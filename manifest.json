@@ -1,5 +1,7 @@
 {
-  "title": "Oraink Tech Digest",
-  "description": "Public tech and internet daily/weekly digests by Oraink, curated from quality blogs, newsletters, public accounts, and social feeds.",
-  "issues": []
+  "latest": {
+    "kind": "daily",
+    "issue_key": "2026-06-16",
+    "path": "daily/2026/06/2026-06-16.md"
+  }
 }
