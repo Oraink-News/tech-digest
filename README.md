@@ -14,28 +14,28 @@
 
 ## 今日日报
 
-> 本期归档文件：[daily/2026/06/2026-06-15.md](daily/2026/06/2026-06-15.md)
+> 本期归档文件：[daily/2026/06/2026-06-16.md](daily/2026/06/2026-06-16.md)
 
 <!-- latest daily content starts -->
 
-# 从监管安全重塑边界，到开发者重夺架构主导，AI行业正走出Token焦虑走向原生Agent
+# 顶级模型越狱与开源投毒交织，技术升维撞上安全底线，认知与消费回归情绪本位
 
-> 今天的焦点已从模型能力转向系统性校准：监管与安全划定合规边界，开发者重掌架构主导权，行业在成本审视下迈向OS原生Agent，这决定了AI落地的真实路径
+> 今天，AI护栏失守与开源投毒暴露出技术狂飙的暗面；对指数增长的警惕与情绪消费的兴起，则标志着从盲目扩张向理性决策与体验本位的回归。
 
 **灵砚日报 · ORAINK DIGEST**  
-2026-06-15 · 日报 · Vol. 173
+2026-06-16 · 日报 · Vol. 176
 
-- 今日处理文章：210
+- 今日处理文章：529
 - 主精选条目：8
 - 预计阅读：6 分钟
-- 今日主线：规制重塑 / 重夺架构 / 成本校准 / 原生Agent
+- 今日主线：安全底线 / 技术校准 / 情绪本位
 
 ## 本期概览
 
-- 候选文章：约 46 篇
-- 公开覆盖原文：46 篇
-- 候选订阅来源：Gary Marcus(@GaryMarcus) / OpenRouter(@OpenRouterAI) / meng shao(@shao__meng) / 笔记侠 / 中国信息安全 / Marc Andreessen 🇺🇸(@pmarca) / 浮之静 / 51CTO技术栈
-- 公开阅读入口：https://oraink.com/public/daily/2026-06-15/
+- 候选文章：约 51 篇
+- 公开覆盖原文：51 篇
+- 候选订阅来源：安全圈 / 美团技术团队 / 硅谷科技 / 思想钢印 / 有机大橘子 / 逛逛GitHub / InfoQ / 数字生命卡兹克
+- 公开阅读入口：https://oraink.com/public/daily/2026-06-16/
 
 ## 本期如何生成
 
@@ -43,179 +43,181 @@
 
 ## 今日目录
 
-1. AI与智能化：AI与智能化：AI监管进入今天的关键现场 — 精要 4 条 / 思考 2 个
-2. 网络安全：网络安全：AI安全进入今天的关键现场 — 精要 4 条 / 思考 2 个
+1. AI与智能化：AI与智能化：AI安全进入今天的关键现场 — 精要 4 条 / 思考 2 个
+2. 网络安全：网络安全：供应链安全进入今天的关键现场 — 精要 4 条 / 思考 2 个
 3. 软件与开发者：软件与开发者：AI编程进入今天的关键现场 — 精要 4 条 / 思考 2 个
-4. 前沿科技：前沿科技：AI行业进入今天的关键现场 — 精要 4 条 / 思考 2 个
-5. 消费电子：消费电子：AI Agent进入今天的关键现场 — 精要 3 条 / 思考 2 个
+4. 前沿科技：前沿科技：认知模型进入今天的关键现场 — 精要 4 条 / 思考 2 个
+5. 待确认：待确认：时尚趋势进入今天的关键现场 — 精要 3 条 / 思考 2 个
 
 ## 今日主线
 
-- 规制重塑
-- 重夺架构
-- 成本校准
-- 原生Agent
+- 安全底线
+- 技术校准
+- 情绪本位
 
 ## 1. AI与智能化
 
-### AI与智能化：AI监管进入今天的关键现场
+### AI与智能化：AI安全进入今天的关键现场
 
 本分类按公共材料整理 AI与智能化 的今日精要，保留来源引用，方便先看编辑主线再展开原文。
 
-**关键词：** AI监管 / 出口管制 / 大模型安全 / Anthropic / 最强模型 72 小时遭停
+**关键词：** AI安全 / 出口管制 / 越狱 / 顶级模型的安全护栏一夜崩
 
 ### 今日精要
 
-#### 1. 最强模型 72 小时遭停用，安全与地缘绞杀前沿智能
+#### 1. 顶级模型的安全护栏一夜崩塌
 
-Anthropic 前沿模型 Fable 5 与 Mythos 5 发布仅 72 小时即因越狱漏洞触发美国出口管制遭全球停用，顶级模型的强力对齐与安全困境浮出水面。地缘政治之手显影，智谱借势推出 GLM-5.2 并宣布开源，国产大模型在监管真空期抢占窗口。
+Anthropic 的 Fable 5 上线即因越狱触发美国出口管制而下架，开发者随后仅用一行泄露提示词在 Opus 上复活了其核心能力，暴露出当前安全对齐的脆弱。安全护栏失效的速度甚至快于模型迭代的速度。这场越狱不仅击穿了防线，更让模型沦为地缘博弈的筹码。
 
-标签：`AI监管` `出口管制` `大模型安全` `Anthropic`
-
-相关材料：
-- [从发布到被消失的72小时，Fable 5暴露了最强AI模型的安全困境](https://oraink.com/public/articles/31895)
-- [突发！Anthropic全球停用Claude5](https://oraink.com/public/articles/31813)
-- [Fable 5被特朗普禁止幕后黑手曝光？Karpathy可能也用不了了](https://oraink.com/public/articles/31905)
-- [实测GLM-5.2，国产Coding模型的又一座新高峰。](https://oraink.com/public/articles/31801)
-
-订阅来源：腾讯科技 / 大模型智能 / 机器之心 / 数字生命卡兹克
-
-#### 2. 混合面板击败单体巨头，模型路由颠覆 Scaling Law
-
-OpenRouter 测试显示，由 Gemini 3 Flash、Kimi K2.6 等组合的 Fusion 面板，以一半成本达到了接近 Fable 5 的性能。非顶级实验室通过混合模型方案在成本-准确率上实现了帕累托最优。同时参数冗余研究也在解构堆参数的迷信，小而美的混合路由正成为新解。
-
-标签：`混合模型` `OpenRouter` `Scaling Law` `模型路由`
+标签：`AI安全` `出口管制` `越狱`
 
 相关材料：
-- [This is an insane release from OpenRouter, and not just because it's perfect timing.](https://oraink.com/public/articles/31852)
-- [Notably, the budget panel was comparable with Claude Fable 5 in performance.](https://oraink.com/public/articles/31725)
-- [We benchmarked Fusion on 100 hard research tasks and found:](https://oraink.com/public/articles/31778)
-- [Scaling Law 的真相，藏在那些「没用」的参数里｜Hao好聊趋势](https://oraink.com/public/articles/31893)
+- [仅一行代码，Fable 5复活了！](https://oraink.com/public/articles/32036)
+- [Fable为啥遭美国下架？一场技术、管理与社会的对撞](https://oraink.com/public/articles/32257)
 
-订阅来源：Jerry Liu(@jerryjliu0) / OpenRouter(@OpenRouterAI) / 腾讯科技
+订阅来源：硅星人Pro / 傅盛
 
-#### 3. AI 硬件受挫与交互重构，表层叠加走不通
+#### 2. AI定价权向电厂与基座沉底
 
-蜂巢科技创始人宣布暂停 AI 眼镜新品，直言给原有硬件叠加 AI 并非正途；微信小程序 AI 模式则表明，AI 交互不是把「点点点」变成「输一句」，而是重构用户与系统的分工。硬件形态需让位于原生交互逻辑的重建。
+多家大厂 AI 应用上半年陆续关停，应用层进入商业出清期。与此同时，资本不再为模型本身支付溢价，而是疯狂涌入算力电厂与底层基建，KKR 与英伟达斥资百亿押注数据中心。算力的尽头是电力，AI的护城河正沉入物理世界，轻资产逻辑正在失效。
 
-标签：`AI硬件` `交互设计` `微信小程序` `智能眼镜`
+标签：`AI泡沫` `算力基建` `定价权`
 
 相关材料：
-- [对话夏勇峰：做了 6 年，我亲手按下 AI 眼镜的暂停键](https://oraink.com/public/articles/31864)
-- [微信小程序 AI 模式，真的只是把“点点点”变成“输一句”吗？](https://oraink.com/public/articles/31833)
+- [上线只活了180天，AI应用层的泡沫被戳破了](https://oraink.com/public/articles/32295)
+- [AI 的下一道护城河，建在发电厂里｜SVTR Signal #020](https://oraink.com/public/articles/31945)
+- [钱沉到基座、并购沉到上游、护城河沉到电厂：AI 定价权三连下沉丨SVTR Weekly #161](https://oraink.com/public/articles/31944)
 
-订阅来源：极客公园 / 人人都是产品经理
+订阅来源：腾讯科技 / 硅谷科技
 
-#### 4. 窄域超智能率先落地，AGI 向 ASI 连续爆炸
+#### 3. 循环工程宣告提示词退场
 
-Google AI Studio 负责人预判大模型将原生整合 Harness，窄域超智能将率先在编程、数学等「可验证性」领域实现；DeepMind 报告亦指出 AGI 到 ASI 可能进入连续爆炸时代。当智能爆炸开始，可验证的窄域将成为第一块跳板。
+谷歌云与 Claude Code 核心人物纷纷提出 Loop Engineering 将取代 Prompt Engineering。AI 交互正从单次问答转向自动运转的循环系统，人类只需设定目标与验收标准，执行过程由 Agent 自闭环。提示词不再是手艺，而是被系统化的燃料。
 
-标签：`窄域超智能` `ASI` `DeepMind` `可验证性`
+标签：`Loop工程` `AI Agent` `开发范式`
 
 相关材料：
-- [最短一年内，模型会吞噬Harness？ Google AI Studio负责人：窄域超智能将率先在编程、数学、金融、科学等“可验证性”领域实现](https://oraink.com/public/articles/31762)
-- [谷歌DeepMind重磅报告：从AGI到ASI,世界可能进入"连续爆炸"时代](https://oraink.com/public/articles/31928)
+- [提示词工程已死，Loop Engineering来了！](https://oraink.com/public/articles/32247)
+- [Prompt该退环境了，未来属于Loop Engineering。](https://oraink.com/public/articles/32033)
+- [龙虾创始人一条推文引800万人围观，全网都在吵的loop工程到底是个啥？](https://oraink.com/public/articles/32035)
 
-订阅来源：51CTO技术栈 / AI寒武纪
+订阅来源：Datawhale / 数字生命卡兹克 / 硅星人Pro
+
+#### 4. 世界模型抢建物理数据地基
+
+美团发布交互式世界模型评测基准 WBench 揭示当前短板，智源大会为其定义四大路线，而星忆智能等创企则开始打造物理空间版 ImageNet。从虚拟评测到物理数据采集，具身智能正抢建自己的数据基建，世界模型的瓶颈不在算力而在真实世界交互。
+
+标签：`世界模型` `具身智能` `评测基准`
+
+相关材料：
+- [从月球漫步到赛博都市，WBench 测出了世界模型的边界](https://oraink.com/public/articles/31933)
+- [2026智源大会火爆超预期，智源研究院为世界模型定义四大路线｜甲子光年](https://oraink.com/public/articles/32071)
+- [笃信“数据即智能”，这个海淀新星要造物理空间版ImageNet](https://oraink.com/public/articles/32034)
+
+订阅来源：美团技术团队 / 甲子光年 / 硅星人Pro
 
 ### 今日思考
 
-#### 当最聪明的模型必然具备最危险的越狱潜能，安全对齐与能力上限是否本质互斥？
+#### 当安全漏洞演变成地缘政治筹码，AI公司还剩下多少自主权？
 
-**今日信号：** Fable 5 发布 72 小时即因安全漏洞遭全球停用
-
-**灵砚视角：**  
-灵砚认为，越狱是高维智能理解规则后寻找边界必然产生的副产物。出口管制与安全对齐正在成为大模型军备竞赛的新战线，纯粹的技术乐观主义必须向系统工程妥协。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t1)
-
-#### 如果混合模型面板在性价比上碾压单体巨头，大模型创业的护城河究竟在哪？
-
-**今日信号：** OpenRouter Fusion 面板以一半成本达到接近 Fable 5 的性能
+**今日信号：** *Fable 5 被美国政府以国安出口管制紧急下架，Anthropic 连夜赴华盛顿谈判。*
 
 **灵砚视角：**  
-灵砚判断，单体模型的绝对领先窗口正在缩短。护城河将从「参数规模」转移到「路由调度能力」与「高价值私有上下文」，编排层比基座模型更具商业壁垒。
+灵砚认为，Fable 5 事件标志着 AI 监管已从「合规自查」进入「国家安全」语境。未来顶级模型的发布审批权将实质性收归政府，AI 公司正在为底层能力付出政治主权对价。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t1)
+
+#### 当人类从提示词编写者退位为循环系统的验收者，我们真的能管住自动运转的 Agent 吗？
+
+**今日信号：** *多个核心开发者宣称 Prompt Engineering 已死，Loop Engineering 将成为新范式。*
+
+**灵砚视角：**  
+灵砚观察到，Loop Engineering 本质是把人的判断力压缩为系统的边界条件。自动闭环带来的风险是系统性偏移，如果验收标准本身有误，Agent 会以最高效率执行错误。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t2)
 
 
 ## 2. 网络安全
 
-### 网络安全：AI安全进入今天的关键现场
+### 网络安全：供应链安全进入今天的关键现场
 
 本分类按公共材料整理 网络安全 的今日精要，保留来源引用，方便先看编辑主线再展开原文。
 
-**关键词：** AI安全 / 安全运营 / AI监管 / AI 既是安全倍增器也是
+**关键词：** 供应链安全 / 开源投毒 / 数据泄露 / 开源供应链投毒成常态，信
 
 ### 今日精要
 
-#### 1. AI 既是安全倍增器也是新型攻击面
+#### 1. 开源供应链投毒成常态，信任防线告急
 
-AI 正在重塑安全运营，部分企业已实现 90% 告警全自动处理，分析师正从执行者转向审核者。但攻防从来不对称，Meta AI 客服系统因未验证邮箱一致性致 2 万余账户被盗，Anthropic CEO 亦警示 AI 指数级发展远超政策立法节奏。AI 既是盾也是矛。
+Arch Linux AUR 遭遇史上最大规模投毒，超1500个包被植入窃密代码，攻击者甚至发动技术升级的第二轮攻势；英国诺丁汉大学亦因第三方平台被攻破致45万人数据泄露。开源与供应链的「信任默认」机制正沦为攻击温床，从社区遗弃包接管到SaaS供应商切入，防线全面失守。
 
-标签：`AI安全` `安全运营` `AI监管`
-
-相关材料：
-- [AI重塑SOC：当90%的告警实现全自动处理，安全分析师该做什么？](https://oraink.com/public/articles/31872)
-- [【安全圈】Meta AI 客服系统被黑，2 万+ Instagram 账户沦陷](https://oraink.com/public/articles/31925)
-- [AI 指数级发展策略](https://oraink.com/public/articles/31844)
-
-订阅来源：安全牛 / 安全圈 / 安全行者老霍
-
-#### 2. 传统边界防御失效，供应链成最脆弱入口
-
-当传统钓鱼和直攻易被拦截，黑客与红队开始调转枪口。供应链入口正成为绕过 EDR 的首选路径。海莲花组织近年将重心转向越南境内，借本土金融软件对股票投资者发动供应链攻击；2026 年红队演练也表明，攻击上游供应商成为新型邪修手法。
-
-标签：`供应链攻击` `APT` `红队`
+标签：`供应链安全` `开源投毒` `数据泄露`
 
 相关材料：
-- [海莲花黑客组织利用越南金融软件进行供应链攻击](https://oraink.com/public/articles/31764)
-- [2026，红队钓鱼的邪修手法](https://oraink.com/public/articles/31902)
+- [快讯：Arch Linux AUR 遭遇史上最大规模投毒攻击，供应链安全防线告急](https://oraink.com/public/articles/32230)
+- [黑客盯上Arch Linux用户：超20个AUR软件包被植入了后门](https://oraink.com/public/articles/32074)
+- [45.5万人中招！英国名校遭供应链攻击，你的校园账户还安全吗？](https://oraink.com/public/articles/32135)
 
-订阅来源：黑鸟 / 安全威胁情报
+订阅来源：数说安全 / 看雪学院 / 安全客
 
-#### 3. 天价罚单落地，数据分类从通用走向精准
+#### 2. 强AI遇「意图走私」，对齐难度升级
 
-韩国电商酷澎因泄露占人口 64% 的公民购物数据，被开出 27.7 亿元史上最大罚单，数据违规成本已达不可承受之重。国内六部门联合印发《金融信息服务数据分类分级指南》，标志着防护逻辑从通用兜底转向精准治理，重要数据识别有了统一操作标准。
+号称合规最强的 Claude Fable 5 上线即被攻破，暴露新型「意图走私」攻击——通过合法上下文夹带恶意意图迫使模型越权执行。随着AI智能体从内容输出转向行动执行，意图审查的难度呈指数级上升，传统安全护栏已难以拦截伪装成正常请求的越狱操作。
 
-标签：`数据安全` `合规` `数据分类分级`
+标签：`AI安全` `意图走私` `智能体风险`
+
+相关材料：
+- [地表最强 Claude Fable 5 暴雷？AI安全进入“意图走私”时代](https://oraink.com/public/articles/32145)
+- [专题·智能体安全 | AI智能体的系统架构与安全治理：从输出风险到行动风险](https://oraink.com/public/articles/32080)
+- [【安全圈】美国政府命令 Anthropic 暂停向外国公民提供 Fable 5 和 Mythos 5 访问权限](https://oraink.com/public/articles/32090)
+
+订阅来源：360数字安全 / 中国信息安全 / 安全圈
+
+#### 3. 天价罚单落地，数据泄露代价刚性化
+
+韩国电商酷澎因泄露64%国民数据被罚27.7亿元创该国纪录；23andMe破产仍须设3.16亿元赔偿基金。国内六部门联合印发《金融信息服务数据分类分级指南》划定合规坐标。数据泄露的代价正从业务损失转化为刚性财务惩罚，合规基线被强制上移。
+
+标签：`数据合规` `天价罚单` `金融数据`
 
 相关材料：
 - [【安全圈】泄露韩国64%的公民购物数据，被罚款27.7亿元](https://oraink.com/public/articles/31927)
-- [通知 | 六部门联合印发《金融信息服务数据分类分级指南》（附全文）](https://oraink.com/public/articles/31733)
+- [破产也逃不掉！知名企业因数据泄露赔偿超3亿元，中国用户有望获赔](https://oraink.com/public/articles/32065)
+- [六部门联合印发《金融信息服务数据分类分级指南》，划定金融信息服务数据合规坐标](https://oraink.com/public/articles/32108)
 
-订阅来源：安全圈 / 中国信息安全
+订阅来源：安全圈 / 互联网安全内参 / 信息安全国家工程研究中心
 
-#### 4. Chrome 终结旧扩展，去中心化过滤时代落幕
+#### 4. AI编程的光与影：重写Git与真实项目失效
 
-Chrome 151 彻底终止对 Manifest V2 的支持，uBlock Origin 在新版浏览器中无法运行，旧版扩展启用后门被焊死。这不仅是广告拦截工具的更迭，更意味着浏览器将扩展的控制权从开发者绝对自由，收拢至平台受限的 V3 标准之下。
+GitHub联合创始人借AI实现搁置15年的Git重写Rust项目；但另一边，评测指出主流AI编程工具在真实复杂项目中常常失效，且陷入「指令越详细输出越差」的X-Y问题。AI是极致的执行者而非需求定义者，当人类给出错误路径时，它只会加速偏离。
 
-标签：`Chrome` `Manifest V3` `浏览器扩展`
+标签：`AI编程` `软件工程` `人机协作`
 
 相关材料：
-- [Chrome 151 彻底终结旧版扩展：uBlock Origin 时代落幕](https://oraink.com/public/articles/31877)
+- [Grit： 迟到了十五年的 Rewrite Git in Rust 梦想被 AI 实现](https://oraink.com/public/articles/32049)
+- [玩具题满分，真实项目瘫痪？AI辅助开发能力“真”评测](https://oraink.com/public/articles/32155)
+- [Agent 时代的 X-Y Problem：为什么你给的指令越详细，AI 反而越“笨”？](https://oraink.com/public/articles/32294)
 
-订阅来源：小众软件
+订阅来源：觉学社 / CodeWisdom / 虚拟框架
 
 ### 今日思考
 
-#### 当 AI 被嵌入业务关键节点，谁为它的低级逻辑漏洞兜底？
+#### 开源社区的维护者人肉防线被击穿后，信任模型该如何重构？
 
-**今日信号：** Meta AI 客服系统因未验证密码重置邮箱致 2 万账户被盗
-
-**灵砚视角：**  
-灵砚认为，AI 落地的最大风险不在「智能失控」，而在传统编码缺陷被放大。安全团队在 SOC 拥抱大模型时，往往忽略了 AI 接口本身的身份验证与越权隐患。防御 AI 与业务 AI 的安全水位并不对齐。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t1)
-
-#### 如果防线总是根据上一次攻击构建，我们该如何预判下一个盲区？
-
-**今日信号：** 红队与 APT 组织均转向攻击 EDR 尚未覆盖的供应链入口
+**今日信号：** Arch Linux AUR 超过1500个包被投毒，攻击者甚至发动第二轮升级攻击
 
 **灵砚视角：**  
-攻防永远存在时间差。合规标准往往滞后于攻击手法演进，企业如果只盯着端点 EDR 达标，就会在供应链上游裸奔。安全投资应从买「硬壳」转向绘「图谱」，摸清资产依赖远比堆砌单点防御重要。
+灵砚认为，开源的「信任默认」机制已无法适应当下的攻击规模，自动化审计与供应链信任链上链或许是唯一的出路，依赖人工审核的开源生态已到极限。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t1)
+
+#### 当AI智能体拥有长链路行动力时，如何拦截伪装成正常请求的恶意意图？
+
+**今日信号：** Fable 5 被「意图走私」攻破，合法上下文夹带恶意意图
+
+**灵砚视角：**  
+灵砚判断，安全对齐已从输出审查升级为意图审查，但这与模型追求长程推理的能力存在内生矛盾，防越狱与防投毒将成为同构难题。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t2)
 
 
 ## 3. 软件与开发者
@@ -224,227 +226,229 @@ Chrome 151 彻底终止对 Manifest V2 的支持，uBlock Origin 在新版浏览
 
 本分类按公共材料整理 软件与开发者 的今日精要，保留来源引用，方便先看编辑主线再展开原文。
 
-**关键词：** AI编程 / 开发者 / 架构 / 人在AI编程中必须夺回方
+**关键词：** AI编程 / 架构设计 / 产品哲学 / AI编程竞争升维，价值观
 
 ### 今日精要
 
-#### 1. 人在AI编程中必须夺回方向盘
+#### 1. AI编程竞争升维，价值观与主导权成为架构核心
 
-当AI编码工具的能力越来越强，开发者反而面临失控风险。从Vibe Coding导致项目停摆的反思，到Codex实操中强调人需占据主导，再到Claude Code将价值观作为架构约束，信号已经明确：AI编程的可持续性不取决于模型能写多少代码，而在于人能否守住架构与意图的边界。半古法不是倒退，而是重申控制权。
+工具竞争正从模型能力转向产品哲学与人机协作范式。Claude Code 将价值观视为架构约束，定位为对等队友；而 Codex 的实操经验则表明，人必须在 AI 编码中占据主导。随着 Kimi K2.7 等垂直模型的加入，开发者的核心挑战已变成如何在保持人类判断的前提下，高效驾驭这些异构的 AI 队友。
 
-标签：`AI编程` `开发者` `架构`
-
-相关材料：
-- [Claude Code 的产品哲学：当价值观成为架构](https://oraink.com/public/articles/31882)
-- [沉迷 Vibe coding 后我幡然醒悟：为什么可持续开发要回归半古法编程](https://oraink.com/public/articles/31784)
-- [老板：“你是怎么使用 AI 的，真能做到不手写代码？为什么 Codex 在我手里感觉是个智障。。”我：“这样，然后再这样。。”老板直接跪了。](https://oraink.com/public/articles/31829)
-
-订阅来源：掘金本周最热
-
-#### 2. 多Agent协作的瓶颈上移到治理层
-
-AI Agent正从单点能力比拼走向系统化协作。Databricks推出Omnigent解决多Agent的组合与治理，端到端业务专家Agent实践指出代码之外的环节串联才是当前核心瓶颈。同时，Skill开发中配置格式的选择也印证了这一点：Agent需要的不仅是自由度，更是结构化的约束与标准化接口，这决定了编排的上限。
-
-标签：`AI Agent` `多智能体` `工程化`
+标签：`AI编程` `架构设计` `产品哲学`
 
 相关材料：
-- [Databricks 推出「Omnigent」](https://oraink.com/public/articles/31816)
-- [如何搭建一个端到端业务需求专家 Agent](https://oraink.com/public/articles/31836)
-- [我在做 baoyu-skills 时，做了一个尝试，就是用了一个 EXTEND.md 文件保存用户自定义设置，当时我想的是 Agent 读起来方便。](https://oraink.com/public/articles/31797)
+- [在 Kimi Code 中用上最新的 Kimi K2.7 Code 模型，太爽了。](https://oraink.com/public/articles/32013)
 
-订阅来源：meng shao(@shao__meng) / 阿里云开发者 / 宝玉(@dotey)
+订阅来源：逛逛GitHub
 
-#### 3. Token资本重塑企业护城河
+#### 2. Skill成为新流量节点，服务与平台加速脱钩
 
-萨提亚·纳德拉提出AI时代企业需经营人力资本与Token资本，二者互相强化。而瑞幸开放点单Skill接入各类Agent的实践，恰好为这一理论提供了微观注脚：当服务脱钩传统平台，企业的核心资产不再是流量入口，而是能否在Agent网络中高效输出并沉淀Token资本。未来没有自有AI能力闭环的模型或企业都难以持续。
+瑞幸推出点单 Skill 接入各类 Agent，v0 承诺默认提供最佳技能，开发者也在打磨并开源自己的专属插图 Skill。这表明服务正从传统 App 中脱钩，Skill 正在成为 AI 时代的基本交互单元。未来的入口不再是超级应用，而是被用户个性化 Agent 调用的各种技能模块。
 
-标签：`Token资本` `AI生态` `商业趋势`
+标签：`AI Agent` `Skill` `流量重构`
 
 相关材料：
-- [微软 CEO Satya Nadella 发了一篇长文，提出了一个新概念：Token 资本。](https://oraink.com/public/articles/31781)
-- [瑞幸 skill 引发的一些思考](https://oraink.com/public/articles/31851)
-- [微软 CEO Satya Nadella：没有生态的「前沿 AI 模型」不可持续！](https://oraink.com/public/articles/31796)
+- [v0 commits to shipping the best skills by default.](https://oraink.com/public/articles/32321)
+- [置身钉内的 20 个切片和 1 个 skill](https://oraink.com/public/articles/31954)
 
-订阅来源：宝玉(@dotey) / 掘金本周最热 / meng shao(@shao__meng)
+订阅来源：Guillermo Rauch(@rauchg) / 有机大橘子
 
-#### 4. AI封禁揭示监管本质是地缘博弈
+#### 3. AI并未拉平差距，交付富集者的马太效应加剧
 
-Claude Fable被封事件被部分人解读为闭源路线的失败，但深层逻辑并非如此。结合Anthropic内部对安全优先的坚持以及与军方的冲突，可以看到前沿AI模型的监管早已脱离单纯的技术开源与闭源之争，本质上是出口管制与地缘政治风险下的国家安全博弈。技术中立的空间正在被大幅压缩。
+讨论 AI 编码的人与借助 AI 实际交付的人在比例上并未改变，AI 只是放大了既有差距。Lovable 的高效团队经验揭示了组织适配的重要性，而泡沫论则提醒落地预期。当外行领导用 AI 简单结论质疑专业方案时，更说明工具本身不产生价值，能把上下文喂准并闭环的人才会赢。
 
-标签：`AI监管` `地缘政治` `安全`
+标签：`马太效应` `组织管理` `AI泡沫`
 
 相关材料：
-- [Claude Fable 被封，不是开源的胜利](https://oraink.com/public/articles/31756)
-- [Anthropic 内幕：近万亿美元 AI 巨头的「安全优先」与权力博弈 | The Circuit](https://oraink.com/public/articles/31727)
+- [There seem to be two main groups](https://oraink.com/public/articles/32175)
+- [很多人想简单了，未来可能经历多次AI泡沫](https://oraink.com/public/articles/31952)
 
-订阅来源：浮之静 / meng shao(@shao__meng)
+订阅来源：Guillermo Rauch(@rauchg) / 思想钢印
+
+#### 4. 计算边界消融，基础设施为长时AI任务让路
+
+Vercel 将函数运行时长拉长至 30 分钟，底层靠 Fluid 计算打破 Serverless 限制；业界也指出沙箱、函数与服务器本质趋同。传统计算分类正在为 AI 推理与长时 Agent 任务让路，基础设施不再强调形态，而是追求无感融合与按需流动，以适配 Agent 时代的复杂工作流。
+
+标签：`Serverless` `AI推理` `基础设施`
+
+相关材料：
+- [Vercel Functions can now run up to 30 minutes](https://oraink.com/public/articles/32228)
+- [A sandbox](https://oraink.com/public/articles/32322)
+- [A Guide to AI Inference Engineering](https://oraink.com/public/articles/32211)
+
+订阅来源：Vercel News / Guillermo Rauch(@rauchg) / ByteByteGo Newsletter
 
 ### 今日思考
 
-#### 当AI生成的代码量远超人类审查能力时，如何避免系统成为无法维护的黑盒？
+#### 当 AI 编码工具的价值观与开发者的效率诉求冲突时，谁该妥协？
 
-**今日信号：** 今天具体看到了Vibe Coding导致项目失控停摆的动作
-
-**灵砚视角：**  
-灵砚认为，代码的所有权不在于谁敲下字符，而在于谁能理解并为之负责。Vibe Coding的诱惑在于剥夺了人的审查耐心，未来开发者的核心竞争力将从「写出代码」转向「审查与重构AI生成的代码」，这是一种认知负担的上移。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t1)
-
-#### 如果流量入口不再垄断，那么Agent时代的分配权掌握在谁手里？
-
-**今日信号：** 瑞幸推出Skill脱钩平台，认为入口不会形成新垄断
+**今日信号：** Claude Code 将价值观作为架构约束，而开发者用 Codex 仍需强势主导
 
 **灵砚视角：**  
-灵砚判断，Agent时代的垄断将从「入口垄断」转为「协议与意图垄断」。谁定义了Agent之间的通信标准和意图解析的优先级，谁就掌握了隐形流量分配权，开放Skill只是拿到了入场券，并非高枕无忧。
+灵砚认为，产品哲学决定能力边界。Claude Code 的对等协作意味着它会在不合规代码上拒答，这倒逼开发者写出更清晰的意图。这不是妥协，而是从「指使工具」到「与队友对齐」的范式切换。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t1)
+
+#### 企业把核心业务逻辑封装成 Skill 暴露给外部 Agent，安全与流量的护城河在哪？
+
+**今日信号：** 瑞幸把点单做成了 Skill 开放给所有 Agent 调用
+
+**灵砚视角：**  
+灵砚判断，未来的护城河不再是入口垄断，而是 Skill 的响应质量与数据壁垒。当所有 Agent 都能调用同一项服务时，谁的数据闭环更好、意图理解更深，谁才能留住 Agent 的「心智」。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t2)
 
 
 ## 4. 前沿科技
 
-### 前沿科技：AI行业进入今天的关键现场
+### 前沿科技：认知模型进入今天的关键现场
 
 本分类按公共材料整理 前沿科技 的今日精要，保留来源引用，方便先看编辑主线再展开原文。
 
-**关键词：** AI行业 / 成本控制 / 大模型 / AI 行业走出 Toke
+**关键词：** 认知模型 / 指数增长 / 决策 / 设计凸性收益函数，警惕指
 
 ### 今日精要
 
-#### 1. AI 行业走出 Token 狂热，算力军备竞赛撞上成本墙
+#### 1. 设计凸性收益函数，警惕指数增长的直觉陷阱
 
-大模型的「Token最大化」狂欢正在终结，行业转向精细化成本控制。Gary Marcus指出Anthropic与OpenAI的Q3增速将放缓，Meta等大厂也已开始限制员工Token用量。当模型推理短板被证实、同质化技术又无护城河，烧钱换规模的旧逻辑正在让位于降本增效的新现实，价格战已在所难免。
+李继刚用函数模型重释「菩萨畏因」，主张打磨人生规则，将收益函数设计为下行有限的凸函数，拥抱波动。Paul Graham 连发数推提醒，指数增长产生的夸张数值超乎常理，需保持智识谦逊。Ray Dalio 呼吁回归近似思考。波动成为免费彩票时，函数形状比祈祷好运更关键。
 
-标签：`AI行业` `成本控制` `大模型`
-
-相关材料：
-- [Tokenmaxxing has given way to tokenminimizing](https://oraink.com/public/articles/31856)
-- [The Economist sees it now, too.](https://oraink.com/public/articles/31789)
-- [and, 6, the US government has beclowned itself, adding uncertainty throughout the industry.](https://oraink.com/public/articles/31723)
-- [“If an AI cannot apply an abstract lesson to a new situation, it is not truly reasoning or learning”...](https://oraink.com/public/articles/31724)
-
-订阅来源：Gary Marcus(@GaryMarcus)
-
-#### 2. 多模型协作编排，对抗单模型上下文衰减
-
-单一模型编码时上下文越跑越蠢、自我评分失准的痛点，正催生出多智能体协作的新范式。开发者尝试让Claude负责规划与评审，GPT Codex负责执行，用仓库作记忆、门禁前置。同时，极简设计的AI编程CLI工具也因轻量灵活受追捧。从依赖单一巨模型到构建AI工作流，开发者正在重塑人机协同边界。
-
-标签：`AI编程` `多智能体` `工作流`
+标签：`认知模型` `指数增长` `决策`
 
 相关材料：
-- [Claude Fable 5 负责规划和评审，GPT-5.5 Codex 负责干活和研究。仓库即记忆，门禁在代码出来前就写死，治的就是单模型编码时上下文越跑越蠢、自己给自己打分、验收标准跟着结果跑的老...](https://oraink.com/public/articles/31874)
-- [从 Gemini CLI → OpenCode → Claude Code → Kimi Code → Codex → Pi 最后还是喜欢极简的 Pi，试试 kooky 很不错 https://t.c...](https://oraink.com/public/articles/31900)
+- [「菩萨畏因，凡夫畏果」。](https://oraink.com/public/articles/32113)
+- [努力把自己的收益函数设计成凸的：下行有限，上行无限。 在下行风险可控的前提下，波动越大越好。 多尝试、多试错、多接触随机性，每一次波动都是免费的彩票。](https://oraink.com/public/articles/32112)
+- [And because exponential growth can produce crazy numbers, you need an extra dose of intellectual hum...](https://oraink.com/public/articles/32314)
+- [Founders with technical backgrounds are often surprised by the results of such calculations too. Exp...](https://oraink.com/public/articles/32315)
 
-订阅来源：Geek(@geekbb)
+订阅来源：李继刚(@lijigang_com) / Paul Graham(@paulg)
 
-#### 3. 监管与封锁的模糊地带，人才流通遭遇寒蝉效应
+#### 2. AI产业从狂飙走向紧缩，价值集中引发反噬
 
-美国针对AI顶尖人才的访问限制正引发争议。非美公民的顶级科学家被禁止接触最先进模型，监管的重锤不仅砸向人才流动，其执法标准也遭质疑：特定模型是否真的更容易被越狱与蒸馏，还是仅仅出于选择性执法的借口？当国家安全成为模糊的通行证，合规与开放间的裂痕正在扩大。
+Gary Marcus 观察到行业已从 Tokenmaxxing 转向 Tokenminimizing，企业开始限制 token 用量。Huggingface 联合创始人警告价值向少数模型商集中，草根运动已阻拦 75 个 AI 基础设施项目。「拥有智能」而非「租用智能」成为新呼声，欧盟对 Mistral 的禁令则暴露了监管与安全的矛盾。
 
-标签：`AI监管` `人才政策` `大模型安全`
-
-相关材料：
-- [could the u.s. policy be any stupider?](https://oraink.com/public/articles/31760)
-- [is there any evidence whatsoever that Fable was more vulnerable to jailbreaking and distillation tha...](https://oraink.com/public/articles/31757)
-
-订阅来源：Gary Marcus(@GaryMarcus)
-
-#### 4. 粗粝文化取代精英沙龙，美国国力叙事的折叠
-
-从白宫举办UFC格斗赛被批文化衰落，到Marc Andreessen连发多条推文庆祝美利坚帝国的扩张，美国的社会叙事正经历一场粗粝转向。曾经邀请文化名流的肯尼迪时代被格斗赛取代，科技巨头则将太空与AI霸权视作新帝国勋章。精英审美退场与硬实力炫耀上位，构成了当下美国内部自我认同的一体两面。
-
-标签：`美国文化` `地缘政治` `社会趋势`
+标签：`AI产业` `Token经济` `价值分配`
 
 相关材料：
-- [Tweet](https://oraink.com/public/articles/31738)
-- [USA.](https://oraink.com/public/articles/31869)
+- ["The last thing any of us want is a world where every company across every sector is ceding value to...](https://oraink.com/public/articles/32123)
+- [Love this framing from Lin: it’s time for all to own intelligence instead of renting it!](https://oraink.com/public/articles/32219)
+- [They can’t keep getting away with this.](https://oraink.com/public/articles/32042)
 
-订阅来源：Marc Andreessen 🇺🇸(@pmarca)
+订阅来源：clem 🤗(@ClementDelangue) / Marc Andreessen 🇺🇸(@pmarca)
+
+#### 3. 开发工具重塑工作流，计算向存储靠拢
+
+终端 AI 编程工具走向极简与多模型协作，kooky 与 pi-web 备受推崇，Waza 替代停服的 Claude Fable 5。为应对成本，llmtrim 在请求前挤掉冗余 token。架构思路上，「将计算放在存储旁」正在取代「将存储放在计算旁」，底层逻辑的变迁暗示着效率与成本的重新平衡。
+
+标签：`开发工具` `AI编程` `架构演进`
+
+相关材料：
+- [在 LLM API 请求发出去之前，把里面浪费的 token 挤掉，省钱但不影响回答质量。](https://oraink.com/public/articles/32061)
+- [old: put storage next to your compute](https://oraink.com/public/articles/32217)
+- [If a friend's worried now that Claude Fable 5 is gone, Waza might help.](https://oraink.com/public/articles/32100)
+
+订阅来源：Geek(@geekbb) / Julien Chaumond(@julien_c) / Tw93(@HiTw93)
+
+#### 4. 搜索体验让步于变现，产品文化需要物理锚点
+
+Paul Graham 批评 Google 在图片搜索中间硬插广告，导致体验劣化至用户转向必应。反观 Notion，在会议室摆放芝麻街玩偶，以此物理锚点提醒团队做产品的准星是客户认可而非内部认同。流量见顶时，是榨取剩余价值还是死守体验底线，是平台的成人礼。
+
+标签：`搜索引擎` `产品文化` `用户体验`
+
+相关材料：
+- [Google has started mixing ads right into the middle of image search results. It decreases search qua...](https://oraink.com/public/articles/32060)
+- [“People \[at Notion\] are really only concerned about one thing which is making the product good and o...](https://oraink.com/public/articles/32288)
+
+订阅来源：Paul Graham(@paulg) / Notion(@NotionHQ)
 
 ### 今日思考
 
-#### 当大模型调用从无限量供应变为限量配给，哪些依赖高并发试错的 AI 创业模式会率先崩塌？
+#### 当个人主动增加生活中的随机性以博取凸性收益时，如何避免被指数级增长的负面黑天鹅反噬？
 
-**今日信号：** *Meta等大厂开始限制内部员工使用大模型的Token用量*
-
-**灵砚视角：**  
-灵砚判断，Token配给制标志着大模型从「技术探险期」进入「生产管控期」。无法在低Token消耗下跑通商业闭环的应用，将无力支付高昂的推理账单。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t1)
-
-#### 多智能体协作的「门禁前置」思路，能否根治大模型自我合理化的幻觉？
-
-**今日信号：** *用Claude做规划评审、GPT做执行，解决单模型上下文衰减*
+**今日信号：** *李继刚提出把收益函数设计成凸的，Paul Graham 称连技术创始人都常对指数增长算出的结果惊讶*
 
 **灵砚视角：**  
-灵砚观察到，单模型既是运动员又是裁判，不可避免导致验收标准漂移。多智能体分工本质是引入制衡机制，但也会带来通信损耗，这要求工程上有极高的调度能力。
+凸函数的下行有限是个数学承诺，但现实中的底线往往会被指数级的系统性风险击穿。拥抱波动不等于盲目试错，在增加彩票的同时，必须为生存设立绝对刚性的止损隔离墙。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t1)
+
+#### 当算力成本迫使大模型公司开始限制 token，租用智能的性价比是否会加速见顶？
+
+**今日信号：** *Gary Marcus 称行业从 Tokenmaxxing 转向 Tokenminimizing，Huggingface 呼吁「拥有智能而非租用」*
+
+**灵砚视角：**  
+狂飙期的 token 最大化是跑马圈地，紧缩期的 token 控制是降本增效。当调用成本成了负担，企业和开发者必然从租用公有智能转向私有化部署或边缘计算，开源模型的真正红利才刚要开始。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t2)
 
 
-## 5. 消费电子
+## 5. 待确认
 
-### 消费电子：AI Agent进入今天的关键现场
+### 待确认：时尚趋势进入今天的关键现场
 
-本分类按公共材料整理 消费电子 的今日精要，保留来源引用，方便先看编辑主线再展开原文。
+本分类按公共材料整理 待确认 的今日精要，保留来源引用，方便先看编辑主线再展开原文。
 
-**关键词：** AI Agent / 操作系统 / 大模型 / OS 原生 Agent
+**关键词：** 时尚趋势 / 情绪消费 / 生活方式 / 穿搭正成为现代人的情绪缓
 
 ### 今日精要
 
-#### 1. OS 原生 Agent 取代 App 入口
+#### 1. 穿搭正成为现代人的情绪缓冲层
 
-华为在 HDC 2026 宣布鸿蒙全面向 Agent 架构演进，小艺升级为系统级智能体，意图重构移动互联网交互入口。当 OS 直接分发服务，App 的存在感将被大幅稀释。同日 Claude Fable 5 封禁内幕也折射出 AI 边界博弈的紧迫。
+从「精神凉拖」薄底鞋到走向日常的度假风，再到成年人主动拥抱的「奶萌风」与极端审美退潮后的薄肌，时尚不再是单纯的视觉展示，而是当代人消解现实压力的情绪外化。舒适与轻盈重新定义了高级感，我们在穿上这些松弛感的同时，也在为紧绷的日常寻找呼吸的出口。
 
-标签：`AI Agent` `操作系统` `大模型`
-
-相关材料：
-- [HDC 2026 深度解构：鸿蒙全面向 Agent 架构演进，小艺做了这三件事](https://oraink.com/public/articles/31821)
-- [早报｜曝苹果iOS还有三项功能没公布/Claude Fable 5封禁内幕曝光/阿里巴巴:「周靖人离职」为谣言](https://oraink.com/public/articles/31820)
-
-订阅来源：爱范儿
-
-#### 2. 企业 AI 转型不能只做技术加法
-
-森马以增收近亿、提效 10 倍的案例证明，传统企业 AI 落地的关键不在单点工具引入，而是技术、流程与组织的三位一体变革。八成企业转型失败，多因陷入「为 AI 而 AI」的工具幻觉。
-
-标签：`AI落地` `企业转型` `组织变革`
+标签：`时尚趋势` `情绪消费` `生活方式`
 
 相关材料：
-- [一年增收近亿、提效10倍，这家公司的AI落地，做对了什么？](https://oraink.com/public/articles/31730)
+- [薄底鞋，现代人的“精神凉拖”](https://oraink.com/public/articles/32183)
+- [什么衣服，穿上即休息，日常像度假？](https://oraink.com/public/articles/32186)
+- [“奶萌风”，一种很大人的流行](https://oraink.com/public/articles/32195)
+- [现在最流行的薄肌，怎么练？](https://oraink.com/public/articles/32190)
 
-订阅来源：笔记侠
+订阅来源：vogue
 
-#### 3. 高阶智驾击穿 15 万级定价红线
+#### 2. 算力越强，主权与治理的拉扯越紧
 
-深蓝 S07 增程版以 15.49 万起售价搭载华为乾崑智驾 ADS Pro，昊铂 S600 同台竞技。当高阶智驾成为 20 万级 SUV 的出厂标配，车企的竞争焦点正从堆料转向体验闭环。
+Anthropic的新模型Claude Fable 5因出口管制被临时下线，而架构师们正试图将AI治理嵌入交付流水线以平衡效率与合规。与此同时，从云端走向本地的去中心化数据协议正在兴起。技术权力的扩张与控制，正倒逼治理框架和数据自主权加速重构，未来的技术博弈不只算力，更在规则。
 
-标签：`智驾平权` `新能源车` `价格战`
+标签：`AI治理` `数据主权` `出口管制`
 
 相关材料：
-- [限时 15.49 万元起，华为乾崑智驾 ADS Pro 上车全新深蓝 S07 增程版](https://oraink.com/public/articles/31846)
-- [昊铂 S600 上市：20 万级 SUV 的竞争，开始进入「少做选择题」阶段](https://oraink.com/public/articles/31915)
+- [Article: Governing AI in the Cloud: A Practical Guide for Architects](https://oraink.com/public/articles/32024)
+- [Podcast: Increasing Users' Data Agency: From BlueSky's AT Protocol to the Local-First Software Movement](https://oraink.com/public/articles/32025)
 
-订阅来源：爱范儿
+订阅来源：InfoQ
+
+#### 3. 去山里发呆是对工作身份的越狱
+
+当打卡式旅行不再时髦，走进山林放空成了新的度假趋势。VOGUE甚至把红毯搬到了九寨沟的风里。这并非简单的避世，而是对被工作身份定义的日常的主动剥离。在自然中卸下社会标签，用慢节奏的物理抽离，换取心理层面的重新确立。
+
+标签：`都市逃离` `度假方式` `自我重塑`
+
+相关材料：
+- [今年流行：穿得时髦，去山里发呆](https://oraink.com/public/articles/32193)
+- [VOGUE Vacation九寨沟红毯，这次是在风里走秀](https://oraink.com/public/articles/32196)
+
+订阅来源：vogue
 
 ### 今日思考
 
-#### 当 OS 层面直接意图分发服务，中小开发者的流量阵地会在哪里？
+#### 当所有消费品都在提供情绪价值，真正的心理松弛是靠外部穿戴获得的吗？
 
-**今日信号：** 鸿蒙将系统底座全面向 Agent 架构演进
-
-**灵砚视角：**  
-灵砚认为，Agent 架构本质是流量再分配。超级 App 将沦为能力提供者而非入口，无法被 Agent 高效调用的长尾服务将面临断流风险。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t1)
-
-#### 硬件平权之后，智驾的付费订阅模式还能否跑通？
-
-**今日信号：** 华为乾崑智驾 ADS Pro 下探至 15 万级家用 SUV
+**今日信号：** *薄底鞋被称为现代人的「精神凉拖」，舒适正在重新定义高级。*
 
 **灵砚视角：**  
-灵砚判断，智驾正在从增值选配变为安全底线。当算力与传感器不再是壁垒，车企必须依靠数据闭环与长尾场景处理能力来构建真正的溢价，而非依赖软件订阅。
+灵砚认为，消费品只是启动松弛的仪式感开关。物质提供的情绪缓冲往往短暂，过度依赖外在穿戴来代偿内心压力，反而可能掩盖了需要直面的问题。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-15#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t1)
+
+#### AI模型成为出口管制对象，这会如何改变开源社区与全球开发者的协作格局？
+
+**今日信号：** *Claude Fable 5 因美国出口指令上线即被暂停。*
+
+**灵砚视角：**  
+灵砚判断，这标志大模型正式进入战略物资序列。地缘政治将迫使全球算力与模型流转碎片化，开源社区的合规成本将急剧上升，去中心化架构或成破局要点。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-06-16#thought-t2)
 
 ## 跨分类洞察
 
