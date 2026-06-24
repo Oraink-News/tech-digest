@@ -35,7 +35,7 @@
 - 候选文章：约 62 篇
 - 公开覆盖原文：62 篇
 - 候选订阅来源：掘金本周最热 / NotebookLM(@NotebookLM) / 奇安信威胁情报中心 / 情报分析师 / Z Potentials / Recraft(@recraftai) / 有机大橘子 / 字节跳动Seed
-- 公开阅读入口：https://oraink.com/digest?date=2026-06-24
+- 公开阅读入口：https://oraink.com/public/daily/2026-06-24/
 
 ## 本期如何生成
 
