@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·前沿科技 2026-W29](weekly/2026/frontier-tech/2026-W29.md)
+- 最新周报：[灵砚周刊·AI与智能化 2026-W29｜开源模型三连发追平闭源前沿](weekly/2026/ai-intelligence/2026-W29.md)
 - [License](#license)
 
 ---
