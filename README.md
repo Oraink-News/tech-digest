@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·消费电子 2026-W29](weekly/2026/consumer-electronics/2026-W29.md)
+- 最新周报：[灵砚周刊·云计算与企业服务 2026-W29](weekly/2026/cloud-enterprise/2026-W29.md)
 - [License](#license)
 
 ---
