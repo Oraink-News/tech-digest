@@ -1,3 +1,3 @@
 # 灵砚公开日报与周报
 
-- [灵砚周刊·AI与智能化 2026-W29｜开源模型三连发追平闭源前沿](weekly/2026/ai-intelligence/2026-W29.md)
+- [灵砚周刊·软件与开发者 2026-W29](weekly/2026/software-developers/2026-W29.md)
