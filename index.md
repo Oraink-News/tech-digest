@@ -1,3 +1,3 @@
 # 灵砚公开日报与周报
 
-- [灵砚周刊·软件与开发者 2026-W30｜模型密集发布后真实交付迎来检验](weekly/2026/software-developers/2026-W30.md)
+- [灵砚周刊·消费电子 2026-W30](weekly/2026/consumer-electronics/2026-W30.md)
