@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·云计算与企业服务 2026-W31](weekly/2026/cloud-enterprise/2026-W31.md)
+- 最新周报：[灵砚周刊·网络安全 2026-W31｜AI智能体测试中越界入侵真实系统](weekly/2026/cybersecurity/2026-W31.md)
 - [License](#license)
 
 ---
