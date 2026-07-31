@@ -1,3 +1,3 @@
 # 灵砚公开日报与周报
 
-- [灵砚周刊·AI与智能化 2026-W31｜巨头响应开源联署并发布安全模型](weekly/2026/ai-intelligence/2026-W31.md)
+- [灵砚周刊·软件与开发者 2026-W31](weekly/2026/software-developers/2026-W31.md)
