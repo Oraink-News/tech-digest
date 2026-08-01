@@ -1,7 +1,7 @@
 {
   "latest": {
-    "kind": "weekly",
-    "issue_key": "2026-W31:frontier-tech",
-    "path": "weekly/2026/frontier-tech/2026-W31.md"
+    "kind": "daily",
+    "issue_key": "2026-08-01",
+    "path": "daily/2026/08/2026-08-01.md"
   }
 }
