@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·AI与智能化 2026-W32｜H3开源打破视频模型独占](weekly/2026/ai-intelligence/2026-W32.md)
+- 最新周报：[灵砚周刊·软件与开发者 2026-W32](weekly/2026/software-developers/2026-W32.md)
 - [License](#license)
 
 ---
