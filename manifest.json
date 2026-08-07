@@ -1,7 +1,7 @@
 {
   "latest": {
-    "kind": "daily",
-    "issue_key": "2026-08-07",
-    "path": "daily/2026/08/2026-08-07.md"
+    "kind": "weekly",
+    "issue_key": "2026-W32:ai-intelligence",
+    "path": "weekly/2026/ai-intelligence/2026-W32.md"
   }
 }
