@@ -1,3 +1,3 @@
 # 灵砚公开日报与周报
 
-- [Cursor并购动向与GLM-5.3后训练：AI编码进入重排时段](daily/2026/08/2026-08-15.md)
+- [灵砚周刊·AI与智能化 2026-W33｜DeepSeek低价逼近Fable](weekly/2026/ai-intelligence/2026-W33.md)
