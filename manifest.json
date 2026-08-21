@@ -1,7 +1,7 @@
 {
   "latest": {
-    "kind": "daily",
-    "issue_key": "2026-08-21",
-    "path": "daily/2026/08/2026-08-21.md"
+    "kind": "weekly",
+    "issue_key": "2026-W34:software-developers",
+    "path": "weekly/2026/software-developers/2026-W34.md"
   }
 }
