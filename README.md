@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·网络安全 2026-W35｜智能体运行框架层暴露攻击面](weekly/2026/cybersecurity/2026-W35.md)
+- 最新周报：[灵砚周刊·前沿科技 2026-W35](weekly/2026/frontier-tech/2026-W35.md)
 - [License](#license)
 
 ---
