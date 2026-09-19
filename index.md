@@ -1,3 +1,3 @@
 # 灵砚公开日报与周报
 
-- [灵砚周刊·AI与智能化 2026-W38｜减速共识在头部实验室成形](weekly/2026/ai-intelligence/2026-W38.md)
+- [灵砚周刊·软件与开发者 2026-W38](weekly/2026/software-developers/2026-W38.md)
