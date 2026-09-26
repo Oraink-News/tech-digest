@@ -1,3 +1,3 @@
 # 灵砚公开日报与周报
 
-- [灵砚周刊·软件与开发者 2026-W39｜判断专用模型 Jev 拆出独立品类](weekly/2026/software-developers/2026-W39.md)
+- [灵砚周刊·消费电子 2026-W39](weekly/2026/consumer-electronics/2026-W39.md)

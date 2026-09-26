@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·软件与开发者 2026-W39｜判断专用模型 Jev 拆出独立品类](weekly/2026/software-developers/2026-W39.md)
+- 最新周报：[灵砚周刊·消费电子 2026-W39](weekly/2026/consumer-electronics/2026-W39.md)
 - [License](#license)
 
 ---
