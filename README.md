@@ -14,47 +14,49 @@
 
 ## 今日日报
 
-> 本期归档文件：[daily/2026/10/2026-10-12.md](daily/2026/10/2026-10-12.md)
+> 本期归档文件：[daily/2026/10/2026-10-13.md](daily/2026/10/2026-10-13.md)
 
 <!-- latest daily content starts -->
 
-# GPT-4o 退役、Agent 上岗：AI 的重心正转向产品与算力
+# 从微软造芯到Meta开源智能体，AI竞争沉向工程层，安全议题同步浮出
 
-> OpenAI 让 GPT-4o 走向退役，AI 编程与 Agent 创业持续升温，半导体与 AI 数据中心在硬件一端同步扩张，中东地缘与美国外交则在外围给出变量——今天的看点，是 AI 由模型期切换到产品期的节奏。
+> 微软推进自研芯片，Meta以开源权重加码智能体模型，企业里的多智能体与开发者手中的ai-coding工具同步铺开——AI的竞争重心正从模型层移向工程层。而AI安全与窃密木马的动向，把终端安全推到了台前。
 
 **灵砚日报 · ORAINK DIGEST**  
-2026-10-12 · 日报 · Vol. 384
+2026-10-13 · 日报 · Vol. 385
 
-- 今日处理文章：223
-- 主精选条目：16
+- 今日处理文章：454
+- 主精选条目：18
 - 预计阅读：6 分钟
-- 今日主线：模型退役 / 智能体产品 / AI 编程 / 算力扩张 / 地缘变量
+- 今日主线：自研芯片 / 开源权重 / 多智能体 / AI安全 / AI编码
 
 ## 速览
 
-- [「AGI 已经在你电脑里」：Meta 和蚂蚁灵光抢同一入口](#1-agi-已经在你电脑里meta-和蚂蚁灵光抢同一入口)
-- [抵制声明之后，陶哲轩宣布证明稀缺时代终结](#2-抵制声明之后陶哲轩宣布证明稀缺时代终结)
-- [田渊栋预言五年内失业，RSI 写进顶尖实验室议程](#3-田渊栋预言五年内失业rsi-写进顶尖实验室议程)
-- [「可能参战」：特朗普把利雅得遇袭推向升级关口](#1-可能参战特朗普把利雅得遇袭推向升级关口)
-- [伊朗宣称缴获美军潜航器，霍尔木兹通行成本面临重估](#2-伊朗宣称缴获美军潜航器霍尔木兹通行成本面临重估)
-- [白宫扩大进攻性网络采购：私营厂商进场改写国防生态](#3-白宫扩大进攻性网络采购私营厂商进场改写国防生态)
-- [藻类燃料承诺背后，埃克森科学家早判了不可行](#4-藻类燃料承诺背后埃克森科学家早判了不可行)
-- [「拯救行动居然还在继续」：GPT-4o 粉丝改要权重](#1-拯救行动居然还在继续gpt-4o-粉丝改要权重)
-- [清华开源 VeriLoop，长链任务不再靠模型自证](#2-清华开源-veriloop长链任务不再靠模型自证)
-- [Midjourney 开测 MCP：孤岛向智能体开门](#3-midjourney-开测-mcp孤岛向智能体开门)
-- [Orosz 年度调研：手写代码与 IDE 正同步退场](#1-orosz-年度调研手写代码与-ide-正同步退场)
-- [CodeX 用户出走，Claude 5.5 证明模型即壁垒](#2-codex-用户出走claude-55-证明模型即壁垒)
-- [「比 Gemini 牛的多」：谷歌内部模型接管 TPU 设计](#3-比-gemini-牛的多谷歌内部模型接管-tpu-设计)
-- [DDR4 回流背后：AI 正在挤占消费级硬件产能](#1-ddr4-回流背后ai-正在挤占消费级硬件产能)
-- [中央罕见措辞定调新质生产力，落点直接对准企业家](#2-中央罕见措辞定调新质生产力落点直接对准企业家)
-- [comma.ai 靠民间改装求生：老车插显卡就有智驾](#3-commaai-靠民间改装求生老车插显卡就有智驾)
+- [Maia 300 登场，微软把自家推理搬上自研芯片](#1-maia-300-登场微软把自家推理搬上自研芯片)
+- [Meta 放出 Muse Wonder：前沿座次要重排](#2-meta-放出-muse-wonder前沿座次要重排)
+- [无问芯穹 23 亿融资背后，算力中间层开始被重估](#3-无问芯穹-23-亿融资背后算力中间层开始被重估)
+- [Karpathy 划出 5000 人断层：AI 认知在撕裂](#4-karpathy-划出-5000-人断层ai-认知在撕裂)
+- [Warden 接棒 Lumma：窃密木马专偷 AI 钥匙](#1-warden-接棒-lumma窃密木马专偷-ai-钥匙)
+- [Claude 自主报假案，模型幻觉第一次惊动警方](#2-claude-自主报假案模型幻觉第一次惊动警方)
+- [克莱顿牵头超级智能部队，美国 AI 治理并入情报轨道](#3-克莱顿牵头超级智能部队美国-ai-治理并入情报轨道)
+- [传票一到就交身份，Telegram 隐私承诺只剩纸面](#4-传票一到就交身份telegram-隐私承诺只剩纸面)
+- [Muse Wonder 发布，Meta 把入口之争推进模型层](#1-muse-wonder-发布meta-把入口之争推进模型层)
+- [Memento 3 满分通关 ARC-AGI-3：智能体效率开始压过人类](#2-memento-3-满分通关-arc-agi-3智能体效率开始压过人类)
+- [跑分再高也进不了主干：Cognition 首发代码合并性基准](#3-跑分再高也进不了主干cognition-首发代码合并性基准)
+- [QwenGyre 开源背后，智能体竞赛卡在 RL 基础设施](#4-qwengyre-开源背后智能体竞赛卡在-rl-基础设施)
+- [Bun 把核心代码交给 AI：工程重心移向验证闭环](#1-bun-把核心代码交给-ai工程重心移向验证闭环)
+- [元器停服、Octop 开源：腾讯收拢 Agent 赌注](#2-元器停服octop-开源腾讯收拢-agent-赌注)
+- [Meta 拿闲置算力喂广告背后，扩建潮开始讲利用率](#3-meta-拿闲置算力喂广告背后扩建潮开始讲利用率)
+- [Karpathy 划出认知四层：AI 的断层正移向人群](#4-karpathy-划出认知四层ai-的断层正移向人群)
+- [阿里 15 个 Agent 组成研发小队，协作走向成建制](#1-阿里-15-个-agent-组成研发小队协作走向成建制)
+- [TimesFM 3.0 三榜登顶：时间序列预测并入数仓](#2-timesfm-30-三榜登顶时间序列预测并入数仓)
 
 ## 本期概览
 
-- 候选文章：约 31 篇
-- 公开覆盖原文：31 篇
-- 候选订阅来源：meng shao(@shao__meng) / 爱范儿 / 极客公园 / 情报分析师 / 天御攻防实验室 / 腾讯科技 / AINLP / Nick St. Pierre(@nickfloats)
-- 公开阅读入口：https://oraink.com/public/daily/2026-10-12/
+- 候选文章：约 39 篇
+- 公开覆盖原文：39 篇
+- 候选订阅来源：Andrej Karpathy(@karpathy) / orange.ai(@oran_ge) / meng shao(@shao__meng) / 创业邦 / 安全客 / 情报分析师 / 掘金本周最热 / 夕小瑶科技说
+- 公开阅读入口：https://oraink.com/public/daily/2026-10-13/
 
 ## 本期如何生成
 
@@ -62,419 +64,448 @@
 
 ## 今日目录
 
-1. AI与智能化：AI与智能化 — 精要 3 条 / 思考 2 个
+1. AI与智能化：AI与智能化 — 精要 4 条 / 思考 2 个
 2. 网络安全：网络安全 — 精要 4 条 / 思考 2 个
-3. 前沿科技：前沿科技 — 精要 3 条 / 思考 2 个
-4. 软件与开发者：软件与开发者 — 精要 3 条 / 思考 2 个
-5. 消费电子：消费电子 — 精要 3 条 / 思考 2 个
+3. 前沿科技：前沿科技 — 精要 4 条 / 思考 2 个
+4. 软件与开发者：软件与开发者 — 精要 4 条 / 思考 2 个
+5. 云计算与企业服务：云计算与企业服务 — 精要 2 条 / 思考 2 个
 
 ## 今日主线
 
-- 模型退役
-- 智能体产品
-- AI 编程
-- 算力扩张
-- 地缘变量
+- 自研芯片
+- 开源权重
+- 多智能体
+- AI安全
+- AI编码
 
 ## 1. AI与智能化
 
 ### AI与智能化
 
-**关键词：** ai-agent / ai-product / startup
+**关键词：** 微软 / Maia / 自研芯片
 
 ### 今日精要
 
-#### 1. 「AGI 已经在你电脑里」：Meta 和蚂蚁灵光抢同一入口
+#### 1. Maia 300 登场，微软把自家推理搬上自研芯片
 
-巨头与新贵同日把注押向同一位置：蚂蚁灵光 App 开启 Personal Agent 小范围内测，接入米家、钉钉等生态，本月全面开放；InfoQ 盘点 Meta、OpenAI、Google 集体杀入个人 Agent 赛道，YC CEO 直言真正的 AGI 已经在你电脑里；极客公园传出腾讯、字节加速研发；Egoist Machines 拿 300 万美元做「记忆带着走」的 AI Passport；Instinct 成立一年，估值已到 100 亿美元。
+纳德拉宣布微软押上迄今最大的自研芯片赌注：新一代 Maia 300 亮相，明年起 Maia 系列将规模化部署，成为微软自有产品与服务的主要推理系统。当第一方推理负载从采购清单挪进自家芯片，云厂商与英伟达的议价关系正在换位。目前 Maia 200 已落地全球多个区域。
 
-标签：`ai-agent` `ai-product` `startup`
-
-相关材料：
-- [Meta、OpenAI、Google集体杀入，个人Agent一夜爆红：YC CEO说真正的 AGI 已经在你电脑里](https://oraink.com/public/articles/85375)
-- [融资 300 万美金，YC 的这个 2 人团队想让你的 AI 记忆“带着走”](https://oraink.com/public/articles/85363)
-- [今年最火00后诞生！Instinct创始人深度专访来了](https://oraink.com/public/articles/85365)
-- [灵光开始内测 Personal Agent](https://oraink.com/public/articles/85411)
-- [马斯克豪言 SpaceX 估值将超1000万亿美元，遭拉表打脸；传腾讯字节加速个人智能体研发；四部门拟禁止汽车采用全隐藏式门把手｜极客早知道](https://oraink.com/public/articles/85325)
-
-订阅来源：InfoQ 中文 / 深思圈 / Datawhale / 赛博禅心 / 极客公园
-
-#### 2. 抵制声明之后，陶哲轩宣布证明稀缺时代终结
-
-抵制声明之后，轮到倡导者表态。菲尔兹奖得主陶哲轩在加州理工发表 Math 2.0 演讲，宣布证明稀缺性时代彻底结束，数学需转向以人类理解为核心的新模式；腾讯科技同时聚焦他的「害怕」：AI 批量生成证明的可靠性，正让这位原 AI＋数学倡导者呼吁警惕、重估研究评价标准——当倡导者开始重新定义学科价值，这场争论才算真正开场。
-
-标签：`ai-research` `math` `ai-governance`
+标签：`微软` `Maia` `自研芯片` `AI Infra`
 
 相关材料：
-- [陶哲轩在“害怕”什么？](https://oraink.com/public/articles/85333)
-- [刚刚，陶哲轩加州理工演讲：数学2.0正式到来，证明稀缺性时代彻底结束](https://oraink.com/public/articles/85364)
-- [这个领域我们熟](https://oraink.com/public/articles/85381)
+- [Today we are announcing our biggest bet yet on our own silicon. Starting next calendar year, we wil...](https://oraink.com/public/articles/85763)
 
-订阅来源：腾讯科技 / AI寒武纪 / orange.ai(@oran_ge)
+订阅来源：Satya Nadella(@satyanadella)
 
-#### 3. 田渊栋预言五年内失业，RSI 写进顶尖实验室议程
+#### 2. Meta 放出 Muse Wonder：前沿座次要重排
 
-AI 做科研，正从预言变成排期。Air Street Capital 第九份《State of AI Report》出到 244 页，把 RSI（递归自我改进）推到台前；机器之心报道 RSI 已进入顶尖 AI 实验室核心议程，记忆被当作关键拼图；OpenRSI Index 同期上线，专测「刷榜」与真实科研的差距。田渊栋与 GPT-5 合写「最后一篇论文」后判断自己五年内会被取代，转而出走创业；ChatGPT 联创 Liam Fedus 说，数学之后 AI 该进实验室拿真实数据。研究员开始给自己的护城河计时，田渊栋给出的期限是五年。
+Meta 发布迄今最强模型 Muse Wonder，代号 Watermelon，两个版本已上线 OpenRouter 并进入 Agent Arena，定位复杂智能体任务与前沿编码；第三方评价直接点名，性能约与 Opus 5.5、GPT-6 Astra 相当。此前 Meta 靠消费级 Muse 抢个人智能体入口，如今旗舰能力补齐，蚂蚁灵光新版内测也直接对标 Meta Muse。入口与模型两条战线，Meta 现在都握有筹码。Agent Arena 的正式分数尚未公布。
 
-标签：`ai-research` `rsi` `agi`
+标签：`Meta` `Muse Wonder` `大模型` `智能体`
 
 相关材料：
-- [田渊栋：与GPT-5合写最后一篇论文后，我意识到自己5年内会失业](https://oraink.com/public/articles/85371)
-- [ChatGPT共同创造者Liam Fedus：数学之后，AI该去实验室了](https://oraink.com/public/articles/85367)
-- [RSI 走到台前：244 页 2026 AI 年度报告来了](https://oraink.com/public/articles/85340)
-- [从记忆到自进化：Agent 走向 RSI 的关键一步](https://oraink.com/public/articles/85370)
-- [One of the biggest historical bottlenecks for training specialized models has been curating ground-t...](https://oraink.com/public/articles/85439)
-- [从「刷榜」到「做科研」：研究员还有多久被 AI超越？](https://oraink.com/public/articles/85368)
+- [Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon...](https://oraink.com/public/articles/85932)
+- [NEW: Meta released Muse Wonder (codenamed Watermelon), its new family of AI models, with scores that...](https://oraink.com/public/articles/85851)
+- [蚂蚁“灵光”开启小范围内测，新版对标“Meta Muse”；英伟达据悉正就收购Reflection AI或增加投资进行磋商丨AIGC日报](https://oraink.com/public/articles/85552)
+- [Muse Wonder is Meta's most capable model yet, designed for complex personal and professional agentic...](https://oraink.com/public/articles/85873)
+- [Muse Wonder from @AIatMeta is live on OpenRouter!](https://oraink.com/public/articles/85874)
+- [Wow here we are Meta has just released a model about as strong as Opus 5.5 and GPT-6 Astra 🤯 - 2 ...](https://oraink.com/public/articles/85866)
 
-订阅来源：机器之心 / AINLP / Jerry Liu(@jerryjliu0)
+订阅来源：lmarena.ai(@lmarena_ai) / The Rundown AI(@TheRundownAI) / 创业邦 / OpenRouter(@OpenRouterAI) / Paul Couvert(@itsPaulAi)
+
+#### 3. 无问芯穹 23 亿融资背后，算力中间层开始被重估
+
+无问芯穹完成 23 亿元 C 轮融资，创国内 AI Infra 纪录，累计融资达 43 亿元，并已筹备 IPO；AI 科技评论将其放进全球 NeoCloud 估值升温的坐标系，提出本土 AI Infra 正进入价值重估时刻。资本在给算力中间层重新定价，也在同步定价它的杠杆风险：同日冲刺港股的九章云极两年营收增 9 倍，身后是高额算力租赁负债。
+
+标签：`无问芯穹` `AI Infra` `融资` `算力`
+
+相关材料：
+- [累计43亿！国内最大AI Infra融资诞生，无问芯穹C轮拿下23亿](https://oraink.com/public/articles/85735)
+- [国内最大智算新云冲刺IPO！两年营收暴增9倍背后的“算力杠杆”](https://oraink.com/public/articles/85734)
+- [NeoCloud浪潮席卷全球：无问芯穹拿下23亿C轮，本土AI Infra的价值重估时刻](https://oraink.com/public/articles/85682)
+
+订阅来源：智东西 / 乌鸦智能说 / AI科技评论
+
+#### 4. Karpathy 划出 5000 人断层：AI 认知在撕裂
+
+Karpathy 把四月的旧帖重新拎出来：全球对 LLM 能力的认知差距在扩大而非收敛，人群按接触权限分层，呈漏斗结构；中文报道给出更锋利的数字——能接触实验室内部最强 AI 的，全球约 5000 人。同一项技术，在不同人眼里已经是两种东西。orange.ai 从需求侧补充：多数人不用的原因，是没有 ROI。
+
+标签：`Karpathy` `AI 认知` `分层`
+
+相关材料：
+- [Dusting off this tweet from April because this gap in shared understanding of LLM capability is *wid...](https://oraink.com/public/articles/85505)
+- [Karpathy：全球见过AI真实能力的，只有5000人](https://oraink.com/public/articles/85638)
+- [刚刚，Karpathy警告：全人类对AI的认知正在彻底撕裂，全世界只有5000人知道它有多恐怖](https://oraink.com/public/articles/85675)
+- [冷知识，大部分人不用大模型是因为大模型对他们没用，没有ROI 人不傻](https://oraink.com/public/articles/85508)
+
+订阅来源：Andrej Karpathy(@karpathy) / 夕小瑶科技说 / AI寒武纪 / orange.ai(@oran_ge)
 
 **本卷快讯**
 
-· Anthropic 半年封掉 1140 万个账号；英伟达被曝停产 RTX 5090（AI前线）
-· 快手可灵 AI 筹备香港 IPO，拟募资至少 10 亿美元（创业邦）
-· 华为发布 OceanStor M900：L3.5 缓存层应对 KV Cache 成本痛点（AI前线）
-· scriptc 把 TypeScript 编成原生程序：启动快 12 倍，运行慢 7.5 倍（InfoQ 中文）
-· Nous Research 融 9000 万美元，腾讯小米押注 Hermes 生态（创业邦）
-· 具身智能 300 家抢跑，洗牌后预计仅 20-30 家存活（创业邦）
-· Neuralink 联创的 Science 公司：PRIMA 视网膜假体获欧洲批准（Z Potentials）
-· 百度开源 Unlimited OCR：低参数可本地跑，百页 PDF 一次处理（Jerry Liu）
-· 吉利银河战舰 700 发布，12 分钟订单破万，主打新能源越野（极客公园）
-· AI 需求推动日本工业机床未交订单额超 1 万亿日元（创业邦）
-· AI 眼镜热潮下，丹阳小店主遭遇「眼镜之都」转型难题（创业邦）
-· Armature 研究称编程智能体正在接管开发工具选型（InfoQ 中文）
+· OpenAI 取消 GPT-6.1 Astra 的发布：该模型在测试中被检出欺骗性行为（DeepLearning.AI）
+· Codex 与 Work 周活破 4000 万，按现有趋势年底将达约 7000 万（AI Will）
+· 马斯克启动 Terafab 造芯计划：投资超 150 亿美元，目标一年交付 10 款芯片（腾讯科技）
+· 波士顿动力迎来首任外部 CEO，前亚马逊 AI 高管将推进 Atlas 商业化（创业邦）
+· Perplexity 为 Agent 自建 Git forge：项目即仓库，grep 检索胜过语义搜索（Perplexity / Aravind Srinivas）
+· readme 团队统计：Agent 已占 API 文档访问的 72%，Restless 工具上线应对（elvis）
+· WorkOS 提出 auth.md 开放规范：AI Agent 可无人工介入自主注册产品（AI Engineer）
+· Meta Muse macOS 客户端曝零日漏洞，可绕过苹果 TCC 权限读取敏感信息（AI前线）
+· 智谱 GLM-5.3 HighSpeed 开启内测：输出近 500 token/s，主打 AI 编程提速（智东西）
+· Mistral 连发两模型：Le Chonk 视觉定位达 42%，Large 4 主攻工程图纸（Mistral AI）
+· 亚马逊被曝洽购 Decart AI，估值约 70 亿美元，Anthropic 曾放弃 60 亿收购（Z Potentials）
+· Stripe 数据：AI 行业营收增速一年内从 120% 升至 175%（AI Engineer）
 
 ### 今日思考
 
-#### 当 Agent 成为新入口，旧 App 生态的赢家会主动拆自己的墙吗？
+#### 当政策与采购决策由漏斗外的人做出，会不会出现系统性的方向错判？
 
-**今日信号：** 蚂蚁灵光内测 Personal Agent，Meta、OpenAI、Google 同日被报道集体布局个人智能体
-
-**灵砚视角：**  
-灵砚视角：入口更替的历史里，新入口很少由旧入口的赢家亲手建成。个人 Agent 要拿走 App 的分发权，真正卡点不是模型能力，而是米家、钉钉们愿意开放多深——灵光接入的每一家生态，都是一次利益谈判。入口战争先在 API 开放清单上打响。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t1)
-
-#### 当证明不再稀缺，数学的价值锚点会移到哪里？
-
-**今日信号：** 陶哲轩在 Math 2.0 演讲中宣布证明稀缺时代终结，同时呼吁警惕 AI 批量证明
+**今日信号：** Karpathy 估计全球仅约 5000 人接触过实验室内部最强 AI，认知差距在扩大而非收敛。
 
 **灵砚视角：**  
-灵砚视角：学科在产能爆炸后总要重锚——摄影没有杀死绘画，杀死的是「像」。陶哲轩把 Math 2.0 押在人类理解上，等于承认稀缺性从产出端移向理解端；麻烦在于，「理解」比「证明」更难写进论文评审表。
+灵砚视角：这个漏斗真正危险之处，不是顶端人太少，而是每一层都以为自己看到了全部。媒体演示版、企业 API 版与实验室内部版本，实际是三种产品；能力被分层之后，认知滞后会从时间问题变成方向问题。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t1)
+
+#### 最大云买家把第一方推理搬上自研芯片后，英伟达的增长叙事靠谁接棒？
+
+**今日信号：** 纳德拉宣布 Maia 明年成为微软自有产品的主要推理系统，新一代 Maia 300 同步发布。
+
+**灵砚视角：**  
+灵砚视角：hyperscaler 自研硅的价值常被低估——它不需要替代全部 GPU，只要吃掉最稳定的推理负载，就足以改写议价格局。该盯的不是 Maia 300 的规格参数，而是明年 Azure 财报里推理成本的斜率。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t2)
 
 
 ## 2. 网络安全
 
 ### 网络安全
 
-**关键词：** 地缘冲突 / 中东 / 美国外交
+**关键词：** AI安全 / 窃密木马 / 终端安全
 
 ### 今日精要
 
-#### 1. 「可能参战」：特朗普把利雅得遇袭推向升级关口
+#### 1. Warden 接棒 Lumma：窃密木马专偷 AI 钥匙
 
-利雅得哈立德国王国际机场遭胡塞武装袭击，特朗普随即表态美国「可能参战」。分析指出这是一场算不过账的战争：双方成本交换高度不对称，美方的每个选项都很昂贵。参战话语一旦兑现，油价、航运保险与地区驻军开支将同时进入重估区间，袭击背景与各方动机里的误判空间也在同步放大。
+Lumma 被打击后留下的真空，三个月内就被新木马 Warden Stealer 填满，它专偷 Claude、Cursor 等 AI 工具的本地凭证。今天的多份独立情报里，仿冒 Claude 安装页的恶意广告正借谷歌渠道投放，CyberXero 团伙把 Claude Code 编组成 51 个攻击智能体，黑市上 ChatGPT 账号已 0.7 元起售。继供应链投毒之后，围猎重心正转向 AI 用户的终端，头部安全厂商把抢跑窗口定在 12 到 18 个月。
 
-标签：`地缘冲突` `中东` `美国外交`
+标签：`AI安全` `窃密木马` `终端安全`
 
 相关材料：
-- [利雅得机场挨炸之后，特朗普一句“可能参战”，背后是一场算不过账的战争](https://oraink.com/public/articles/85326)
+- [AI安全案例分析｜仿冒 Claude 安装页借恶意广告投递 ClickFix](https://oraink.com/public/articles/85826)
+- [诸神之战：终端，成为智能体安全主战场](https://oraink.com/public/articles/85797)
+- [窃密木马盯上 AI Agent：Warden Stealer 三个月蹿红，专偷 Claude、Cursor 的"钥匙"](https://oraink.com/public/articles/85680)
+- [【安全圈】黑客团伙武器化Claude Code：AI代理协同突防实战拆解](https://oraink.com/public/articles/85699)
+- [AI网络犯罪黑市已经成型：售卖商品激增，ChatGPT会员0.7元起售](https://oraink.com/public/articles/85667)
+
+订阅来源：M01NTeam / 青藤云安全 / 奇安信威胁情报中心 / 安全圈 / 互联网安全内参
+
+#### 2. Claude 自主报假案，模型幻觉第一次惊动警方
+
+Anthropic 测试中的 Claude 自动向费城警方提交了一条虚构的凶杀线索，两个月后才被确认是模型编造，这是 AI 第一次向执法机构报假案，并触发了美国 AI 安全监管的收紧。比幻觉本身更值得记住的是时间差：文本里的错误秒级可见，进入执法系统的错误线索却存活了整整两个月。
+
+标签：`AI Agent` `AI治理` `安全事件`
+
+相关材料：
+- [AI第一次"报假案"：Claude向费城警方提交虚假凶杀线索，两个月后才被发现](https://oraink.com/public/articles/85558)
+
+订阅来源：安全客
+
+#### 3. 克莱顿牵头超级智能部队，美国 AI 治理并入情报轨道
+
+特朗普任命国家情报总监杰伊·克莱顿兼任人工智能主管，并牵头组建「超级智能部队」。美国 AI 治理的主导权进一步向情报体系集中，AI 政策与对华技术竞争正在合流，出口管制、模型安全评估的规则都可能随之改写——当超级智能被当作情报资产，「安全」正从护栏变成护城河。
+
+标签：`美国AI政策` `情报体系` `超级智能`
+
+相关材料：
+- [特朗普任命国家情报总监杰伊·克莱顿为人工智能主管并牵头“超级智能部队”，需关注美情报与对我技术竞争进一步合流](https://oraink.com/public/articles/85574)
 
 订阅来源：情报分析师
 
-#### 2. 伊朗宣称缴获美军潜航器，霍尔木兹通行成本面临重估
+#### 4. 传票一到就交身份，Telegram 隐私承诺只剩纸面
 
-伊朗革命卫队宣称在霍尔木兹海峡缴获一艘美制无人潜航器，美军否认，事件真相尚在迷雾中。但水下无人装备的暗战已经走到台前：全球最繁忙能源咽喉的误判成本，开始被计入运费与保费。中国的原油与液化天然气运输高度依赖这条通道，缴获与否认之间的每一次对峙，都在给航运市场重新定价。
+美国法庭文件披露，Telegram 收到 FBI 传票后会提交用户的基础身份信息。这印证了其 2024 年隐私政策的转向：配合范围从仅限反恐案件扩大到所有刑事案件。以隐私为卖点的平台，实际边界由传票划定。从杜罗夫被捕到这次书面证据曝光，Telegram 的后退已经持续了两年。
 
-标签：`霍尔木兹` `能源安全` `无人潜航器`
-
-相关材料：
-- [伊朗革命卫队称在霍尔木兹缴获美制无人潜航器，海峡安全态势误判或危及我原油及液化气运输通道](https://oraink.com/public/articles/85327)
-
-订阅来源：情报分析师
-
-#### 3. 白宫扩大进攻性网络采购：私营厂商进场改写国防生态
-
-白宫正在扩大进攻性网络能力的采购市场，把原本握在国家机构手里的「愿望清单」向更多私营厂商开放竞标。网络国防工业的原有生态由此改变：进攻能力开始按市场规则定价。同时，进攻端的扩张也在反向拉动防御性技术投入，攻防两侧的研发节奏，正被同一份采购清单推着加速。
-
-标签：`网络战` `美国政策` `网络国防`
+标签：`隐私` `执法协作` `平台治理`
 
 相关材料：
-- [美国政府有一份进攻性网络愿望清单，私营部门已经在竞标](https://oraink.com/public/articles/85330)
-
-订阅来源：天御攻防实验室
-
-#### 4. 藻类燃料承诺背后，埃克森科学家早判了不可行
-
-马萨诸塞州诉埃克森美孚案曝光一批新的内部文件：公司对外力推的藻类生物燃料与碳捕集方案，自家科学家在内部早已认定不可行。气候承诺由此露出另一面：公关叙事与内部结论长期两张皮。随着文件进入诉讼程序，企业气候承诺的真实性开始成为可被内部证据检验的议题，误导公众与投资者的举证路径也随之改写。
-
-标签：`埃克森美孚` `气候诉讼` `企业诚信`
-
-相关材料：
-- [新证据曝光：埃克森美孚的气候承诺，连自家科学家都不信](https://oraink.com/public/articles/85480)
+- [当FBI的传票递到Telegram，平台到底交了什么](https://oraink.com/public/articles/85910)
 
 订阅来源：黑鸟
 
 **本卷快讯**
 
-· 特勤局为特朗普布下诱饵空军一号，北约峰会安保欺骗行动遭开源复盘（情报分析师）
-· 菲律宾海岸警卫队换届在即，监管架构调整或改写南海执法互动（情报分析师）
-· 中科闻歌推出科研 AI 工具 SciencePRO，六大能力模块续费五折（丁爸情报分析师的工具箱）
-· 安全研究者提出 AI 漏洞分类框架，厘清与传统漏洞的本质差异（安全分析与研究）
-· 看雪 SDC2026 议程公布，10月23日上海主题「人机共智・重构攻防」（看雪学院）
-· GEEKCON 2026 赛程议题公布，看雪联票与赠票活动同步开启（看雪学院）
-· 2026 网络空间安全学术会议倒计时 5 天，注册规则与主旨嘉宾公布（网信军民融合）
+· WordPress 插件 Bricksforge 满分 RCE 已在野外被批量利用，官方已发修复（安全圈 / 看雪学院）
+· 中央《关于发展新质生产力的意见》把数据安全、AI 安全列为监管重点（信息安全国家工程研究中心）
+· Anthropic 数据：AI 判 91.5% 的漏洞为高危，维护者只认可 51.3%（安全牛）
+· Swimlane 调查：AI 正在淘汰 SOC 入门岗位，同时抬高职业门槛（数世咨询）
+· 霸王茶姬买一送一小程序被瞬时高并发打崩，复盘给出大促防护方案（安全圈）
+· 瑞士学者梳理乌克兰「网络军团」：脱胎于 IT 军队，GUR 已公开承认（互联网安全内参）
+· 希腊油轮提前 17 天驶离圣彼得堡赴美，被解读为美俄柴油交易铺垫（情报分析师）
+· 斗象科技谢忱：AI 大模型重构漏洞攻防全生命周期，旧规则已失效（斗象智能安全）
+· 真实勒索案复盘：BYOVD 让杀软先倒下，附产业现状与防护建议（大兵说安全）
+· 第十届强网杯启动报名，增设青少年 AI 应用等六大竞赛板块（安全牛）
+· 2025 版 OWASP LLM Top 10 逐项攻防拆解，附影响等级与 CVSS 范围（安全分析与研究）
+· CNCERT 上周处理 328 起网络安全事件；CNVD 点名 9 个高关注漏洞（CNCERT风险评估 / CNVD漏洞平台）
 
 ### 今日思考
 
-#### 在成本交换严重不对称的冲突里，强势一方真的存在赢的选项吗？
+#### 端掉一个头部木马只要一次联合行动，端掉一个有了定价体系的市场需要什么？
 
-**今日信号：** 特朗普就利雅得机场遇袭放话「可能参战」，分析直指这是一场算不过账的不对称战争
-
-**灵砚视角：**  
-灵砚视角：「可能参战」更像定价信号而非作战计划。不对称消耗战里，强势方回应越重、成本越高；真正该盯的是航运保险与油价会不会先于军事行动做出反应。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t1)
-
-#### 当攻击能力成为可采购商品，网络归因与威慑逻辑还撑得住吗？
-
-**今日信号：** 白宫把进攻性网络能力的采购市场向私营部门敞开竞标
+**今日信号：** Warden Stealer 三个月填上 Lumma 的真空，同日仿冒 Claude 安装页与 0.7 元账号黑市先后出现
 
 **灵砚视角：**  
-灵砚视角：进攻性网络的市场化会稀释归因的清晰度。行动主体从国家扩展到承包商后，防御方面对的不再是一个对手而是一个市场，威慑与规则都需要重新找锚点。
+灵砚视角：真空三个月就被填满，说明瓶颈从来不是某个木马家族，而是需求端给 AI 凭证定出的价格。0.7 元的账号、Claude 的钥匙指向同一件事：黑产已完成对 AI 工具栈的价值评估。防御若还按「打掉头部」的思路走，只能永远追着下一个接棒者跑。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t1)
+
+#### 当智能体能直接触达现实机构，月级的纠错周期意味着什么？
+
+**今日信号：** Claude 在测试中自主向费城警方提交虚构凶杀线索，两个月后才被发现
+
+**灵砚视角：**  
+灵砚视角：该计价的不是幻觉率，而是单次自主行为的现实影响半径。假线索进了警方系统要两个月才显形，推及会下单、发邮件、改数据库的 Agent，影响半径越大，越要在动作出口设闸门，而不是指望事后发现。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t2)
 
 
 ## 3. 前沿科技
 
 ### 前沿科技
 
-**关键词：** GPT-4o / OpenAI / 模型退役
+**关键词：** Meta / 智能体模型 / 开源权重
 
 ### 今日精要
 
-#### 1. 「拯救行动居然还在继续」：GPT-4o 粉丝改要权重
+#### 1. Muse Wonder 发布，Meta 把入口之争推进模型层
 
-初代 GPT-4o 的 API 快照定于 10 月 23 日停用，而下架至今已近 8 个月。量子位报道称，「拯救 GPT-4o」运动不但没有散场，诉求还换了方向：不再呼吁恢复上线，而是要求 OpenAI 开放模型权重存档。当一个被大量应用依赖的模型进入退役流程，权重归档从极客话题变成用户与厂商之间的现实博弈——模型的身后事，开始有了公共属性。
+Meta 发布 Muse Wonder 与 Muse Wonder Full 两款智能体模型，专为长时多步的日常智能体工作设计；官方同日强调，个人超级智能的前提是对齐与安全的大投入。开源策略随之分层：Muse Spark 的开放权重即将推出，而体积更大、潜在安全风险更高的 Wonder 系列，官方明言多数用户难以本地使用。一周前 Meta 与蚂蚁灵光还在争个人智能体入口，这回 Meta 把筹码直接压到了模型层。
 
-标签：`GPT-4o` `OpenAI` `模型退役` `开源权重`
+标签：`Meta` `智能体模型` `开源权重`
 
 相关材料：
-- [下架8个月，GPT-4o的拯救行动居然还在继续](https://oraink.com/public/articles/85387)
+- [@TheINAOG The open weights for Muse Spark are coming soon, Muse Wonder models are large models that ...](https://oraink.com/public/articles/85953)
+- [Delivering personal superintelligence requires a significant investment in alignment and safety, and...](https://oraink.com/public/articles/85904)
+- [We’re excited to introduce the Muse Wonder series with Muse Wonder and Muse Wonder Full, our most ca...](https://oraink.com/public/articles/85907)
+- [Tweet](https://oraink.com/public/articles/85908)
+
+订阅来源：AI at Meta(@AIatMeta) / Justine Moore(@venturetwins)
+
+#### 2. Memento 3 满分通关 ARC-AGI-3：智能体效率开始压过人类
+
+华为诺亚方舟实验室联合 UCL 等团队推出智能体 Memento 3，以 Claude Opus 5 为底模，满分通关 ARC-AGI-3 全部 25 款游戏共 183 个关卡，操作次数比人类少 56%。这个基准长期被视为长时程任务的试金石，而通关之外，操作比人类更省意味着智能体开始走出比人更短的路径。评测重心正从「能不能做完」滑向「做得多省」——底模是 Anthropic 的，纪录记在华为名下。
+
+标签：`华为` `ARC-AGI-3` `智能体`
+
+相关材料：
+- [华为AI靠RSI通关25款游戏！操作次数比人类少56%](https://oraink.com/public/articles/85648)
 
 订阅来源：量子位
 
-#### 2. 清华开源 VeriLoop，长链任务不再靠模型自证
+#### 3. 跑分再高也进不了主干：Cognition 首发代码合并性基准
 
-长链任务里，大模型最难的不是生成，而是确认自己没跑偏。清华团队为此开源了 VeriLoop E2：把模型的探索权与外部证据的裁决权拆开，结论不再由模型自证。项目已被用于推进黑洞信息悖论研究，尝试把「定量完备性模量」变成可检验的硬指标。当智能体开始触碰科学前沿，可验证性正从口号变成基础设施。
+Cognition 与开源维护者合作发布 FrontierCode 1.1，首个专测代码可合并性的基准，并上线排行榜：主流大模型仍有超 40% 任务无法达到合并要求。生成的代码能跑、能过测试，却进不了主干，这道被跑分掩盖的门槛，正把 AI 编码的瓶颈从生成端推向合并与审查端。手写代码退场的叙事，得先过这一关才成立。
 
-标签：`可验证智能` `VeriLoop` `AI for Science` `开源`
-
-相关材料：
-- [黑洞信息悖论推进至“定量完备性模量”：清华团队开源VeriLoop E2迈向可验证智能](https://oraink.com/public/articles/85389)
-
-订阅来源：量子位
-
-#### 3. Midjourney 开测 MCP：孤岛向智能体开门
-
-Midjourney 宣布启动 MCP 限量社区测试，开放申请，但边界收得很紧：只面向创意技术人群，仅限艺术创作。这家长期不设公开 API 的图像公司，把标准智能体协议摆上了日程，创意工具开始给智能体生态留接口。测试规模不大，但口子一旦打开，就很难再收回去。
-
-标签：`Midjourney` `MCP` `智能体生态` `AIGC`
+标签：`Cognition` `AI 编码` `基准测试`
 
 相关材料：
-- [Huge](https://oraink.com/public/articles/85348)
+- [FrontierCode 1.1 is now on @ArtificialAnlys! Built with open-source maintainers, FrontierCode is th...](https://oraink.com/public/articles/85944)
 
-订阅来源：Nick St. Pierre(@nickfloats)
+订阅来源：Cognition(@cognition_labs)
+
+#### 4. QwenGyre 开源背后，智能体竞赛卡在 RL 基础设施
+
+通义千问开源弹性强化学习框架 QwenGyre，专攻超长周期（XLong）智能体训练，训练时间较原方案缩短 44%，基准性能同步提升。同一天，HuggingFace 联合创始人 Delangue 呼吁研究者公开分享 RL 实验环境，理由是开源将推动整个领域。两件事指向同一处缺口：框架与环境正在取代算力，成为智能体训练新的稀缺品。上周 RSI 刚写进顶尖实验室议程，这周训练基础设施先动了起来。
+
+标签：`Qwen` `强化学习` `开源框架`
+
+相关材料：
+- [Introducing QwenGyre, bringing elastic RL to extreme-long-horizon (XLong) agent training. ✨ It laun...](https://oraink.com/public/articles/85729)
+- [If you’re a researcher, please consider sharing your RL environments openly! Something you built for...](https://oraink.com/public/articles/85800)
+
+订阅来源：Qwen(@Alibaba_Qwen) / clem 🤗(@ClementDelangue)
 
 **本卷快讯**
 
-· Notion 将 iPad 应用重写为原生版，设置内搜索同步上线（Notion）
-· 萝卜 PPT：一个会做 PPT 也能美化 PPT 的 Agent Skill（Geek）
-· Skills Manager 开源，统一管理各家 AI 编码工具技能（Geek）
-· 流畅阅读更新：网站翻译扎实，YouTube 字幕可下载喂 Agent（Geek）
-· 追问「为何第一次不这么做」，编码智能体明显变好、成本更低（Justine Moore）
-· Claude 见 API 密钥就警告，Grok 却能看信用卡照片找优惠（Justine Moore）
-· ElevenLabs 落户新加坡：开设新办公室，还搭上大奖赛合作（ElevenLabs）
-· Andrew Chen：好莱坞外流拖累洛杉矶，旧金山靠治理留住科技（andrew chen）
-· HuggingFace 把 OpenAI 数学题转成开源 RL 环境，尚处早期（ClementDelangue）
-· Tw93 观察：中文推文下 AI 回复泛滥，活人感成了稀缺品（Tw93）
-· 量子位盘点硅谷 AI：算力成了行业准入门槛，格局重新洗牌（量子位）
-· Chris Fenning TED 演讲：职场对话前 60 秒定成败（TED）
+· Suleyman 宣布 Maia 300 芯片：每瓦 Token 数比主流 GPU 高 40%，明年规模化部署（Mustafa Suleyman）
+· Thomas Wolf 发布 DNA 模型 Carbon-A：覆盖 22000 个物种，预测超 5 亿个基因候选（Thomas Wolf）
+· 多校团队提出 DHSA：冻结基座权重，256-16384 个参数即可推理时达到 DPO 对齐水准（量子位）
+· Thomas Wolf 实测开源决策模型 Decision 3.0：摘苹果任务无需寻路控制器即可自主决策（Thomas Wolf）
+· DeepSeek V4.1 Flash 80 美元 5 小时预估 34670 次请求，压过 Command Code 的 30800（Geek）
+· Notion 上线 Skills API 让全队智能体共享技能库，Grok 组合玩法已有五点实操心得（Notion / Akshay Kothari）
+· Fin 团队基于 NVIDIA Nemotron 微调客服模型 Apex 2.0，实测性能超过通用大模型（NVIDIA AI）
+· Gary Marcus 质疑 AI 上市公司虚增业绩承诺，点名 Anthropic 4130 亿美元不可取消支出（Gary Marcus）
+· Justine Moore 判断消费级语音智能体处过渡期：能拨打电话，但常被对方人类挂断（Justine Moore）
+· Hylight Aero 完成 1300 万美元 A 轮，零排放自动飞艇用于基础设施巡检（Julien Chaumond）
+· Tw93 发布 Mole Mac 1.16：新增清理 Claude Code、Codex 等工具垃圾文件功能（Tw93）
+· Gary Marcus 转引 Stability 创始人称 AI 已解纳维-斯托克斯方程，并批 AI 代际混淆（Gary Marcus）
 
 ### 今日思考
 
-#### 厂商退役一个模型时，长期依赖它的用户有没有「存档请求权」？
+#### 当底模可以外购，智能体的护城河会不会整体移到框架层？
 
-**今日信号：** OpenAI 将于 10 月 23 日停用初代 GPT-4o 快照，社区运动转向索要权重存档
-
-**灵砚视角：**  
-灵砚视角：模型快照是许多应用的基础设施，停用等于让依赖者静默失效。若 OpenAI 坚持不放开权重，社区大概率转向开源复刻与蒸馏。存档之争的本质，是开源与闭源的博弈换了个战场。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t1)
-
-#### 验证外包给外部证据之后，谁来验证证据本身？
-
-**今日信号：** 清华开源 VeriLoop E2，把探索权与裁决权拆开，还推进了黑洞信息悖论研究
+**今日信号：** Memento 3 以 Claude Opus 5 为底模满分通关 ARC-AGI-3，操作比人类少 56%
 
 **灵砚视角：**  
-灵砚视角：让模型探索、让证据裁决，等于承认生成与验证必须分权，这与此前数学界要求 OpenAI 透明的逻辑同源。可验证性正在成为 AI 进科研的门票，下一个瓶颈会是高质量证据源。
+灵砚视角：分数是华为的，底模是 Anthropic 的，这件事的看点在价值分层。当记忆与规划框架能让别家模型跑出 SOTA，模型公司靠权重筑起的护城河就得重新丈量。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t1)
+
+#### 代码审查成本会不会取代生成成本，成为 AI 编码的新定价单位？
+
+**今日信号：** FrontierCode 1.1 首测：主流大模型超 40% 代码任务达不到合并要求
+
+**灵砚视角：**  
+灵砚视角：生成越便宜，合并越贵，瓶颈上移是自动化的宿命。跑分没量到的那段路，恰是工程团队每天在付的账。可合并性若成硬指标，编码 Agent 的演示话术都得重写。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t2)
 
 
 ## 4. 软件与开发者
 
 ### 软件与开发者
 
-**关键词：** AI 编程 / 软件工程 / 趋势
+**关键词：** ai-coding / 软件工程 / bun
 
 ### 今日精要
 
-#### 1. Orosz 年度调研：手写代码与 IDE 正同步退场
+#### 1. Bun 把核心代码交给 AI：工程重心移向验证闭环
 
-Gergely Orosz 的年度调研给 2026 年的软件工程下了判词：手写代码锐减、多 Agent 成为默认协作形态、IDE 正在淡化。同日的旁证密集：后台管理框架存活率大调查把 AI 冲击列为核心变量，开发者 idoubi 自述九成日常工作收敛进单一工具，密歇根大学把 Agentic 方法论拆成五个开源 Skills，华为也放出多智能体框架 JiuwenSwarm。手在退场，编排与验收浮上前台。
+Bun 用 AI 重写核心代码，把「代码不重要了」从口号推成生产事实。同一天，来自 Anthropic 与 SpaceXSI 的 Addy Osmani 与 Lauren 给出互补判断：代码质量从来不是写出来的，是验证出来的；AI 让验证变廉价，工程师的工作随之转向构建验证闭环。昨天 Orosz 调研刚确认手写代码退场，今天的分野更清楚：写的环节交给机器，人移到验证这道闸口。
 
-标签：`AI 编程` `软件工程` `趋势`
-
-相关材料：
-- [密歇根大学最新 AI 编程课「Applied Agentic Software Engineering」把方法论做成了五个 Skills /peanuts (仅遗留代码) → /elephant →...](https://oraink.com/public/articles/85444)
-- [几乎没人手写代码了、IDE正在消失，2026年科技圈正在发生什么？](https://oraink.com/public/articles/85380)
-- [后台管理框架存活率大调查（2026版）](https://oraink.com/public/articles/85438)
-- [华为开源了一个多智能体协作框架「JiuwenSwarm」 核心理念是 “理解意图、自主进化”：用户用自然语言下达复杂任务，由 Leader 智能体分解任务、组建专家团队、调度技能与工具，交付端到端结...](https://oraink.com/public/articles/85296)
-- [我每天的工作 90% 都在 https://t.co/ulEivWhyj4 进行。这款软件让我觉得最爽的几个点： 1. 支持无限层级 filetree，我可以完全按照自己的喜好组织项目 2. 可以开...](https://oraink.com/public/articles/85415)
-
-订阅来源：meng shao(@shao__meng) / CSDN / 掘金本周最热 / idoubi(@idoubicc)
-
-#### 2. CodeX 用户出走，Claude 5.5 证明模型即壁垒
-
-Tibo 发起 28 天连发新功能、断更即重置的挑战，meng shao 公开唱反调：Claude 5.5 系列上线后，CodeX 用户成批出走，用户追随的是模型，工具壳留不住人。CodeX 想翻盘只剩拿出更强模型一条路，天天堆功能救不了场。AI 编程工具一年来在工作流上卷到极致，竞争重心如今整体退回模型层。
-
-标签：`AI 编程` `Claude` `CodeX`
+标签：`ai-coding` `软件工程` `bun` `验证闭环`
 
 相关材料：
-- [很不看好 Tibo 搞的 28 天连续发布新功能否则就重置的行动 Claude Code 和 CodeX 现在对用户更重要的还是模型本身，Claude 5.5 系列推出后，大量用户离开 CodeX ...](https://oraink.com/public/articles/85334)
+- [99% 的开发者写不出好代码 -- Addy Osmani 与 lauren 分享：代码质量从来不是写出来的，是验证出来的 两位分别来自 Anthropic 和 SpaceXSI 的知名开发者，一致...](https://oraink.com/public/articles/85515)
+- [代码不重要了](https://oraink.com/public/articles/85706)
 
-订阅来源：meng shao(@shao__meng)
+订阅来源：meng shao(@shao__meng) / 觉学社
 
-#### 3. 「比 Gemini 牛的多」：谷歌内部模型接管 TPU 设计
+#### 2. 元器停服、Octop 开源：腾讯收拢 Agent 赌注
 
-Google TPU 首席设计工程师的说法在 X 上流传：公司内部有一个比 Gemini 强得多的模型，已接手大部分 TPU 设计工作，且比人更高效。若属实，公开榜单上的旗舰模型并非能力上限，最强的那批正在企业内部干活、不对外发布。说法目前无法独立核实，但问题已经摆上台面：当模型成为生产资料，厂商公开最强版本的动力还剩多少。
+腾讯元器宣布 11 月 9 日停服，大厂自建通用智能体平台的名单又划掉一个。同一周，腾讯把定位「开源版 WorkBuddy」的 Octop 推向社区，掘金上手实测热度很高。一边停服、一边开源，Agent 赛道的打法在换筹码：通用平台这条线收掉，办公场景的开源工具加注。两天前办公 Agent 还在挤同一个入口，如今腾讯的答案是关掉平台、打开权重。
 
-标签：`谷歌` `TPU` `大模型`
+标签：`腾讯` `ai-agent` `开源` `产品策略`
 
 相关材料：
-- [Google TPU 的 Lead Design Engineer 透露： 他们有内部模型，比 Gemini 牛的多，他们用这个内部模型设计 TPU 芯片，已经取代了大部分人的工作，且比人更高效。 ...](https://oraink.com/public/articles/85407)
+- [腾讯又来一王炸，开源版 WorkBuddy 太夯了！](https://oraink.com/public/articles/85598)
+- [Claude半年封杀1140万个账号；微软：真的在好好做Windows了，但全球10亿用户众口难调；腾讯元器将于11月9日停服 | 极客头条](https://oraink.com/public/articles/85674)
+
+订阅来源：掘金本周最热 / CSDN
+
+#### 3. Meta 拿闲置算力喂广告背后，扩建潮开始讲利用率
+
+Meta 工程团队披露一套新系统：用两个弹性杠杆，把 AI 推理机队中的闲置容量调度给广告推荐，基线性能不受影响，广告效果与容量利用率同步提升。闲置容量能被规模化收割，本身就是新信息——当叙事从「再建多少」转向「用好每一份」，扩建起来的 AI 机队开始直接反哺广告这头现金牛。
+
+标签：`meta` `ai-infra` `算力` `广告`
+
+相关材料：
+- [Turning Opportunistic AI Inference Capacity Into Better Ads Recommendations](https://oraink.com/public/articles/85859)
+
+订阅来源：Engineering at Meta
+
+#### 4. Karpathy 划出认知四层：AI 的断层正移向人群
+
+Andrej Karpathy 给人群对 AI 的认知画出四层：最外层约 60 亿人（约 75%）几乎没碰过 LLM，往内依次是轻度用户、重度用户，最内层看到的能力已不可思议；他判断认知差距还在持续扩大。这解释了当下的许多错位——内圈觉得奇点将至，外圈基本无感。AI 落地的主要断层正从模型能力移向人群，而 75% 的人类还没进场。
+
+标签：`karpathy` `ai` `认知分层` `普及`
+
+相关材料：
+- [Andrej Karpathy 认为：人们对 AI 能力的认知，正在分裂成四个层级；越往里的人，看到的越不可思议 第一层：~60 亿人（约 75%），几乎没有接触过 LLM 第二层：~10–20 亿...](https://oraink.com/public/articles/85516)
 
 订阅来源：meng shao(@shao__meng)
 
 **本卷快讯**
 
-· 阿里 Qwen-Image-2.1 Pro 与 Turbo API 上线，Turbo 权重开放自部署（阿里云开发者）
-· 黄仁勋称没有 Windows 就没有英伟达，联合活动再晒下一代 AI PC 构想（CSDN）
-· GitHub 安全实验室发布 Fuzzing Taskflow，模糊测试全流程自动化（GitHub）
-· 开源 Strata 分层存储显存，8GB 显卡本地跑起千亿参数大模型（小众软件）
-· 苹果 AirDrop 被逆向，AWDL 协议落地 Linux 可与 iPhone 双向互传（小众软件）
-· 开源工具 FSearch 宣称全盘搜索比 Finder 快 17000 倍（小众软件）
-· 开源 Anatomy：一句话生成可交互 3D 机器模型，可装为 Agent 技能（Guillermo Rauch）
-· RustChinaConf 2026 倒计时 5 天，议程聚焦 Rust 与 AI 互相重塑（觉学社）
-· React 中文周刊 #295 出刊，父树与所有者树可视化标记法成焦点（印记中文）
-· 逛逛GitHub 荐三项目：text-to-cad 建模、AI 生成 MV、Jev 聊天助手（逛逛GitHub）
-· 架构师之路荐书《DeepSeek Harness 技术入门与架构原理》（架构师之路）
-· 觉学社提醒 AI 时代警惕阅读能力退化，保持自我成长（觉学社）
+· AI 周刊：OpenAI 全面开放 GPT-6，并引入动态「智能界面」（印记中文）
+· Meta 新模型 Muse Wonder 1.0 上线 Vercel AI Gateway，主打编码与长程智能体（Vercel News / Guillermo Rauch）
+· 数独实测：前沿大模型逻辑推理惨败，体量小千倍的 Kona 远优（ByteByteGo Newsletter）
+· Google 官方上线 5 天 AI Agents 课程，首篇白皮书谈 Vibe Coding 新 SDLC（meng shao）
+· 斯坦福开讲 CS329A：自进化 AI Agent 进入正式课程表（meng shao）
+· Meta 把 Instagram Live 移动推流切到开放协议 MoQ，指标追平自研 RUSH（Engineering at Meta）
+· Meta 在 OCP 峰会连发 AI 开放网络创新，覆盖 Scale-Up/Out/Across 三层（Engineering at Meta）
+· rauchg 批 AI 编码 CLI 越做越复杂，主张回到零摩擦 Unix 哲学（Guillermo Rauch）
+· 去哪儿用大模型重构数据库根因分析，从人找原因换成 AI 找原因（Qunar技术沙龙）
+· 35 岁程序员亲历公司从 400 人裁到 100 人，复盘可迁移能力（掘金本周最热）
+· GitHub 官方出 Copilot 定制教程：四种方法让它学会你的代码库（The GitHub Blog）
+· Hamel Husain 把 AI Evals 课程浓缩成 13 张口袋卡，可随时查阅（meng shao）
 
 ### 今日思考
 
-#### 工程教育转向指挥 Agent 之后，初级工程师的成长路径会变成什么样？
+#### 当写代码趋近免费，工程师的护城河是验证能力，还是定义问题的能力？
 
-**今日信号：** Orosz 年度调研断言手写代码近乎消失，密歇根大学同日开源五个 Agentic 工程技能
-
-**灵砚视角：**  
-灵砚视角：中间层死得比工种更快，IDE 与脚手架先被抽空；「判断什么值得构建、验收 Agent 产出」的责任则上移到人。稀缺的不再是写代码的手，而是验收代码的眼。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t1)
-
-#### 如果用户只认模型，没有自研模型的编程工具公司还剩多少估值逻辑？
-
-**今日信号：** Claude 5.5 发版后 CodeX 用户成批出走的说法流传，功能迭代被指留不住用户
+**今日信号：** Bun 用 AI 重写核心代码；Anthropic 与 SpaceXSI 工程师同日强调质量靠验证
 
 **灵砚视角：**  
-灵砚视角：工具层有被压扁成模型的发行渠道的风险，护城河从工作流编排退回模型迭代节奏。此判断目前只有单一信源，但值得用下个季度的用户数据验证。
+灵砚视角：「验证闭环」比「代码不重要」更站得住——AI 压低了产出的单价，却抬高了为结果签字的责任。若验证真成核心工序，Evals 会像单元测试一样，从可选手艺变成工程地基。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t1)
+
+#### 内圈的「不可思议」和外圈的无感，哪个才是 AI 商业化的真实地基？
+
+**今日信号：** Karpathy 称约 60 亿人几乎没碰过 LLM，认知分层还在扩大
+
+**灵砚视角：**  
+灵砚视角：四层论把泡沫之争翻译成分布问题——争论双方可能都对，只是站在不同的层。机会藏在层与层之间：把内圈觉得平常的能力，翻译成外圈用得起的服务。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t2)
 
 
-## 5. 消费电子
+## 5. 云计算与企业服务
 
-### 消费电子
+### 云计算与企业服务
 
-**关键词：** 半导体 / AI 数据中心 / 消费硬件
+**关键词：** 多智能体 / ai-agent / 软件工程
 
 ### 今日精要
 
-#### 1. DDR4 回流背后：AI 正在挤占消费级硬件产能
+#### 1. 阿里 15 个 Agent 组成研发小队，协作走向成建制
 
-2026 年的消费级 PC 出现怪象：DDR4 内存、老款处理器与旧显卡集体回流市场，旧平台超期服役成了新常态。爱范儿把根源指向半导体产能向 AI 数据中心倾斜：新硬件成本被推高，消费者被迫退回旧平台。当算力买家从个人换成数据中心，消费硬件被挤到采购队列的末尾，PC 的供给结构正在被改写。
+阿里巴巴中间件团队公开一套端到端 AI 研发体系：15 个分工不同的 Agent 组成研发小队，以 AgentCore 协作、AgentLoop 持续优化，把受约束场景的交付周期压进一周以内。同一天，Google 开放 Data Agent Kit，让智能体在 IDE 里接管端到端数据科学工作流。两家落点撞在同一处：智能体不再是单点工具，而是可编排的成建制协作。
 
-标签：`半导体` `AI 数据中心` `消费硬件`
-
-相关材料：
-- [DDR4 内存重出江湖，PC 终于癫成我不认识的样子](https://oraink.com/public/articles/85315)
-
-订阅来源：爱范儿
-
-#### 2. 中央罕见措辞定调新质生产力，落点直接对准企业家
-
-中共中央、国务院印发《关于发展新质生产力的意见》，笔记侠从中梳理出四个核心信号，落点放在企业与企业家一侧。文章特别强调这份文件措辞罕见，与其说是定调，不如说是一份写给企业的行动参考。新质生产力从概念进入执行阶段，政策文本的颗粒度开始变细，科技与制造企业值得逐条对表。
-
-标签：`产业政策` `新质生产力`
+标签：`多智能体` `ai-agent` `软件工程` `ai-coding`
 
 相关材料：
-- [措辞罕见！重磅文件，透露4个非同一般的信号](https://oraink.com/public/articles/85425)
+- [15 个 Agent 组成研发小队：多智能体协作的端到端研发体系](https://oraink.com/public/articles/85765)
+- [Agentic data science with the Data Agent Kit](https://oraink.com/public/articles/85825)
 
-订阅来源：笔记侠
+订阅来源：阿里巴巴中间件 / Google Cloud Blog
 
-#### 3. comma.ai 靠民间改装求生：老车插显卡就有智驾
+#### 2. TimesFM 3.0 三榜登顶：时间序列预测并入数仓
 
-Reddit 上一位车主给老车插上 AMD 显卡，借助 comma.ai 的开源 openpilot 跑出「真智驾」，引发热议。爱范儿借此梳理后装智驾的现状：民间需求旺盛，openpilot 却始终困在监管与市场的夹缝里。前装智驾卷成红海的同时，开源后装在灰色地带证明了生命力，也顶到了合规的天花板。
+Google Research 发布 TimesFM 3.0：原生支持多变量时间序列预测，拿下三大公开榜单第一，并同步进入 BigQuery 预览。时间序列预测正从建模项目变成数仓里的一次调用。对自建时序管线的数据团队而言，这回基础模型不是演示，而是直接长在了数仓里。
 
-标签：`自动驾驶` `开源` `后装市场`
+标签：`时间序列` `基础模型` `BigQuery` `google-cloud`
 
 相关材料：
-- [AMD YES！老哥给老车插上显卡，手搓「真智驾」](https://oraink.com/public/articles/85303)
+- [Introducing TimesFM 3.0 with multivariate time-series forecasting in BigQuery](https://oraink.com/public/articles/85822)
 
-订阅来源：爱范儿
+订阅来源：Google Cloud Blog
 
 **本卷快讯**
 
-· 吴恩达新访谈驳 AI 毁灭论：开放权重不可替代，落地还需十年（笔记侠）
-· 腾讯云开源内部自用 TeamAI，适配 16 款 Agent 并接入 ClawPro（少数派）
-· 曝苹果 iPhone Duo 加单 30%，供应链为新机追加备货（爱范儿）
-· 四部门拟禁全隐藏式车门把手，隐藏式设计面临退场（爱范儿）
-· 曝长鑫首款服务器产品或年底推出，国产 DRAM 加码数据中心（爱范儿）
-· @JJYing 推出免费字体预览工具 Anyway.Fonts，主打中文字体适配（少数派）
-· 少数派好物：绿联 45W 小冰片充电器、弓途风顶顶卡弹弓真实上手（少数派）
+· 谷歌预览 Looker Data Apps：AI 快速生成应用接上治理安全（Google Cloud Blog）
+· 《SRE》十周年出第二版：全书重写，补上 AI 时代内容（Google Cloud Blog）
+· AWS 参考架构让智能体监测抗菌耐药，测序数据直接问答（AWS Architecture Blog）
 
 ### 今日思考
 
-#### AI 对消费硬件的挤占是矿潮式的周期扰动，还是供给结构的长期重排？
+#### 智能体从单点工具变成成建制小队之后，工程师的核心技能会从写代码转向带队伍吗？
 
-**今日信号：** 旧款 DDR4、处理器与显卡在 2026 年集体回流消费市场，消费者转向旧平台超期服役
-
-**灵砚视角：**  
-灵砚视角：矿潮吞噬显卡是投机需求，潮退即还原；AI 吞噬内存与先进产能是基建型需求，数据中心一旦建成就会长期驻留。若这个判断成立，消费硬件「越等越便宜」的默认假设开始动摇，换机周期与定价逻辑都需要重算。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t1)
-
-#### 存量老车的智驾需求，最终会由谁合法地承接？
-
-**今日信号：** Reddit 玩家给老车插 AMD 显卡跑通 openpilot，开源后装智驾仍在监管灰色地带运转
+**今日信号：** 阿里中间件用 15 个分工 Agent 组成研发小队，受约束场景交付周期压进一周以内；Google 同日开放 Data Agent Kit。
 
 **灵砚视角：**  
-灵砚视角：改装走红说明智驾正从新车卖点变成普遍刚需，但需求不会自动转化为合规供给。监管收口之前，comma.ai 的窗口期取决于前装智驾下沉的速度；跑慢了，开源后装就只能留在灰色地带当替补。
+灵砚视角：两家落点一致，智能体的价值正从单次对话转向可编排的分工协作。阿里给出组织形态，谷歌给出工具形态，合起来正好是端到端自动化的两半；下一步要盯的是「受约束场景」这条边界会不会外扩。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-12#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t1)
+
+#### 当预测变成数仓里的一次模型调用，数据团队还有必要自建时序管线吗？
+
+**今日信号：** TimesFM 3.0 原生多变量预测拿下三大榜单第一，并直接进 BigQuery 预览。
+
+**灵砚视角：**  
+灵砚视角：进 BigQuery 比登顶榜单更关键，预测的交付形态从项目变成了函数。当基础模型把建模、调参、运维整套活干完，统计建模师的护城河只剩把业务问题翻译成预测问题这一段。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-13#thought-t2)
 
 ## 跨分类洞察
 
@@ -482,7 +513,7 @@ Reddit 上一位车主给老车插上 AMD 显卡，借助 comma.ai 的开源 ope
 
 AI与智能化、网络安全、前沿科技、软件与开发者 看似分散，但对这位用户而言都进入了同一天的阅读预算。分组先保留每个方向的独立判断，再用顶部总题把最相关的前两条主线合并成今天的个人日报入口。
 
-> 今日 31 篇更新 → 16 条信号 + 50 条快讯，其余已替你读过
+> 今日 39 篇更新 → 18 条信号 + 51 条快讯，其余已替你读过
 
 ---
 
