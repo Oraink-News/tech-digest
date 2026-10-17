@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·AI与智能化 2026-W42｜个人智能体成为大厂新入口](weekly/2026/ai-intelligence/2026-W42.md)
+- 最新周报：[灵砚周刊·消费电子 2026-W42](weekly/2026/consumer-electronics/2026-W42.md)
 - [License](#license)
 
 ---
