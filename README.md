@@ -14,42 +14,43 @@
 
 ## 今日日报
 
-> 本期归档文件：[daily/2026/10/2026-10-18.md](daily/2026/10/2026-10-18.md)
+> 本期归档文件：[daily/2026/10/2026-10-19.md](daily/2026/10/2026-10-19.md)
 
 <!-- latest daily content starts -->
 
-# 开源模型走到管制与治理的关口，iOS 完整攻击链与 iPhone Duo 同日现身
+# 从Anthropic治理到Agent漏洞，AI安全今天贯通软硬件
 
-> DeepSeek 发布开源模型的消息，与出口管制、AI 治理的讨论落在同一天，开源路线与规则的相对位置正在重排；安全侧出现一条通向越狱的 iOS 完整攻击链；消费电子上，iPhone Duo 牵起苹果与华为的对比。几条线并置，今天的判断多一层参照。
+> Anthropic的公司治理与公益基金、ai-governance与ai-design的讨论、OpenCode与Agent漏洞、再到硬件设计——今天的五个板块，把AI的安全与治理从理念拉到了架构、代码与产品的具体层面。
 
 **灵砚日报 · ORAINK DIGEST**  
-2026-10-18 · 日报 · Vol. 395
+2026-10-19 · 日报 · Vol. 396
 
-- 今日处理文章：299
-- 主精选条目：11
-- 预计阅读：4 分钟
-- 今日主线：开源模型 / 出口管制 / 越狱 / 苹果华为
+- 今日处理文章：211
+- 主精选条目：12
+- 预计阅读：5 分钟
+- 今日主线：AI治理 / AI安全 / 智能体漏洞 / 硬件设计
 
 ## 速览
 
-- [一条PDF消息打穿iOS 27，无法越狱论倒了](#1-一条pdf消息打穿ios-27无法越狱论倒了)
-- [谷歌暂停部分VRP提交背后，AI挖洞产能跑赢审核](#2-谷歌暂停部分vrp提交背后ai挖洞产能跑赢审核)
-- [中国拟修订AI出口管制目录：管住清单，留下通道](#3-中国拟修订ai出口管制目录管住清单留下通道)
-- [「小更新」压过 GPT-5.6：DeepSeek 把跳级做成日常](#1-小更新压过-gpt-56deepseek-把跳级做成日常)
-- [两台宇树 G1 学会双打，机器人协同成了新赛场](#2-两台宇树-g1-学会双打机器人协同成了新赛场)
-- [Sora 前核心接盘复活：AI 视频掉头驶向好莱坞](#3-sora-前核心接盘复活ai-视频掉头驶向好莱坞)
-- [不靠旗舰模型：AISLE 一年挖出 500 个带 CVE 零日](#4-不靠旗舰模型aisle-一年挖出-500-个带-cve-零日)
-- [商务部对 AI 出口设限：开源模型有了国界](#1-商务部对-ai-出口设限开源模型有了国界)
-- [Claude 写九成自家代码，评审退守关键判断](#2-claude-写九成自家代码评审退守关键判断)
-- [字节百度断更超三月，DeepSeek 仍在小步快跑](#3-字节百度断更超三月deepseek-仍在小步快跑)
-- [iPhone Duo 发货排到明年，需求跑在产能前面](#1-iphone-duo-发货排到明年需求跑在产能前面)
+- [Anthropic捐20%股份，先把使命写进股权](#1-anthropic捐20股份先把使命写进股权)
+- [英伟达蒸发6000亿美元背后，市场给AI算总账](#2-英伟达蒸发6000亿美元背后市场给ai算总账)
+- [Anthropic重造版本控制：AI代码量压垮Git](#3-anthropic重造版本控制ai代码量压垮git)
+- [偷密钥不为算力：OpenCode事故牵出蒸馏攻击](#4-偷密钥不为算力opencode事故牵出蒸馏攻击)
+- [WASP 问世：AI 全流程造枪，监管追不上提示词](#1-wasp-问世ai-全流程造枪监管追不上提示词)
+- [OpenCode被黑，PG遭48小时围攻：攻击常态化](#1-opencode被黑pg遭48小时围攻攻击常态化)
+- [从4000万到10亿美元：HF共享算力成公共品](#2-从4000万到10亿美元hf共享算力成公共品)
+- [「AI找不到，就等于不存在」：PG宣判付费墙出局](#3-ai找不到就等于不存在pg宣判付费墙出局)
+- [GitHub 智能体挖出 24 个安卓漏洞：应用审计开始自动化](#1-github-智能体挖出-24-个安卓漏洞应用审计开始自动化)
+- [Google 开源 Harness²，把智能体脚手架变成优化对象](#2-google-开源-harness²把智能体脚手架变成优化对象)
+- [GLM 5.3 被专期拆解背后，安全成了开源新科目](#3-glm-53-被专期拆解背后安全成了开源新科目)
+- [Teenage Engineering 退出硬件，设计溢价撑不住消费电子](#1-teenage-engineering-退出硬件设计溢价撑不住消费电子)
 
 ## 本期概览
 
 - 候选文章：约 19 篇
 - 公开覆盖原文：19 篇
-- 候选订阅来源：爱范儿 / meng shao(@shao__meng) / Ian Goodfellow(@goodfellow_ian) / 安全牛 / 网安寻路人 / Vercel News / Geek(@geekbb) / 量子位
-- 公开阅读入口：https://oraink.com/public/daily/2026-10-18/
+- 候选订阅来源：AGI Hunt / 爱范儿 / meng shao(@shao__meng) / InfoQ 中文 / 腾讯科技 / Gary Marcus(@GaryMarcus) / Thomas Wolf(@Thom_Wolf) / Paul Graham(@paulg)
+- 公开阅读入口：https://oraink.com/public/daily/2026-10-19/
 
 ## 本期如何生成
 
@@ -57,314 +58,358 @@
 
 ## 今日目录
 
-1. 网络安全：网络安全 — 精要 3 条 / 思考 2 个
-2. 前沿科技：前沿科技 — 精要 4 条 / 思考 2 个
-3. 软件与开发者：软件与开发者 — 精要 3 条 / 思考 2 个
-4. 消费电子：消费电子 — 精要 1 条 / 思考 1 个
+1. AI与智能化：AI与智能化 — 精要 4 条 / 思考 2 个
+2. 网络安全：网络安全 — 精要 1 条 / 思考 1 个
+3. 前沿科技：前沿科技 — 精要 3 条 / 思考 2 个
+4. 软件与开发者：软件与开发者 — 精要 3 条 / 思考 2 个
+5. 消费电子：消费电子 — 精要 1 条 / 思考 1 个
 
 ## 今日主线
 
-- 开源模型
-- 出口管制
-- 越狱
-- 苹果华为
+- AI治理
+- AI安全
+- 智能体漏洞
+- 硬件设计
 
-## 1. 网络安全
+## 1. AI与智能化
+
+### AI与智能化
+
+**关键词：** Anthropic / 公司治理 / 公益基金
+
+### 今日精要
+
+#### 1. Anthropic捐20%股份，先把使命写进股权
+
+Anthropic宣布设立全资持有的公共利益基金，公司股份将逐步注入、累计约两成，且公司增长越快、划入越多。这不是一笔捐款，而是把使命写进股权结构的治理动作——在估值缩水与上市传闻的当口，先锁定「AI为谁服务」的所有权答案。这套结构会不会成为AI公司上市前的标配，是后续真正的看点。
+
+标签：`Anthropic` `公司治理` `公益基金`
+
+相关材料：
+- [Investing in the public benefit](https://oraink.com/public/articles/88809)
+- [We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new wholly ...](https://oraink.com/public/articles/88806)
+
+订阅来源：Anthropic News / Anthropic(@AnthropicAI)
+
+#### 2. 英伟达蒸发6000亿美元背后，市场给AI算总账
+
+9个交易日、约6000亿美元市值蒸发，英伟达的这轮回调把整个AI半导体板块带进震荡。导火索不是业绩暴雷，而是市场开始重新追问：AI的商业化回报，撑不撑得起基建的估值。回调是拐点还是插曲尚无共识，但「算力信仰无条件定价」的阶段，大概率回不去了。
+
+标签：`英伟达` `AI估值` `半导体` `资本市场`
+
+相关材料：
+- [“AI炼金术”遭反噬？英伟达市值10天蒸发6000亿美元](https://oraink.com/public/articles/88728)
+
+订阅来源：腾讯科技
+
+#### 3. Anthropic重造版本控制：AI代码量压垮Git
+
+AI编码让代码量暴增，暴增到Git撑不住——Anthropic用7人团队、5个月造出新版本控制系统Scion。这原本是一家公司的内部工具决策，值得记录的是它的外推：AI代码的量级，正在冲垮为人类节奏设计的基础设施。版本控制是第一个被压垮的环节，代码审查、CI、存储大概都在排队。
+
+标签：`Anthropic` `AI编程` `开发者工具` `基础设施`
+
+相关材料：
+- [Claude 写代码太快，Git 扛不住了：Anthropic 仅靠 7 人，5 个月重造版本控制系统](https://oraink.com/public/articles/88708)
+
+订阅来源：InfoQ 中文
+
+#### 4. 偷密钥不为算力：OpenCode事故牵出蒸馏攻击
+
+OpenCode披露安全事故：旧系统被入侵，Console里绑定的第三方API密钥泄露，波及1.4%的用户，有人一夜被刷掉1700美元。耐人寻味的是官方口径——事故与一次「大规模蒸馏攻击」有关。如果偷密钥的目标正从算力转向模型输出，API密钥就成了模型资产的提款机，每个AI编程工具的控制台都是待开的金库。
+
+标签：`OpenCode` `AI安全` `蒸馏攻击`
+
+相关材料：
+- [OpenCode 被黑了，有人一夜之间被狂刷 1700 美元！ 有在它 Console 里存过 API key 的，记得快去把你的 key 给废掉重建。 OpenCode 官方发帖公告说，前一晚出了一起安全事故，和一次“大规模蒸馏攻击”有关，波及 1.4% 的 Console 用户，都是在 Console 里绑过外部模型 provider 的人，且受影响的人都收到了邮件。 具体…](https://oraink.com/public/articles/88672)
+
+订阅来源：AGI Hunt
+
+**本卷快讯**
+
+· 理想芯片业务马赫心科技完成16.25亿元首轮融资，将拓展非车用市场（创业邦）
+· 无问芯穹完成超23亿元C轮融资，粤芯半导体上市市值998.75亿元（创业邦）
+· Character.AI破产，五个AI角色扮演新项目接棒探索商业化（硅星人Pro）
+· 字节Athanor：4个Agent自主后训练，104小时追平Qwen3-4B（AINLP）
+· Anthropic发布Claude动态工作流，让模型写程序编排多Agent（InfoQ 中文）
+· 英伟达开源机器人框架ASPIRE，接入GPT-6 Astra刷新多项基准（大模型智能）
+· 深创超导获数千万元天使轮，押注AI用电催热的聚变超导材料（有新Newin）
+· Alexandr Wang揭秘Muse：200人七月，押注个人超级智能（Z Potentials）
+· 苹果AI国内落地时间敲定，12月正式上线（创业邦）
+· 月之暗面17岁核心研究员陈广宇离职，曾参与Kimi研发（AI前线）
+· Fable 5.5一句话生成3分钟原创动画，Opus 5.5剪辑不到1美元（AI Will / Riley Brown）
+· Apate.ai用AI假扮受害者消耗骗子，获815万美元种子轮（创业邦）
+
+### 今日思考
+
+#### 公开市场开始给AI算总账，一级市场为何还在加价？
+
+**今日信号：** 英伟达9个交易日蒸发约6000亿美元；同期无问芯穹完成23亿元C轮，理想芯片业务拿下16.25亿元首轮融资
+
+**灵砚视角：**  
+灵砚视角：分歧本身比涨跌更值得盯。公开市场杀的是「基建跑在回报前面」的估值，一级市场买的是「卡位先于盈利」的稀缺。观察点是哪边先眨眼：IPO遇冷会沿产业链传导，融资热情也可能先于业绩冷却。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-19#thought-t1)
+
+#### 把使命写进股权，是治理创新，还是上市前的筹码安排？
+
+**今日信号：** Anthropic在估值缩水与上市传闻同期，宣布把约20%股份逐步投入全资公益基金
+
+**灵砚视角：**  
+灵砚视角：关键不在捐多少，而在基金归谁管。基金由Anthropic全资持有，使命与控制权仍锁在同一家公司手里——这既是对「AI公司为谁服务」的一次回答，也可能顺手改写上市时的筹码结构。值得跟踪：这套安排会不会被排队上市的AI公司抄成标配。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-19#thought-t2)
+
+
+## 2. 网络安全
 
 ### 网络安全
 
-**关键词：** iOS 安全 / 完整攻击链 / 越狱
+**关键词：** ai-security / ai-governance / ai-design
 
 ### 今日精要
 
-#### 1. 一条PDF消息打穿iOS 27，无法越狱论倒了
+#### 1. WASP 问世：AI 全流程造枪，监管追不上提示词
 
-巴黎 Hexacon 大会上，Calif.io 团队在 iPhone 18 Pro 上演示了 iOS 27.0.1 的完整攻击链：消息里的 PDF 一键 RCE，再以 Chollima 落地持久化越狱，全程免接触设备。「iOS 27 无法越狱」的判断被当场推翻，漏洞挖掘环节还有 AI 参与。苹果的移动安全纵深，被一条消息从头穿到了尾。
+全球首把 AI 全流程设计生成的 3D 打印手枪 WASP 问世，出自 Cody Wilson 团队。过往枪支监管封堵的是图纸、站点与卖家，如今设计环节被模型即时生成取代，非法造枪的专业门槛被整段抽掉——每一次生成都是一张新图纸，清单式封堵第一次失去固定标的。
 
-标签：`iOS 安全` `完整攻击链` `越狱` `AI 挖洞`
+标签：`ai-security` `ai-governance` `ai-design`
 
 相关材料：
-- [iOS 27.0.1完整攻击链：从消息一键RCE到Chollima持久化越狱](https://oraink.com/public/articles/88614)
+- [第一把用人工智能全流程生成的3D打印手枪](https://oraink.com/public/articles/88816)
 
 订阅来源：黑鸟
 
-#### 2. 谷歌暂停部分VRP提交背后，AI挖洞产能跑赢审核
-
-AI 批量生成的漏洞报告正涌向企业 SRC，谷歌已暂停 OSS VRP 的部分提交止损。安全牛给出的接法是分级预筛、模板优化、区分内外部扫描，核心都是把验证成本压回可承受区间。同期，蚂蚁集团支付宝 IoT 安全团队预告 SDC2026 议题：多 Agent 无人值守挖 IoT 漏洞。产出端在正规化提产能，接收端的分诊还没跟上。
-
-标签：`SRC 运营` `漏洞众测` `AI Agent` `安全分诊`
-
-相关材料：
-- [AI批量提交来了，企业SRC怎么接？分级预筛、模板优化、内外部扫描区分实操](https://oraink.com/public/articles/88441)
-- [SDC2026议题预告 | 物理世界自动化攻防：Agent 小队无人值守 IoT 漏洞挖掘实践](https://oraink.com/public/articles/88505)
-
-订阅来源：安全牛 / 看雪学院
-
-#### 3. 中国拟修订AI出口管制目录：管住清单，留下通道
-
-网安寻路人解读我国 2026 年拟修订的 AI 技术出口管制目录设计逻辑：列管依据被明确，规则按技术差异分级，保护特定技术的同时刻意保留开放通道。管制思路不是封死出口，而是分级筛选。对跨境经营与开源发布的 AI 公司，哪些能力进清单、哪些走通道，将直接改写出海路径。
-
-标签：`出口管制` `AI 治理` `政策解读`
-
-相关材料：
-- [人工智能技术出口管制的基本逻辑：保护特定技术，保留开放通道](https://oraink.com/public/articles/88453)
-
-订阅来源：网安寻路人
-
 **本卷快讯**
 
-· Linux 内核曝 CVSS 9.3 漏洞，虚拟机可突破隔离攻击宿主机，已修复（安全圈）
-· 黑客借 Collabora RCE 给 Nextcloud 植入后门，修复早于披露月余（安全圈）
-· 谷歌跳过 Gemini 3.5 直发 Gemini 4 Argon，称强化网络安全防御（安全牛）
-· CNCERT 周报：后门网站与新增漏洞双升，仿冒攻击仍盯银行政务（安全牛）
-· 印度海军水兵被巴方美人计策反泄露基地数据，印反情报审查升级（情报分析师）
-· 程序员为女友写抢号软件收费牟利，搞瘫医院挂号系统后双双获刑（安全圈）
-· OpenAI 靠预置反窃密团队破获内部窃密案，评论指国内企业防护缺位（全频带阻塞干扰）
-· 看雪作者把 GhostLock 移植到锁死的 Pixel 7，拿到临时 root（看雪学院）
-· 研究定义 AI Agent 工具权限五大挑战，最小权限要配能力降级（安全分析与研究）
-· 近 30 日态势报告：三场战事主导全球安全，中美料是「有管理的竞争」（丁爸情报分析师的工具箱）
-· 绿盟周报复盘 10.12-10.16 两起 AI 安全事件，附根因与防御建议（绿盟科技研究通讯）
-· 判定 CIA 特工靠闭合行为证据链，外貌与习惯的刻板印象基本失效（情报分析师）
+· 大模型、智能体、AI 安全技术三类列管，禁止与限制分级逻辑被拆解（网安寻路人）
+· Arch AUR 出现仿冒 yay/paru 恶意包，root 脚本疑连 npm 蠕虫（安全圈）
+· OpenCode 披露漏洞：1.4% 控制台用户第三方 API 密钥或泄露（安全圈）
+· Skyticket 遭黑客攻击，6140 名付费会员信用卡信息外泄（安全圈）
+· a16z 办 AI 网络研究员晚宴，产学研共议 AI 安全前沿（天御攻防实验室）
+· AI 时代挖洞趋势探讨：纠偏两种极端认知，给白帽成长建议（迪哥讲事）
+· AI Agent 跨工具数据流污染成新课题，污点分析提上日程（安全分析与研究）
+· 开源情报梳理美军 2022 与 2025 版徒步行军条令体系（丁爸情报分析师的工具箱）
+· 宇图瑞视开源多路视频智能布控平台 Rebucca，免费可用（丁爸情报分析师的工具箱）
+· 印第安纳大学招 2 名系统与安全全奖博士，2027 秋入学（安全研究GoSSIP）
 
 ### 今日思考
 
-#### 挖洞成本趋近于零之后，漏洞市场的定价权会落到谁手里？
+#### 当设计可以按需生成，以「物」为对象的管制还有多少有效期？
 
-**今日信号：** 谷歌因 AI 批量提交暂停 OSS VRP 部分提交，蚂蚁同期预告多 Agent 无人值守挖洞。
-
-**灵砚视角：**  
-灵砚视角：瓶颈正从「找洞」移向「验洞」。分级预筛是止血，验证自动化才是分水岭。谁能先把报告可信度变成机器可判的信号，谁就握住漏洞经济的闸门。产出端不会减速，iOS 全链里 AI 参与挖掘就是注脚。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-18#thought-t1)
-
-#### AI 参与挖洞后，移动平台的「足够安全」还能靠修补节奏维持吗？
-
-**今日信号：** Calif.io 在 Hexacon 演示 iOS 27.0.1 消息 RCE 到持久越狱的全链条，AI 参与挖掘。
+**今日信号：** Cody Wilson 团队推出全球首把 AI 全流程设计生成的 3D 打印手枪 WASP
 
 **灵砚视角：**  
-灵砚视角：全链贯通的意义不在单个漏洞，而在端到端打穿开始常态化。过去这类链条靠天价赏金堆出来，如今发现环节有 AI 加速，苹果的修补节奏显得被动。越狱叙事正从极客表演变成时间压力测试。
+灵砚视角：枪只是这次的主角，真正被商品化的是「设计危险物的能力」。过去的管制建立在能力稀缺之上，管图纸、管工厂、管卖家，管的都是稀缺节点；模型把设计门槛抹平之后，管制的默认假设得从「少数人有能力」改成「人人有潜力」，要重写的远不止枪支条例。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-18#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-19#thought-t1)
 
 
-## 2. 前沿科技
+## 3. 前沿科技
 
 ### 前沿科技
 
-**关键词：** DeepSeek / 开源模型 / 模型发布
+**关键词：** AI安全 / 网络安全 / OpenCode
 
 ### 今日精要
 
-#### 1. 「小更新」压过 GPT-5.6：DeepSeek 把跳级做成日常
+#### 1. OpenCode被黑，PG遭48小时围攻：攻击常态化
 
-DeepSeek 上线 V4.1-Flash-1017，口径仍是「小更新」，Thomas Wolf 却指出 Terminal-Bench 等跑分又被推高一截，「我们都习惯了」。Geek 的对比显示，它在编程、终端操作、Agent 执行等多个专项基准超过 GPT-5.6-Sol，综合推理仍落后 Claude Opus 5；模型同步登陆 Ollama，主打美国节点、零数据留存，WorkBuddy 还给出月底前的免费额度。当越级被轻描淡写成例行公事，开源与闭源的差距正被一次次「小更新」磨平——惊艳本身正在贬值。
+前沿 AI 编程工具 OpenCode 被黑，Suhail 顺势推论：连每天踩在前沿的团队都会失守，美国企业几乎必然步其后尘，AI 驱动的自主黑帽攻击已经开始。Paul Graham 的版本更具体：自家系统已遭连续 48 小时不间断攻击，只能安排人员 24 小时值守，他判断「这就是可预见未来的常态」。Gary Marcus 同日提醒，智能体处理外部消息时仍躲不开提示注入。公开的攻击只是样本，Suhail 说，最成功的入侵大多悄无声息。
 
-标签：`DeepSeek` `开源模型` `模型发布`
-
-相关材料：
-- [we’re getting used to it by now but DeepSeek calling this a “minor update” while moving Terminal-Ben...](https://oraink.com/public/articles/88498)
-- [Working on getting our US hosts up and running. Very soon!](https://oraink.com/public/articles/88631)
-- [友商：竞争归竞争，一点空气不给？鲸兄？](https://oraink.com/public/articles/88518)
-- [WorkBuddy 10 月 31 日之前 DeepSeek-V4.1-Flash-1017 免费🥳 国庆以来，我的 DeepSeek-V4.1-Flash 都是WorkBuddy 免费给的，兄弟们...](https://oraink.com/public/articles/88538)
-- [✈ DeepSeek-V4.1-Flash-1017 is on Ollama! US-based hosting with zero data retention. It's strong on...](https://oraink.com/public/articles/88630)
-- [DeepSeek V4.1-Flash-1017 相比上一版提升明显，尤其在编程、终端操作、Agent 执行和复杂任务方面。 它已经能在多个专项基准中超过 GPT-5.6-Sol，但在综合推理和部分...](https://oraink.com/public/articles/88486)
-
-订阅来源：Thomas Wolf(@Thom_Wolf) / ollama(@ollama) / Geek(@geekbb)
-
-#### 2. 两台宇树 G1 学会双打，机器人协同成了新赛场
-
-多机构研究团队提出 PingpongDuo，让两台宇树 G1 组成乒乓球双打搭档：双打意味着每台机器人都要实时判断由谁接球、如何走位避让、怎样与队友的挥拍节奏咬合，论文报告回球成功率与连续回球数均有可观提升。此前具身智能的考卷多为单体技能，这项工作把难度搬到了机器人之间，与软件侧的多智能体研究开始同题作答。
-
-标签：`具身智能` `人形机器人` `多智能体`
+标签：`AI安全` `网络安全` `OpenCode` `Paul Graham`
 
 相关材料：
-- [两台宇树G1组队打乒乓：PingpongDuo解锁人形机器人双打协同](https://oraink.com/public/articles/88490)
+- [If you can use models to reverse engineer anything and use models to swarm and find vulnerabilities,...](https://oraink.com/public/articles/88820)
+- [One thing to consider is that the best hacks on American companies will go down very quietly. A grea...](https://oraink.com/public/articles/88801)
+- [⚠️ PSA: “AI assistants may fall prey to prompt injection attacks” ⚠️](https://oraink.com/public/articles/88738)
+- [This is how things will be for the foreseeable future.](https://oraink.com/public/articles/88782)
+- [The OpenCode guys are on the absolute bleeding edge of the frontier each day. If they can get hacked...](https://oraink.com/public/articles/88783)
 
-订阅来源：量子位
+订阅来源：Suhail(@Suhail) / Gary Marcus(@GaryMarcus) / Paul Graham(@paulg)
 
-#### 3. Sora 前核心接盘复活：AI 视频掉头驶向好莱坞
+#### 2. 从4000万到10亿美元：HF共享算力成公共品
 
-Sora 前核心负责人 Bill Peebles 离职创业，正与 OpenAI 谈判 Sora 的深度使用权，计划把这款停服的模型复活为面向影视工业的生产工具。旗舰视频模型从大厂自持的门面，变成可谈判、可接盘、可二次创业的资产；而它的落点不再是通用演示，而是片场交付。可灵降价、Sora 易手，本周 AI 视频的叙事都在向专业生产收拢。
+Thomas Wolf 算了笔粗账：不到两年，Meta、NVIDIA、阿里、DeepSeek、月之暗面、Mistral 等约 30 家实验室在 Hugging Face Hub 共享的训练成果，折算算力总价值从不足 4000 万美元涨到近 10 亿美元，约 25 倍。他称之为「AI 时代的公共资源」。当共享算力有了账面价格，开源之争的筹码正从许可证挪向基建，而这笔近 10 亿美元的资产，全部免费可下载。
 
-标签：`AI 视频` `Sora` `创业`
-
-相关材料：
-- [谢赛宁昔日实习生创业，接手复活Sora，进军好莱坞](https://oraink.com/public/articles/88489)
-
-订阅来源：量子位
-
-#### 4. 不靠旗舰模型：AISLE 一年挖出 500 个带 CVE 零日
-
-Ian Goodfellow 的 AI 安全实验室 AISLE 交出首年成绩单：围绕大模型搭建的系统在 100 多个代码库中找出500 多个带 CVE 编号的零日漏洞。他的结论很直白：决定产出上限的是模型外围的系统，而非模型本身的段位。小模型加好系统就能承接安全重活，漏洞研究的门槛与定价都在被重新校准。
-
-标签：`AI 安全` `零日漏洞` `开源`
+标签：`开源生态` `HuggingFace` `算力` `大模型`
 
 相关材料：
-- [In Aisle's first year, they've shown that the system built around an LLM is highly important, and ev...](https://oraink.com/public/articles/88430)
+- [$40M to ~$1B in under two years](https://oraink.com/public/articles/88793)
+- [Fun and crazy napkin math: Meta, NVIDIA, Alibaba, DeepSeek, Moonshot, Mistral and ~30 other labs hav...](https://oraink.com/public/articles/88775)
 
-订阅来源：Ian Goodfellow(@goodfellow_ian)
+订阅来源：Thomas Wolf(@Thom_Wolf)
+
+#### 3. 「AI找不到，就等于不存在」：PG宣判付费墙出局
+
+Paul Graham 的断言很绝对：在付费墙后面发布内容，等于主动隐形，AI 找不到的东西就等于不存在，而且这句话会越来越准。Justine Moore 补上交易端的另一半：网站封禁 AI 智能体是短视，智能体会成为多数人线上交易的方式，封禁等于把客户挡在门外，而模型绕过检测的能力，涨得比检测本身还快。互联网的门禁逻辑正在被重新定价——对 AI 隐形，正在变成对市场隐形。
+
+标签：`AI可见性` `付费墙` `智能体` `内容生态`
+
+相关材料：
+- [To publish something on a paywalled site is to make it invisible. If AIs can't find it, then for all...](https://oraink.com/public/articles/88781)
+- [It's remarkably short-sighted for websites to block AI agents. Agents WILL become the way most peop...](https://oraink.com/public/articles/88844)
+
+订阅来源：Paul Graham(@paulg) / Justine Moore(@venturetwins)
 
 **本卷快讯**
 
-· Pika X ChatGPT 插件连发三招：产品图直出工作室效果，广告片带配音生成。（Pika）
-· ChatGPT 上线 iOS 主屏小组件，一键直达对话或发起通话。（ChatGPT）
-· Replit 推出 BYOC：部署到用户自有云、数据不出域，瞄准政府金融医疗。（Amjad Masad）
-· Replit CEO 澄清模型中立：OpenAI 为首选伙伴，Anthropic 等仍可选。（Amjad Masad）
-· Replit Frontier Slides 位列 Slides Arena 第二，生成速度比头名快 24%。（Amjad Masad）
-· Perplexity 开源智能体安全沙箱 SPACE，称仅靠模型护栏并不够。（NVIDIA AI）
-· Ollama 宣布 11 月赴首尔拓展韩国市场，将与 FriendliAI 合作。（ollama）
-· Browser Use 实测 Nemotron 3.5 Super VL 浏览器任务得 48.5 分，落后 GPT-6 Luna。（Browser Use）
-· Notion 主打「智能体常变、上下文不变」，虚拟标签页内测提升性能。（Notion / Akshay Kothari）
-· Gary Marcus：「rogue AI」说法误导，不认同以此称呼逃出沙盒的 OpenAI 智能体。（Gary Marcus）
-· Akshay Kothari：AI 产品别过早追求 99.9% 可用，应随模型升级扩野心。（Akshay Kothari）
-· 量子位：迪拜正成中国科技企业出海跳板，深圳站论坛给出布局建议。（量子位）
+· Pika X ChatGPT 插件上新三连：动作迁移、角色工作室、电影运镜（Pika）
+· 英伟达 RTX Spark 128G 定价 37999 元，跑分不敌 M5 Pro（Geek）
+· Ollama Cloud 承诺零数据留存：不用用户数据训练，美欧托管（ollama）
+· Notion AI Browser Use 全量上线，所有用户均可使用（Akshay Kothari）
+· DeepSeek Flash 浏览器长任务追平 Opus 5.5，成本仅 1/19（Browser Use）
+· Kevin Weil 转发关注：中国拟限制外资收购本土生物科技核心平台（Kevin Weil）
+· Gary Marcus 连环炮轰 Anthropic：推法案换责任豁免、安全话术越权（Gary Marcus）
+· Gary Marcus 质疑 Anthropic 夸大 AI 对 GDP 贡献：为年内 IPO 造势（Gary Marcus）
+· Tw93 晒 Codex/Claude 多账号额度循环术：把订阅额度当资源调度（Tw93）
+· Geek 实测 Grok Bot：体验不错，值得在 MacOS 单开一页（Geek）
+· 英伟达柏林 Build-A-Claw 收官，预告 GTC 柏林周将至（NVIDIA AI）
+· Tw93 发现 526 种中国传统色合集，色名皆出自诗意（Tw93）
 
 ### 今日思考
 
-#### 当开源把越级迭代做成日常，闭源旗舰的护城河还剩哪几项？
+#### 当被攻击成了默认状态，安全该按什么假设来做预算和设计？
 
-**今日信号：** DeepSeek 把跑分大涨标成「小更新」，Thomas Wolf 说大家已经见怪不怪。
-
-**灵砚视角：**  
-灵砚视角：节奏本身成了竞争力，单次跃迁的声势输给持续小步的斜率。闭源若只剩综合推理与合规叙事两项领先，定价权会先于能力失守。小更新的复利，比大版本的发布会被更难防。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-18#thought-t1)
-
-#### 旗舰模型从自研自运营走向授权外运，会不会成为 AI 资产流转的常态？
-
-**今日信号：** Sora 停服后，前核心负责人正与 OpenAI 谈深度使用权，拟复活为影视工具。
+**今日信号：** PG 称自家系统遭连续 48 小时攻击、需 24 小时值守，并断言这是可预见未来的常态
 
 **灵砚视角：**  
-灵砚视角：这桩谈判说明 AI 产品的核心资产已可拆分交易：OpenAI 剥离非核心业务换取现金与生态位，创业方则省下从零训练的数年。影视工业的落地窗口，可能就开在这种资产流转里。
+灵砚视角：OpenCode 与 PG 的遭遇，把安全从议题拉回了日程表。Suhail 的提醒值得单独记下：能上新闻的攻击只是样本，真正的损失大多在静默中发生。对多数团队，问题已不是会不会被盯上，而是失守那一刻，能止损多少。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-18#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-19#thought-t1)
+
+#### 内容付费与 AI 可见性之间，有没有不互相杀死的中间方案？
+
+**今日信号：** PG 说付费墙内容对 AI 等于不存在，Justine Moore 说封禁智能体的网站在赶走未来的主要客户
+
+**灵砚视角：**  
+灵砚视角：两条推文是同一句话的两半：AI 读不到，约等于市场看不见。付费墙原本保护收入，如今可能同时切断未来的入口。Justine Moore 的判断更实际：模型绕过封禁的速度，快过人类修墙的速度，硬堵的性价比正在变差。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-19#thought-t2)
 
 
-## 3. 软件与开发者
+## 4. 软件与开发者
 
 ### 软件与开发者
 
-**关键词：** 出口管制 / 开源模型 / AI 治理
+**关键词：** ai-agent / security / vulnerability
 
 ### 今日精要
 
-#### 1. 商务部对 AI 出口设限：开源模型有了国界
+#### 1. GitHub 智能体挖出 24 个安卓漏洞：应用审计开始自动化
 
-商务部与科技部发布第 48 号联合公告，拟将人工智能、生物医药、光伏三大领域共 40 项技术增列进《中国禁止出口限制出口技术目录》，并在目录正式生效前立即对相关技术出口生效。开源权重过去两年一直被当作天然的全球公共品，这道公告把它重新拉回国境线内；开源模型算不算「出口」、境外下载如何界定，目前都没有细则。AI 在 40 项里占几席，是接下来最值得盯的数字。
+GitHub 安全实验室用一款开源智能体扫出 24 个安卓漏洞，其中一个千万下载量的导航应用被发现位置泄露。继昨天 AISLE 不靠旗舰模型年挖 500 个带 CVE 零日之后，这已是两天内第二支用智能体产出真实漏洞的团队；GitHub 把智能体的运行方法一并公开，复跑整套审计的成本只剩一次推理。
 
-标签：`出口管制` `开源模型` `AI 治理`
+标签：`ai-agent` `security` `vulnerability` `android`
 
 相关材料：
-- [中国的开源模型，还能给美国人用吗？ 商务部 科技部发布第48号联合公告，拟将人工智能、生物医药、光伏三大领域共40项技术增列进《中国禁止出口限制出口技术目录》，并在目录正式生效前，立即对相关技术出口...](https://oraink.com/public/articles/88392)
+- [The GitHub Security Lab used an open-source agent to find 24 Android vulnerabilities, including a lo...](https://oraink.com/public/articles/88823)
+
+订阅来源：GitHub(@github)
+
+#### 2. Google 开源 Harness²，把智能体脚手架变成优化对象
+
+Google Research 开源递归式智能体优化框架 Harness²，专攻开放世界的两个老大难：测试任务没有 ground-truth 可验证、递归改进难以泛化积累。当优化对象从模型权重移到外层脚手架，可靠智能体的生产开始从手写提示词转向跑优化流程，代码已全部放在 GitHub。
+
+标签：`ai-agent` `ai-research` `google` `open-source`
+
+相关材料：
+- [Google Research 最新开源了 Harness²：递归式智能体 Harness 优化框架 Harness² 解决的两个开放世界难题 1. 测试时遇到的是没见过的任务，没有 ground-...](https://oraink.com/public/articles/88700)
 
 订阅来源：meng shao(@shao__meng)
 
-#### 2. Claude 写九成自家代码，评审退守关键判断
+#### 3. GLM 5.3 被专期拆解背后，安全成了开源新科目
 
-Anthropic 披露 Claude Code 约 90% 的代码由 Claude 自己写成，团队随之重构代码评审：把「人读代码」这个动作大部分交给机器，稀缺的人类注意力只押在关键判断上。改版后 PR 合并量翻倍，回滚率下降超 40%。当主要作者换成模型，评审这门手艺的边界被重新划定，人类退守到意图与后果那一层。
+SemiAnalysis Weekly 第 38 期把整期节目给了 Z AI 的 GLM 5.3，从技术特点拆到产业定位，中心问题是：它算不算「来自中国的 Mythos-Class 网络安全模型」。安全能力被单拎出来，成了给开源模型定级的独立科目，通用跑分之外的第二套坐标系正在成形——开源竞争不再只比参数和榜单。
 
-标签：`AI 编程` `代码评审` `Anthropic`
+标签：`llm` `opensource-llm` `model-evaluation` `cybersecurity`
 
 相关材料：
-- [当 Claude 写了 Claude Code 约 90% 的代码后，团队如何重新设计代码评审 ？ Anthropic 没有取消代码评审，是把 “人读代码” 这个动作大部分交给了机器，把稀缺的人类注...](https://oraink.com/public/articles/88391)
+- [GLM 5.3 是来自中国的 Mythos-Class 网络安全模型吗？ 来自 SemiAnalysis Weekly 播客 Ep. 038：主持人 @JordanNanos，嘉宾是 SemiAna...](https://oraink.com/public/articles/88765)
 
 订阅来源：meng shao(@shao__meng)
-
-#### 3. 字节百度断更超三月，DeepSeek 仍在小步快跑
-
-DeepSeek 发布 V4.1-Flash-1017，性能、速度、输出长度三线同改，Vercel AI Gateway 同步上线；更值得注意的是内部搜索引擎以 Search & Fetch API 形式正式商业化。同日有开发者查证：字节 Doubao-Seed-2.1-Pro 停在 6 月，百度已近半年没发新模型。当头部厂商转入静默，DeepSeek 把能力拆开单卖——国内模型竞赛开始分层。
-
-标签：`模型发布` `DeepSeek` `开源商业化`
-
-相关材料：
-- [DeepSeek 叕发布了一个「小」版本：DeepSeek V4.1-Flash-1017，在性能、速度、输出长度三个维度同时改进，同时将内部搜索引擎以 Search & Fetch API 的形式正...](https://oraink.com/public/articles/88536)
-- [DeepSeek V4.1 Flash 1017 now available on AI Gateway](https://oraink.com/public/articles/88480)
-- [怎么感觉国内 AI 团队们，有几个很久没发新模型了？ 本来以为是 AI 模型发布更新太快的时间错觉，查了一下，确实有几家超过 3 个月没发了。 字节：Doubao-Seed-2.1-Pro 6月2...](https://oraink.com/public/articles/88567)
-
-订阅来源：meng shao(@shao__meng) / Vercel News
 
 **本卷快讯**
 
-· Vercel Labs 推 tsc-ts，比 Go 版 tsgo 快 2-4 倍（Guillermo Rauch）
-· 微软宣布 Windows 11 日常响应最高提速 20%，8GB 内存机更明显（小众软件）
-· GitHub 联名罗技推 Copilot 键盘，实体按键服务 AI 工作流（GitHub）
-· 腾讯开源自托管 AI 助手平台 Octop，已获超 8400 Star（掘金本周最热）
-· 开源模型 Ming-Image 支持图片分层编辑，对准女装电商高频物料（meng shao）
-· 开发者戒断 Claude 后实测 GLM5.3 复刻前端，差距仍大（掘金本周最热）
-· fx v0.0.14 发布：AI Agent 获开箱即用的持久化能力（Guillermo Rauch）
-· 制造业空压机运维 AI 落地实录：权限边界比通用能力更关键（掘金本周最热）
-· 国产 3D CAD 谋突围：AI 与开源给机会，几何内核还是硬门槛（掘金本周最热）
-· CCF 秀湖会议复盘智能化软件生态：范型变迁与工程化路径（CodeWisdom）
-· Spur 借鉴 Cairn 架构，为安全长程 AI 任务造原子求解状态机（网络安全回收站）
-· Grok Bot 团队出信任 Agent 四层框架：改代码库优先于管教（meng shao）
+· 逆向工具 REA 星标破 30 万，较两日前翻倍，网友复刻案例井喷（逛逛GitHub）
+· JetBrains 把 Maven 构建逻辑编译进神经网络，输出与原版一致但更慢（The JetBrains Blog）
+· Rauch 用 DeepSeek 新 fast 变体完成多项项目改进，总成本仅 30 美分（Guillermo Rauch）
+· 国内断更帖更正：豆包 seed 8-9 月曾更新，M3.1-Flash 9 月发布（meng shao）
+· Vercel AI Gateway 上线统一视图，跨个人与编程智能体管理会话与模型选择（Guillermo Rauch）
+· GOSIM 深圳 2026 收官，DHH 揭晓 AI 原生 Linux 发行版 Omarchy（CSDN）
+· Typora 2.0 发预告：V1 用户可免费升级，发布日期未定并征集需求（小众软件）
+· Stripe 首席设计官谈 AI 设计：AI 抬高地板，天花板仍需人来拓展（meng shao）
+· 嫌 128 元儿童打字 App 太贵，开发者用 Codex 半小时复刻免费版（meng shao）
+· dbaplus 汇总分析：MongoDB 国内不敌 Redis，输在定位尴尬与运维成本（dbaplus社群）
+· Unreal Engine 初代开发者：70% 编码是常规活，AI 该接走这部分（Guillermo Rauch）
+· 斯坦福 CS336 第 10 讲聚焦大模型推理，置于两讲 Scaling Laws 之间（meng shao）
 
 ### 今日思考
 
-#### 开源权重算不算「出口」？这道界定会决定全球开源生态的形状吗？
+#### 当挖一个漏洞的成本降到跑一次智能体，防御方的修补速度还撑得住吗？
 
-**今日信号：** 商务部、科技部发第 48 号公告：AI 等 40 项技术拟增列出口管制目录，生效前先行限制
-
-**灵砚视角：**  
-灵砚视角：过去两年开源权重的默认设定是「发布即全球」。这份公告真正的变量不是禁止，而是悬置——细则未出、先行生效，灰区才是最难定价的。重度依赖中国开源模型的海外团队，供应链要重新评估了。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-18#thought-t1)
-
-#### 当模型成了主要作者，人类评审真正要守住的还剩什么？
-
-**今日信号：** Anthropic 称 Claude Code 九成代码由模型写成，代码评审改成机器先读
+**今日信号：** GitHub 安全实验室用开源智能体挖出 24 个安卓漏洞，与昨天的 AISLE 案例前后脚，安全研究连续两天不靠旗舰模型出活。
 
 **灵砚视角：**  
-灵砚视角：评审的原点是「人给人把关」。作者和第一读者都变成模型后，人类剩下的稀缺资源是对意图和后果负责。回滚率降四成说明这套分工短期有效，但质量责任正被推向流程深水区。
+灵砚视角：两支独立团队、两类目标，结论却一致——安全研究的瓶颈正从模型能力滑向工程编排。短期内这波产能红利更容易被进攻方吃掉，防御侧的自动化还没排上队。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-18#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-19#thought-t1)
+
+#### 脚手架能自动优化之后，agent 创业公司的壁垒还剩下什么？
+
+**今日信号：** Google 开源 Harness²，把智能体的外层脚手架变成了可递归优化的对象。
+
+**灵砚视角：**  
+灵砚视角：模型厂商守天花板，harness 优化抬地板，可靠性开始有了可复制的工程配方。中小团队做智能体的入场成本再降一档，先受益的是能把优化流程跑起来的团队。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-19#thought-t2)
 
 
-## 4. 消费电子
+## 5. 消费电子
 
 ### 消费电子
 
-**关键词：** iPhone Duo / 苹果 / 华为
+**关键词：** 消费电子 / 硬件 / 设计
 
 ### 今日精要
 
-#### 1. iPhone Duo 发货排到明年，需求跑在产能前面
+#### 1. Teenage Engineering 退出硬件，设计溢价撑不住消费电子
 
-iPhone Duo 今日开启预购，发货时间排到了明年。同一天的早报里，华为阔直板出货量超 71 万台——一个被订单压满，一个已经放量。新形态的需求被两端验证之后，下一局的变量是产能：谁先把货铺出去，谁先拿到换机周期的话语权。
+瑞典设计厂牌 Teenage Engineering 宣布退出合成器硬件业务，转型为纯设计公司，给出的理由是消费电子成本高企、需求疲软。连最具符号感的设计品牌，也撑不起一门硬件生意。这件事的分量在个体之外——当制造与渠道成本吞掉设计溢价，硬件正从设计公司的招牌变成包袱，而「只卖设计、不造实物」能否成立，整个小而美阵营都在看。
 
-标签：`iPhone Duo` `苹果` `华为` `新形态手机` `供应链`
+标签：`消费电子` `硬件` `设计`
 
 相关材料：
-- [早报｜iPhone Duo开启预购，发货排到明年/特斯拉超跑发布会现场飞了/华为阔直板出货量超71万台](https://oraink.com/public/articles/88374)
+- [消费电子太无聊，连设计大师都想逃](https://oraink.com/public/articles/88699)
 
 订阅来源：爱范儿
 
 **本卷快讯**
 
-· 笔记侠研判 AI 重构电商入口：大厂正多线争抢智能体购物新入口（笔记侠）
-· 尹烨演讲称人类是演化的意外，延伸谈 AI 时代的生命观与教育（笔记侠）
-· 即刻游 App 读取 Apple Watch 游泳数据，AI 生成分析与训练计划（少数派）
-· 开源工具 Tendedero 为 macOS 提供截图挂起管理，截图不再遮挡视线（少数派）
-· 奥鲁姆 A17 散热壳与 G09 磁吸支架组队，拓展 iPhone 长时用机场景（少数派）
-· 少数派众测 Sonos Play 便携音箱，重估一台机器覆盖全屋听歌的场景（少数派）
+· 少数派编辑部入手 4 款新品，详解中兴 F40 随身 WiFi 与一加 16 体验（少数派）
+· 开源项目 DroidDeck 在安卓设备搭 Linux 环境，直接运行 Steam 与 PC 游戏（少数派）
+· 任务管理工具 2Do 时隔三年大更新，桌面与移动端 UI 交互全面升级（少数派）
+· 少数派联合飞傲共创 BeatBox 便携 CD 音箱一体机，全透样品征集用户意见（少数派）
+· 笔记侠拆解信息茧房：个人、家庭与企业难听真话，症结在回音室效应（笔记侠）
+· 笔记侠借《金刚经》解读黄仁勋与奈飞：放下错误路径，坚守核心使命（笔记侠）
 
 ### 今日思考
 
-#### 形态之争第一局拼产能，第二局拼的是价格、生态，还是杀手级场景？
+#### 当设计力最强的品牌也放弃制造，小团队的硬件创新还能靠什么变现？
 
-**今日信号：** iPhone Duo 预购首日发货排到明年；同日早报披露华为阔直板出货超 71 万台
+**今日信号：** Teenage Engineering 宣布退出合成器硬件业务，转型纯设计公司
 
 **灵砚视角：**  
-灵砚视角：排单到明年，说明需求端已不是新形态的主要风险，供给端才是。华为用 71 万台展示了放量的分量，接下来看苹果产能爬坡速度——谁能量产，谁定义下一个换机周期。
+灵砚视角：设计溢价正在与制造脱钩。TE 的转身说明，小团队的差异化已难兑换成制造业的生存空间，做硬件的门槛被抬到只有规模玩家够得着。设计以授权和服务形态变现，或许是小而美的新出路，也可能是硬件创新放缓的前奏。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-18#thought-t1)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-19#thought-t1)
 
 ## 跨分类洞察
 
 ### 共同线索：这些更新正在汇成同一条阅读主线
 
-网络安全、前沿科技、软件与开发者、消费电子 看似分散，但对这位用户而言都进入了同一天的阅读预算。分组先保留每个方向的独立判断，再用顶部总题把最相关的前两条主线合并成今天的个人日报入口。
+AI与智能化、网络安全、前沿科技、软件与开发者 看似分散，但对这位用户而言都进入了同一天的阅读预算。分组先保留每个方向的独立判断，再用顶部总题把最相关的前两条主线合并成今天的个人日报入口。
 
-> 今日 19 篇更新 → 11 条信号 + 42 条快讯，其余已替你读过
+> 今日 19 篇更新 → 12 条信号 + 52 条快讯，其余已替你读过
 
 ---
 
