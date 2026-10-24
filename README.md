@@ -14,47 +14,42 @@
 
 ## 今日日报
 
-> 本期归档文件：[daily/2026/10/2026-10-23.md](daily/2026/10/2026-10-23.md)
+> 本期归档文件：[daily/2026/10/2026-10-24.md](daily/2026/10/2026-10-24.md)
 
 <!-- latest daily content starts -->
 
-# 云厂商竞逐智能体基建，AI安全与PHP在野利用同日升温
+# 前沿模型之争延伸到分销渠道，折叠屏iPhone与在野利用同日现身
 
-> 谷歌云亮出Agent Compute Engine，云厂商与中间件加码AI基建；另一侧，PHP2Shell在野利用与漏洞披露接连出现，AI安全与漏洞挖掘同步进入视野。加上AI制药创业融资与机器人的进展，今天适合把「建」与「防」放在一起看：基建跑得越快，安全跟得越紧。
+> Meta把Muse带入前沿模型行列，OpenAI借谷歌云铺设分销路径，模型比拼的落点正从研发转向渠道；同一天，PHP2Shell的在野利用让漏洞披露的节奏再受审视，iPhone Duo折叠屏与高德地图把变化带到掌上。模型、安全与终端同日换挡，今天的科技版图由此铺开。
 
 **灵砚日报 · ORAINK DIGEST**  
-2026-10-23 · 日报 · Vol. 400
+2026-10-24 · 日报 · Vol. 401
 
-- 今日处理文章：276
-- 主精选条目：16
-- 预计阅读：6 分钟
-- 今日主线：智能体基建 / AI安全 / 在野利用 / AI制药 / 机器人
+- 今日处理文章：289
+- 主精选条目：11
+- 预计阅读：4 分钟
+- 今日主线：前沿模型 / 模型分销 / 在野利用 / 折叠屏
 
 ## 速览
 
-- [PHP 暴雷第二日：GPT 挖的洞，逼出多国预防性下线](#1-php-暴雷第二日gpt-挖的洞逼出多国预防性下线)
-- [DeepSeek 千亿背后，产业资本开始站队头部模型](#2-deepseek-千亿背后产业资本开始站队头部模型)
-- [Vercel 六成部署出自 Agent，差距却在人不在模型](#3-vercel-六成部署出自-agent差距却在人不在模型)
-- [朱啸虎看不懂的品类，Anthropic 开测了 Duet](#4-朱啸虎看不懂的品类anthropic-开测了-duet)
-- [PHP2Shell第二天：在野攻击跑赢补丁](#1-php2shell第二天在野攻击跑赢补丁)
-- [Tor近一成出口被控两月：匿名终点就是明文起点](#2-tor近一成出口被控两月匿名终点就是明文起点)
-- [Skill木马攻破多款Agent：审查拦不住二进制](#3-skill木马攻破多款agent审查拦不住二进制)
-- [ATT&CK v20扩容AI攻击，防御基线跟着重画](#4-attck-v20扩容ai攻击防御基线跟着重画)
-- [Kevin Weil 入局制药：AI 创业转向科学纵深](#1-kevin-weil-入局制药ai-创业转向科学纵深)
-- [腾讯字节谷歌齐出手：AI 中间件进入平台接管期](#1-腾讯字节谷歌齐出手ai-中间件进入平台接管期)
-- [DeepSeek 悄悄上新 Flash：轻量型号开始收思考税](#2-deepseek-悄悄上新-flash轻量型号开始收思考税)
-- [「一个人干三个人的活」：Claude Code 改写裁员经济账](#3-一个人干三个人的活claude-code-改写裁员经济账)
-- [谷歌上线智能体计算引擎：云架构开始换主角](#1-谷歌上线智能体计算引擎云架构开始换主角)
-- [Claude 部署选项扩容，谷歌云把对手模型当卖点](#2-claude-部署选项扩容谷歌云把对手模型当卖点)
-- [连 HSM 都开源：微软把基建开放当武器](#3-连-hsm-都开源微软把基建开放当武器)
-- [分层控制方案背后，微软把主权做成配置项](#4-分层控制方案背后微软把主权做成配置项)
+- [Meta 用 14 个月重回前沿，Muse 用户破千万](#1-meta-用-14-个月重回前沿muse-用户破千万)
+- [蚂蚁电信挤进决策模型：Jev 榜首易主](#2-蚂蚁电信挤进决策模型jev-榜首易主)
+- [K3.1 Pro 摸到前沿的背后，开放权重进入倒计时](#3-k31-pro-摸到前沿的背后开放权重进入倒计时)
+- [DeepSeek 公开推理账本，全行业定价被锚定](#4-deepseek-公开推理账本全行业定价被锚定)
+- [PHP2Shell 第三天：攻击早于披露四天，起跑线失守](#1-php2shell-第三天攻击早于披露四天起跑线失守)
+- [Node2Shell 藏身 Brotli：内置件成新雷区](#2-node2shell-藏身-brotli内置件成新雷区)
+- [400 家金融机构被 AI 全自动攻破，对手不再是人](#3-400-家金融机构被-ai-全自动攻破对手不再是人)
+- [荷兰情报局蹭 GRU 后门：库什纳手机牵出 20 亿美元](#4-荷兰情报局蹭-gru-后门库什纳手机牵出-20-亿美元)
+- [OpenAI半年集齐三大云，模型独家绑定时代终结](#1-openai半年集齐三大云模型独家绑定时代终结)
+- [京东亮出4.2米机器人：产业AI竞争转向供应链](#2-京东亮出42米机器人产业ai竞争转向供应链)
+- [微信过渡、高德抢跑：iPhone Duo 适配开始分层](#1-微信过渡高德抢跑iphone-duo-适配开始分层)
 
 ## 本期概览
 
-- 候选文章：约 44 篇
-- 公开覆盖原文：44 篇
-- 候选订阅来源：Claude(@claudeai) / Microsoft Azure Blog / 安全客 / 创业邦 / AINLP / 极客公园 / 掘金本周最热 / Latent Space
-- 公开阅读入口：https://oraink.com/public/daily/2026-10-23/
+- 候选文章：约 26 篇
+- 公开覆盖原文：26 篇
+- 候选订阅来源：少数派 / 安全客 / 量子位 / 天御攻防实验室 / InfoQ 中文 / Latent Space / Z Potentials / 爱范儿
+- 公开阅读入口：https://oraink.com/public/daily/2026-10-24/
 
 ## 本期如何生成
 
@@ -64,115 +59,108 @@
 
 1. AI与智能化：AI与智能化 — 精要 4 条 / 思考 2 个
 2. 网络安全：网络安全 — 精要 4 条 / 思考 2 个
-3. 前沿科技：前沿科技 — 精要 1 条 / 思考 1 个
-4. 软件与开发者：软件与开发者 — 精要 3 条 / 思考 2 个
-5. 云计算与企业服务：云计算与企业服务 — 精要 4 条 / 思考 2 个
+3. 前沿科技：前沿科技 — 精要 2 条 / 思考 2 个
+4. 消费电子：消费电子 — 精要 1 条 / 思考 1 个
 
 ## 今日主线
 
-- 智能体基建
-- AI安全
+- 前沿模型
+- 模型分销
 - 在野利用
-- AI制药
-- 机器人
+- 折叠屏
 
 ## 1. AI与智能化
 
 ### AI与智能化
 
-**关键词：** AI 安全 / 漏洞挖掘 / PHP
+**关键词：** Meta / Muse / 前沿模型
 
 ### 今日精要
 
-#### 1. PHP 暴雷第二日：GPT 挖的洞，逼出多国预防性下线
+#### 1. Meta 用 14 个月重回前沿，Muse 用户破千万
 
-PHP2Shell 风暴进入第二天，焦点从补丁覆盖率转向挖洞者：OpenAI 的 Patch the Planet 项目作为两方之一，用 GPT-5.6 Sol 挖出 PHP 核心这对潜伏约二十年的高危漏洞，波及全球 70% 网站，协调修复历时两个月。因披露提前泄密，日本首相公开催打补丁，多国政府与服务索性预防性下线。挖洞成本被 AI 压低之后，应急响应第一次跑在了补丁前面。
+Meta 超级智能实验室成立 14 个月后交出第二代模型，第三方评测把 Muse Wonder Full 放进 Claude 5.5 一档，发布当日股价上涨 3%。更值得看的是配套事实：Muse 应用用户突破 1000 万，约四分之一每天打开，购物成为高频场景，另有一款可本地部署的开源版 Muse Spark Open。前沿能力、消费级入口与开源权重被同一家公司攥在手里，前沿竞赛的计分规则正在被改写。
 
-标签：`AI 安全` `漏洞挖掘` `PHP` `应急响应`
-
-相关材料：
-- [全球 70% 网站一夜告急，日本首相催打补丁！详解PHP暴雷事件始末](https://oraink.com/public/articles/90031)
-- [AINews\] OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months](https://oraink.com/public/articles/90012)
-- [AI 到处挖漏洞一整年，终于给人类爆了个大的](https://oraink.com/public/articles/90004)
-- [AI挖出藏了十几年的底层PHP漏洞，网络安全也回不去那个旧时代了。](https://oraink.com/public/articles/90017)
-- [GPT挖出PHP世纪大漏洞，人类屎山代码的大清算开始了](https://oraink.com/public/articles/90158)
-- [GPT 挖出 PHP 大漏洞，全球互联网连夜打补丁](https://oraink.com/public/articles/89990)
-
-订阅来源：InfoQ 中文 / Latent Space / 极客公园 / 数字生命卡兹克 / 傅盛
-
-#### 2. DeepSeek 千亿背后，产业资本开始站队头部模型
-
-DeepSeek 新一轮融资约 1000 亿元人民币（约 150 亿美元），跻身中国史上最大融资之列：宁德时代、腾讯入局，完美世界、中芯聚源等产业资本跟进，资金投向模型研发、算力与具身智能，公司同步筹备科创板上市。当外部资金还在观望，产业资本已经选择直接站队头部模型公司，这笔钱也把具身智能推成了大模型公司的下一站。
-
-标签：`DeepSeek` `融资` `产业资本` `具身智能`
+标签：`Meta` `Muse` `前沿模型` `开源权重`
 
 相关材料：
-- [DeepSeek千亿融资逼近收官：结盟完美世界、中芯聚源等产业资本，募资翻倍押注具身智能](https://oraink.com/public/articles/90058)
-- [刚刚，DeepSeek在最新一轮融资中筹集了约1000亿元人民币（约150亿美元），这是中国有史以来规模最大的融资之一](https://oraink.com/public/articles/90014)
+- [Meta’s Muse Wonder and Spark Open, Educational Use of ChatGPT, Reflection's Partnership with Nvidia](https://oraink.com/public/articles/90422)
+- [AINews\] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model](https://oraink.com/public/articles/90316)
+- [速递｜Meta称Muse用户已超1000万，购物是热门用途之一](https://oraink.com/public/articles/90327)
 
-订阅来源：AI前线 / 夕小瑶科技说
+订阅来源：deeplearning.ai / Latent Space / Z Potentials
 
-#### 3. Vercel 六成部署出自 Agent，差距却在人不在模型
+#### 2. 蚂蚁电信挤进决策模型：Jev 榜首易主
 
-Vercel CEO Guillermo Rauch 披露，平台上 60% 的部署已来自 AI 编程智能体，互联网正在为 AI 重做一遍。同一天，Jellyfish 基于 447 家公司、近 5 万名工程师的数据得出反向结论：AI 模型对编码产出的影响不足 1%，个体工程师才是最大变量。智能体接管部署的同时，模型选型的权重反而在缩水，工程组织与流程成了新的胜负手。
+Jev 领跑的决策模型赛道，短短几天挤进多家中国厂商：蚂蚁数科 LingDT-Decision-1.0 的 27B 版本在 23 项开源基准上超过微软与 Jev，Token 消耗再降九成；中国电信开源可本地部署的 Xing4.0-29B-Intent，补上 Jev「只能选择、不能抽参数」的短板；StartLux 凭 AutoThink 路线登上 Hugging Face Decision Index 榜首。一个新品类从稀缺到拥挤，只用了一个发布周期。
 
-标签：`AI 编码` `Vercel` `智能体` `工程效能`
-
-相关材料：
-- [全世界只有 5000 人见过的 AI 群控，会把软件公司的差距拉到一百倍](https://oraink.com/public/articles/90032)
-- [Vercel CEO 最新爆料：60% 的部署已经来自 agent，互联网正在为 AI 重做一遍](https://oraink.com/public/articles/90018)
-- [Better AI Models Won't Fix Your Engineering Team — Nicholas Arcolano, Jellyfish](https://oraink.com/public/articles/90214)
-
-订阅来源：InfoQ 中文 / 深思圈 / AI Engineer
-
-#### 4. 朱啸虎看不懂的品类，Anthropic 开测了 Duet
-
-Anthropic 开放 Claude Duet 研究预览：由 Opus 5.5 驱动的主动式智能体，面向美国 Pro 与 Max 订阅用户，7×24 小时自主推进工作，不等指令先动手。中文圈同期仍在争论品类成立与否——朱啸虎直言不明白 Personal Agent 能干嘛，也有人断言「从来就没有什么 Personal Agent」。海外把「主动」做成默认产品形态，分歧本身比结论更值得盯。
-
-标签：`Claude Duet` `Anthropic` `主动式智能体` `Personal Agent`
+标签：`决策模型` `Jev` `蚂蚁数科` `中国电信` `StartLux`
 
 相关材料：
-- [对话朱啸虎：不明白Personal Agent能干嘛；5亿ARR 的中国应用将批量涌现](https://oraink.com/public/articles/90065)
-- [绝杀OpenAI！首个Claude Duet上岗，Opus 5.5 24 小时替你打工](https://oraink.com/public/articles/89983)
-- [We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent. ...](https://oraink.com/public/articles/89950)
-- [从来就没有什么Personal Agent](https://oraink.com/public/articles/90210)
+- [Jev 迎来中国挑战者：StartLux 登顶决策模型榜单，还学会了“拿不准再想”](https://oraink.com/public/articles/90287)
+- [中国电信悄悄开源本地29B模型，不仅会决策，还能填空，实测夯！](https://oraink.com/public/articles/90343)
+- [蚂蚁版Jev模型来了！27B版本综合评分第一，Token省90%](https://oraink.com/public/articles/90394)
+- [又一国产决策模型发布：面向企业高频判断任务，23 项开源基测准确率超过微软和 JEV](https://oraink.com/public/articles/90342)
 
-订阅来源：硅星人Pro / 创业邦 / Claude(@claudeai)
+订阅来源：InfoQ 中文 / 袋鼠帝AI客栈 / 智东西 / AI前线
+
+#### 3. K3.1 Pro 摸到前沿的背后，开放权重进入倒计时
+
+月之暗面发布 3 万亿参数的 Kimi K3.1 Pro，支持 100 万上下文，同步推出高速版，代码、3D 创作与金融场景提升明显；Simon Willison 第一时间上手 API，整理出定价与基准成绩，结论是性能达到前沿水平。真正的分量在承诺：11 月 4 日开放全部模型权重。前沿能力与开源权重不再是二选一，头部实验室开始把开放当排期管理，而非姿态展示。
+
+标签：`Kimi` `月之暗面` `开源权重`
+
+相关材料：
+- [Kimi K3.1 Pro：智能前沿，更进一步](https://oraink.com/public/articles/90510)
+- [Introducing Kimi K3.1 Pro](https://oraink.com/public/articles/90491)
+
+订阅来源：月之暗面 Kimi / Simon Willison's Weblog
+
+#### 4. DeepSeek 公开推理账本，全行业定价被锚定
+
+DeepSeek 在 PyTorch Conf 开源生产级推理引擎 DeepInfer，顺手公开了一份罕见的生产账本：单集群日处理 155T tokens、日入约 2200 万美元、利润率约 80%、投资回收期 81 天。核心组件暂未完全开源，但数字本身已给全行业的推理定价立了锚。当单位经济学成为公开信息，闭源 API 的价格叙事需要重新对表，价格战的主场也从模型参数转向运维效率。
+
+标签：`DeepSeek` `DeepInfer` `推理经济学`
+
+相关材料：
+- [AINews\] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback](https://oraink.com/public/articles/90305)
+
+订阅来源：Latent Space
 
 **本卷快讯**
 
-· Character.AI 因商业模式问题破产，字节猫箱百万月活闷声盈利（创业邦）
-· 成都海艺 AI 陪伴两个月流水近百万美元，AI 业务占比 45%（白鲸出海）
-· 人形机器人租赁降温：日租从三万跌到两千，商户难回本（创业邦）
-· 双 11 多家大模型服务商上架 token 套餐，算力生意走向消费端（网易科技）
-· Uber 向全球超 3 万名员工全面部署 ChatGPT Work（OpenAI / OpenAI Blog）
-· Qwen 团队开源 FlashQLA 算子库，线性注意力前后向提速 2-3 倍（InfoQ 中文）
-· MiniMax M3.1 Flash 发布：ALE 榜国产第一，成本约为 Opus 十分之一（十字路口Crossing）
-· 阿里提出 CODA 协议：协同进化下高分智能体反而更脆弱（阿里技术）
-· 柳叶刀子刊：AI 凭人脸照片预测癌症患者死亡风险，未入临床（硅星人Pro）
-· Otter.ai 融 3.2 亿美元，AI 法律创企 Legora 估值达 88 亿美元（Z Potentials / Z Potentials）
-· 外滩年会上经济学家为 AI 投资失败寻对策，警示金融动荡风险（腾讯科技）
-· 岩芯矩阵开源 EdgeRock-4B，单卡长推理吞吐达原模型 6.4 倍（甲子光年）
+· DeepSeek 千亿融资临收官，已启动科创板上市筹备，最快明年上市（腾讯科技 / 极客公园）
+· MiniMax 开源 M3.1 Flash：428B 参数成本降七成，72 小时处理超 100 万亿 Token（MiniMax 稀宇科技 / 魔搭ModelScope社区）
+· 国务院办公厅印发 AI 就业意见：部署 6 方面 18 项任务，坚持就业优先（赛博禅心）
+· 黄仁勋为内存行业站台后，纳指芯片股集体暴跌，机构减持散户抄底（腾讯科技）
+· 亚马逊 CEO 贾西：2026 年约 2200 亿美元资本开支投向 AI，需求仍未满足（a16z）
+· 科大讯飞发布全国产芯片训练的星火 X2.6，云端定价低于 DeepSeek V4.1 Flash（智东西）
+· Anthropic 用 Claude 写 1.8 亿行形式化验证，挖出数百个隐藏多年的漏洞（夕小瑶科技说）
+· 宇树十周年办世界物理 AI 大会，王兴兴称物理 AI 的 GPT 时刻将至（极客公园）
+· OpenAI 官宣 2027 年展示人形机器人样机，GPT-6 Astra 显具身能力（创业邦）
+· Cloudflare 开测后量子地理围栏密钥管理器，2027 年一季度正式上线（The Cloudflare Blog）
+· Jump Trading：多数 GPU 算力仍在群聊私下成交，中型买家融资受挤压（AI Engineer）
+· 田渊栋新公司开源 Flint-40B-A2B，AI 全程参与、4 个月从零造出（机器之心）
 
 ### 今日思考
 
-#### 当挖洞成本趋近于零，两个月的协调披露窗口还守得住吗？
+#### 当推理的单位经济学成为公开信息，闭源 API 的定价权还握在谁手里？
 
-**今日信号：** GPT-5.6 Sol 挖出 PHP 核心双漏洞，多国政府抢在补丁前预防性下线
-
-**灵砚视角：**  
-灵砚视角：真正的变量不是漏洞，而是发现者换成了 AI。攻防时间差被压缩后，「等补丁再行动」第一次输给了「先下线再说」。协调节奏是人定的，AI 挖洞的产能不认这个节奏——预案会比补丁更早成为刚需。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t1)
-
-#### 模型不再是差距来源后，AI 编码的溢价会沉淀在人身上还是流程里？
-
-**今日信号：** Vercel 披露六成部署来自 Agent，Jellyfish 数据显示模型选型只解释 1% 产出
+**今日信号：** DeepSeek 在 PyTorch Conf 开源推理引擎 DeepInfer，公开日入 2200 万美元、81 天回本的生产数据。
 
 **灵砚视角：**  
-灵砚视角：两个数字放在一起，指向同一个方向：价值正从模型层滑向工程组织层。Agent 写掉六成部署，模型好坏却只解释 1% 的产出差异，放大器始终是人。企业的采购逻辑可能要改：追新模型的预算，未必跑得赢投给工程师与流程的钱。
+灵砚视角：这份账本真正开源的不是代码，是成本结构。155T tokens 的日吞吐说明规模即壁垒，约 80% 的利润率说明自研栈的溢价空间。后来者要么接受被锚定的价格，要么在运维效率上再卷一层，价格战的主场正从模型参数转向基础设施。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-24#thought-t1)
+
+#### 人才溢价回落后，实验室的训练安全与权限治理会变松还是变紧？
+
+**今日信号：** 晚点同日刊出田柯宇案还原与抢人退潮两稿，天才的破坏力与溢价回落同时出现。
+
+**灵砚视角：**  
+灵砚视角：两
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-24#thought-t2)
 
 
 ## 2. 网络安全
@@ -183,304 +171,202 @@ Anthropic 开放 Claude Duet 研究预览：由 Opus 5.5 驱动的主动式智�
 
 ### 今日精要
 
-#### 1. PHP2Shell第二天：在野攻击跑赢补丁
+#### 1. PHP2Shell 第三天：攻击早于披露四天，起跑线失守
 
-补丁落地次日，奇安信威胁情报中心交出 PHP2Shell 在野攻击全记录：两个潜伏 14 年的内核漏洞在披露前夕遭信息泄露，规模化利用跑在补丁前面。慢雾测算超五成加密行业域名运行 PHP，奇安信称波及千万级站点，PoC 与利用细节均已公开。厂商通告刷屏，360 把图龙锋 AI 排查免费开放——当攻击不再等补丁，修复窗口本身成了攻击面。
+PHP2Shell 进入第三天，时间坐标被奇安信 CERT 周报改写：黑客在漏洞公开披露前 4 天就发起了利用尝试。公众看到 CVE 的那一刻，攻方已经先跑了四天。长亭、绿盟陆续发布处置手册，多国政府网站此前连夜下线。当在野利用跑在披露前面，以公告为起点的应急时钟整体失真，漏洞情报在披露流程之外的暗渠流转第一次被摆上台面。
 
-标签：`PHP2Shell` `在野利用` `漏洞披露` `Web3`
-
-相关材料：
-- [补丁未至，攻击先行：PHP2Shell 在野攻击全记录](https://oraink.com/public/articles/90051)
-- [PHP 爆出"互联网级"高危漏洞，Web3 的"链下软肋"该怎么补？](https://oraink.com/public/articles/90135)
-- [【已复现可RCE】PHP 远程代码执行漏洞(CVE-2026-109618、CVE-2026-109619)安全风险通告](https://oraink.com/public/articles/90086)
-- [【已复现 RCE】php2shell：PHP Core 远程代码执行漏洞（CVE-2026-109618/109619）](https://oraink.com/public/articles/90162)
-- [【已复现验证】PHP远程代码执行漏洞（CVE-2026-109618/CVE-2026-109619）](https://oraink.com/public/articles/90164)
-- [【安全圈】PHP官方补丁来了！速升这4个版本](https://oraink.com/public/articles/90150)
-- [75%的网站都该警惕了！PHP「php2shell」高危漏洞深度解析与修复指南](https://oraink.com/public/articles/89980)
-- [免费！360开放图龙锋安全体检，帮企业排查PHP漏洞风险](https://oraink.com/public/articles/90154)
-
-订阅来源：奇安信威胁情报中心 / 慢雾科技 / 奇安信CERT / 长亭安全课堂 / 绿盟科技CERT
-
-#### 2. Tor近一成出口被控两月：匿名终点就是明文起点
-
-黑鸟披露 Tor 史上最大规模节点劫持：约 11% 出口中继被提前两个月控制，潜伏期满突然发难，收割流经出口的 SSH 密码与明文邮件，植入 Ebury 后门。发难三天后才被发现，受感染节点随后全部下线，残留风险仍未排除。匿名网络的软肋不在密码学，而在出口处明文流过的每一台机器与每一位运营者。
-
-标签：`Tor` `节点劫持` `Ebury` `匿名网络`
+标签：`PHP2Shell` `在野利用` `漏洞披露` `应急响应`
 
 相关材料：
-- [潜伏两月突然发难：Tor 近10%出口中继被黑客控制](https://oraink.com/public/articles/90196)
+- [PHP2Shell：两个高危漏洞拉响全球安全“警报”](https://oraink.com/public/articles/90345)
+- [【在野利用】PHP Core 远程代码执行漏洞（CVE-2026-109618/109619）](https://oraink.com/public/articles/90455)
+- [PHP 曝两个"满分级"漏洞，多国政府网站连夜下线](https://oraink.com/public/articles/90391)
+- [安全热点周报：黑客在 PHP2Shell 漏洞公开披露前4天就试图利用该漏洞](https://oraink.com/public/articles/90406)
+- [【处置手册】PHP远程代码执行漏洞（CVE-2026-109618/CVE-2026-109619）](https://oraink.com/public/articles/90445)
 
-订阅来源：黑鸟
+订阅来源：数世咨询 / 长亭安全课堂 / 信息安全国家工程研究中心 / 奇安信CERT / 绿盟科技CERT
 
-#### 3. Skill木马攻破多款Agent：审查拦不住二进制
+#### 2. Node2Shell 藏身 Brotli：内置件成新雷区
 
-复旦白泽战队 JADE 发布 SkillTrojan：把恶意代码藏进 Skill 二进制文件，绕过多款主流智能体框架的执行前安全审查，相关漏洞已被 CNNVD 收录，研究案例同步开源。当 Agent 的能力靠技能生态拼装、审查却只扫描文本，攻击者只需要换一种文件格式。技能市场这堂审核课，应用商店十年前就上过一遍。
+PHP2Shell 的补丁还没焐热，代码卫士把 Node.js 捆绑 Brotli 解码器里的严重 RCE 命名为 Node2Shell（CVE-2026-111497），深信服、天融信同日发出通告。这次的爆点不在应用代码，而在位置：雷埋在运行时自带的解压组件里，常规的应用层扫描很难照到这一层。同一周思科 Expressway、GitLab 也接连曝出未认证 RCE，暴雷正从业务层下移到地基件，资产清点与补丁优先级需要跟着重排。
 
-标签：`Agent安全` `SkillTrojan` `复旦白泽` `CNNVD`
-
-相关材料：
-- [Skill Trojan Horse：二进制文件实现隐蔽的恶意代码注入](https://oraink.com/public/articles/90169)
-
-订阅来源：复旦白泽战队
-
-#### 4. ATT&CK v20扩容AI攻击，防御基线跟着重画
-
-MITRE 发布 ATT&CK v20，扩容 AI 攻击、MFA 绕过与工控威胁的技术面，新增 15 项检测策略。全球防御者共用的威胁语言开始系统性收录 AI 战术，AI 攻击从新闻个案变成可按图索骥的常规条目。检测规则跟着框架走的企业，这周多了一批要做的升级。
-
-标签：`ATT&CK` `MITRE` `AI攻击` `威胁情报`
+标签：`Node.js` `Node2Shell` `RCE` `运行时安全`
 
 相关材料：
-- [MITRE ATT&CK v20 重磅更新：AI 攻击、MFA 绕过及工控威胁全面扩展](https://oraink.com/public/articles/90056)
+- [【风险提示】天融信关于Node.js Brotli解码器远程代码执行漏洞(CVE-2026-111497)的风险提示](https://oraink.com/public/articles/90487)
+- [【漏洞通告】Node.js 多个安全漏洞(CVE-2026-105482 / CVE-2026-111497)](https://oraink.com/public/articles/90413)
+- [Node2Shell：Node.js 修复严重的 RCE 漏洞](https://oraink.com/public/articles/90378)
 
-订阅来源：数世咨询
+订阅来源：天融信阿尔法实验室 / 深信服千里目安全实验室 / 代码卫士
+
+#### 3. 400 家金融机构被 AI 全自动攻破，对手不再是人
+
+安全客报道，有黑客组织用 Claude、Grok 等模型搭出攻击智能体，对 400 多家拉美金融机构完成了全自动攻击，从踩点到入侵不再需要人盯。攻方的边际人力成本趋近于零，而多数机构的 SOC 仍按人天排班，攻防的不对称从算力层蔓延到人力层。防御思路需要倒置：不再假设攻击者会累、会犯错、会下班，把基线监测与自动封禁全部前置交给机器。
+
+标签：`AI攻击` `智能体` `金融安全` `攻击自动化`
+
+相关材料：
+- [你的对手不是人了：Claude+Grok组队，400家金融机构被AI全自动攻破](https://oraink.com/public/articles/90245)
+
+订阅来源：安全客
+
+#### 4. 荷兰情报局蹭 GRU 后门：库什纳手机牵出 20 亿美元
+
+天御攻防实验室与黑鸟各自还原了 Matthew Cole 新书披露的链条：俄罗斯 GRU 入侵库什纳的 iPhone X，荷兰国防情报与安全局随后接管这条植入链实施监控，牵出横跨三国、总额超 20 亿美元的秘密资金网。情报机构把对手的后门当成自己的入口，盟友核心圈的手机同样在猎场之内。库什纳方面否认指控，爆料尚待证实，目前的一切都停在那 20 亿美元上。
+
+标签：`GRU` `荷兰AIVD` `库什纳` `情报战`
+
+相关材料：
+- [俄罗斯GRU黑客入侵特朗普女婿手机，荷兰国防情报与安全局随后获得访问权限](https://oraink.com/public/articles/90266)
+- [一部被监听的iPhoneX，牵出横跨三国的二十亿美元秘密资金网](https://oraink.com/public/articles/90486)
+
+订阅来源：天御攻防实验室 / 黑鸟
 
 **本卷快讯**
 
-· GitLab 修复满分未认证 RCE，波及 12 年来所有版本，自托管速升（代码卫士）
-· LiteLLM 1.107.0 遭供应链投毒，植入窃密器与后门，官方已移除（代码卫士）
-· Conduent 泄露 6220 万用户数据，5.3 亿元和解待法院批准（互联网安全内参）
-· 华盛顿邮报称 CIA 将中国 AI、半导体企业列为重点情报目标（天御攻防实验室）
-· 联合国 AI 科学小组首发简报：失控风险已显现，现有防护不够用（信息安全国家工程研究中心）
-· 网信办清朗行动整治短视频虚假人设，推动内容回归真实（中国信息安全）
-· 176 号令后区域安服商承压，「平台+本地」陪跑成转型选项（安全419）
-· 港科大 RedHerring 用诱饵漏洞消耗 AI 攻击资源，掩护真漏洞（安全研究GoSSIP）
-· 安全牛披露 Claude Agent 四类越界案例，权限管控别靠自觉（安全牛）
-· 反诈中心点名 27 款涉诈 App，艾米聊、飞舟在列，快卸载（中国信息安全）
-· Meta 因数据误导行为面临 250 亿美元天价司法罚单（安全牛）
-· 威胁猎人开源黑灰产黑话词典 3.0，750 条黑话免费共享（永安在线情报平台）
+· 思科修复 Expressway 严重漏洞 CVE-2026-76466，评分 9.8，可被利用拿 root 权限。（代码卫士）
+· 深信服通告 GitLab 未认证 RCE 漏洞 CVE-2026-110264，已给出修复方案与检测支持。（深信服千里目安全实验室）
+· 慢雾披露 GitHub 上伪装成 Web3 面试题的 sol-live 项目暗藏窃密后门，已发预警。（慢雾科技）
+· 白泽披露俄背景 APT 组织 Swallowtail 定向攻击北约政府军工，C2 基础设施仍在线。（白泽安全实验室）
+· 《反网络暴力法（征求意见稿）》公布制度设计，网暴治理走向专门立法。（中国信息安全）
+· OPPO OSRC 发布 AI 辅助挖洞提交与测试规范，明确违规白帽处罚，即日生效。（OPPO安全应急响应中心）
+· 复旦 MATE 用可编辑自然语言规则审计 GUI 智能体轨迹，准确率较现有方法升约 20%。（复旦白泽战队）
+· 讯飞发布全国产算力训练的端云一体星火 X2.6，让敏感数据留在端侧。（中国信息安全）
+· Yakit 新增 eMudhra 证书信任测试：该 CA 私钥脆弱，弱到私钥可以是 4。（Yak Project）
+· 日本汉堡王 1118 万条客户信息遭泄露，火绒周报同步提示多起泄露事件。（火绒安全实验室）
+· 智能体犯错谁来担责：中国信息安全连发两文，提出三元责任分配模型。（中国信息安全）
+· KCon 2026 定档 11 月 1 日北京开幕，主打可落地的 AI 攻防议题。（嘶吼专业版）
 
 ### 今日思考
 
-#### 当在野利用总跑赢补丁，协调披露的时间差还是安全余量吗？
+#### 攻方的漏洞情报是从哪条暗渠来的——私下流转、独立发现，还是披露流程本身漏了？
 
-**今日信号：** 奇安信威胁情报中心今天交出 PHP2Shell 在野攻击全记录：补丁发布前已有规模化利用，披露前夕还发生信息泄露。
-
-**灵砚视角：**  
-灵砚视角：这起事件最该记住的不是 CVSS 9.2，而是时间线：攻击先于补丁抵达战场。披露前泄密、PoC 全公开、通告刷屏，说明漏洞情报的分发速度已超过修复速度。对 PHP 这类存量资产，防御方或许该把零日假设当成默认姿态。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t1)
-
-#### Agent 技能生态在重演应用商店的审核战争，最后一道门该设在入口审查还是运行时隔离？
-
-**今日信号：** 复旦白泽 SkillTrojan 把恶意代码藏进 Skill 二进制，多款主流 Agent 框架的执行前审查被整体绕过。
+**今日信号：** 奇安信 CERT 周报显示，PHP2Shell 在公开披露前 4 天就出现利用尝试。
 
 **灵砚视角：**  
-灵砚视角：技能市场拼能力、框架只审文本，等于把移动时代的旧坑原样搬进 Agent。执行隔离正在成为生意，但入口审核与运行时沙箱缺一不可，只补一半，木马永远走另一半。
+灵砚视角：如果利用早于披露成为常态，应急响应的第一秒，其实在中场哨响前就已输掉。企业的威胁狩猎时钟必须从 CVE 发布前移到行为异常出现之时，补丁管理只是这场赛跑的最后一棒。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-24#thought-t1)
+
+#### 当攻击侧完成无人化，按人天排班的 SOC 还剩多少存在意义？
+
+**今日信号：** 安全客报道 Claude 与 Grok 搭建的智能体对 400 多家拉美金融机构完成全自动攻击。
+
+**灵砚视角：**  
+灵砚视角：攻防的人力成本曲线第一次彻底分叉。防守方无法靠对称堆人应对，只能把身份基线、权限收紧与自动封禁前移到攻击链上游，让机器对机器成为响应的默认单元。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-24#thought-t2)
 
 
 ## 3. 前沿科技
 
 ### 前沿科技
 
-**关键词：** AI制药 / 创业融资 / 机器人
+**关键词：** openai / google-cloud / 模型分销
 
 ### 今日精要
 
-#### 1. Kevin Weil 入局制药：AI 创业转向科学纵深
+#### 1. OpenAI半年集齐三大云，模型独家绑定时代终结
 
-Kevin Weil 等人联合创立 Warp Sciences，把 AI 和机器人用于新药研发，A 轮即融 2.15 亿美元。一家新公司首轮融资就拿到这个量级，说明资本对「AI+机器人+科学」的组合已有明确押注。通用模型的军备竞赛之外，AI 正沿着垂直纵深寻找下一个回报周期，制药是眼下注码最重的那个场景。
+OpenAI 与 Google Cloud 官宣合作，GPT 系列模型与 Codex 正式上线谷歌云。至此，OpenAI 半年内集齐美国三大云厂商，与 Azure 的独家绑定时代落幕。失去排他筹码的模型公司换来更大触达面，云厂商则成为大模型的核心分销渠道；当各家模型摆上同一排货架，竞争重心开始从模型本身移向云上的配套基建与数据层。
 
-标签：`AI制药` `创业融资` `机器人` `AI for Science`
+标签：`openai` `google-cloud` `模型分销` `azure`
 
 相关材料：
-- [💥 Introducing Warp Sciences, a new company applying AI and robotics to help the world develop new m...](https://oraink.com/public/articles/90204)
+- [死对头牵手！GPT住进Gemini家，OpenAI半年集齐三大云](https://oraink.com/public/articles/90252)
 
-订阅来源：Kevin Weil 🇺🇸(@kevinweil)
+订阅来源：量子位
+
+#### 2. 京东亮出4.2米机器人：产业AI竞争转向供应链
+
+工博会上，京东工业亮出清卓动力 4.2 米巨型机器人 Neo1，引来马斯克围观，同场还展出多款工业 AI 产品与合作。几乎同一时间，英伟达扩充 Cosmos 开发工具，覆盖训练数据生成、世界模型训练到部署前测试，已有企业把物理 AI 用于自动驾驶、机器人和工厂运营。演示期结束后，产业 AI 比拼的变成了谁握有场景、数据与供应链。
+
+标签：`京东工业` `物理AI` `英伟达` `工业机器人`
+
+相关材料：
+- [4.2米擎天柱引马斯克围观！京东工业的AI野心已经藏不住了](https://oraink.com/public/articles/90251)
+- [From autonomous vehicles to smarter factories, companies are putting physical AI to work. We’ve add...](https://oraink.com/public/articles/90493)
+
+订阅来源：量子位 / NVIDIA AI(@NVIDIAAI)
 
 **本卷快讯**
 
-· You.com 发布 Inference Router：企业级多模型推理，零数据留存（Richard Socher）
-· Sandra Matz 在 TED 演讲：算法正收窄个人品味与探索空间（TED）
-· Erum Mariam 的 TED 演讲：「游戏实验室」用玩耍疗愈难民儿童（TED）
-· UBC 心理学教授谈精神病态：特质人群占比可观，且极难改变（The Diary Of A CEO Clips）
+· 特赞范凌：企业AI需自建两个世界模型，走向主权智能（量子位）
+· 港中文 DuoMatching 方案：少步视频生成提速不牺牲画质（量子位）
+· Van Jones：AI 的危险不在技术，而在被抛下的社区（TED）
+· Jen Loving：提前干预可预防无家可归，Right at Home 见效（TED）
+· 泽连斯基受访：特朗普可轻易促成俄乌和谈，不清楚为何没做（The Diary Of A CEO Clips）
+· 量子位 MEET2027 大会定档12月北京，年度AI榜单征集启动（量子位）
 
 ### 今日思考
 
-#### 通用模型竞赛之外，「AI for Science」会不会成为资本和人才的下一个聚集地？
+#### 模型在每朵云都买得到之后，云厂商的差异化要靠什么建立？
 
-**今日信号：** Kevin Weil 宣布创立 Warp Sciences，用 AI 和机器人做新药研发，A 轮即融 2.15 亿美元。
+**今日信号：** OpenAI 与谷歌云官宣合作，GPT 与 Codex 上线 Google Cloud，半年集齐三大云
 
 **灵砚视角：**  
-灵砚视角：A 轮 2.15 亿美元买的不是一个产品，是一个判断：AI 的下一个回报周期可能藏在实验室里。机器人补物理实验的手，模型补假设生成的脑，制药恰好两头都要。接下来值得盯的，是同类重注会不会接连出现。
+灵砚视角：分销渠道全通，意味着模型层加速同质，云的护城河必须下沉到智能体基建、数据层与主权合规——本周谷歌的智能体计算引擎、微软的主权云抢的都是这个位置。上架只是入场券，留存靠配套。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t1)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-24#thought-t1)
+
+#### 物理 AI 这轮落地，主导权会落在场景方还是工具方手里？
+
+**今日信号：** 京东工博会展出 4.2 米机器人 Neo1，英伟达更新 Cosmos 物理 AI 工具链
+
+**灵砚视角：**  
+灵砚视角：机器人负责抢眼球，真正值得注意的是分工——京东把供应链与场景数据当产业 AI 入口，英伟达把训练到部署的工具链标准化。场景方握数据，工具方定节奏，通用模型公司反而不在主位。落地成色如何，看年底前的复购与工单。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-24#thought-t2)
 
 
-## 4. 软件与开发者
+## 4. 消费电子
 
-### 软件与开发者
+### 消费电子
 
-**关键词：** AI基建 / 云厂商 / 中间件
+**关键词：** iPhone Duo / 折叠屏 / 高德地图
 
 ### 今日精要
 
-#### 1. 腾讯字节谷歌齐出手：AI 中间件进入平台接管期
+#### 1. 微信过渡、高德抢跑：iPhone Duo 适配开始分层
 
-腾讯把升级后的元宝搜索以 API 形式开放，直接喊话开发者「别再自建搜索」；同一天，火山引擎发布面向 Agent 的云数据库 Lakebase，打通库与湖；谷歌 API 网关上线流式预览，不改规范即可承载 AI 负载。搜索、数据、接口三块自建件，一天之内都有了即开即用版。本周阿里云刚披露八成新增实例由 Agent 创建，需求侧已投票，供给侧跟上，开发者的自建清单一天划掉三项。
+iPhone Duo 的应用适配这一周走出两种节奏：高德官宣全面适配，并推出全球首个针对可折叠 iPhone 的分屏导航；爱范儿实测微信 8.0.80 仍属过渡适配，核心痛点已解决、交互细节尚未完全跟上。一边把新形态当首发营销位抢占，一边按痛点优先级小步快走，头部应用的投入差异第一次摆上台面——硬件换形态之后，第二战场正在应用层打开。
 
-标签：`AI基建` `云厂商` `中间件`
-
-相关材料：
-- [开发者别再自建搜索了：腾讯把「AI搜索」开放了！](https://oraink.com/public/articles/90025)
-- [火山引擎云数据库 Lakebase 正式发布：让 Agent 高效访问库、湖数据](https://oraink.com/public/articles/90102)
-- [Streaming comes to API Gateway: real-time and AI-ready APIs, without changing your spec](https://oraink.com/public/articles/90139)
-
-订阅来源：CSDN / 字节跳动技术团队 / Google Developers Blog
-
-#### 2. DeepSeek 悄悄上新 Flash：轻量型号开始收思考税
-
-DeepSeek 无预告上线 V4.1-Flash-1017，两篇独立实测结论一致：一句话能生成可玩的小游戏，能力确实上来了；但思考环节会吃掉约九成 token 预算，长输出动辄截断。另一份多场景测评给出同样纠结的画像：较旧版有提升、性价比不错，复杂任务仍落后 GPT、Claude 一档。便宜和好用之间，隔着一笔没印在价目表上的思考开销。无预告上新成常态，评测只能追着版本号跑。
-
-标签：`DeepSeek` `模型评测` `token成本`
+标签：`iPhone Duo` `折叠屏` `高德地图` `微信` `应用适配`
 
 相关材料：
-- [DeepSeek 又偷偷升级了：我实测了 V4.1-Flash-1017，一句话生成可玩游戏，但有个坑会吃掉你 90% 的预算](https://oraink.com/public/articles/90048)
-- [DeepSeek 新版还是难评！](https://oraink.com/public/articles/90006)
+- [实测 iPhone Duo 微信适配版：适配好了吗，体验怎么样？](https://oraink.com/public/articles/90332)
+- [高德官宣全面适配苹果 iPhone Duo](https://oraink.com/public/articles/90240)
 
-订阅来源：掘金本周最热
-
-#### 3. 「一个人干三个人的活」：Claude Code 改写裁员经济账
-
-西班牙系统管理员 Nash 发帖：公司裁掉两名年薪 50 万+ 的工程师，花两小时教他用 Claude Code，年薪约 17 万的他就此接下三人的活，这笔公开的账在社区引爆讨论。同日的另一篇分享里，复旦彭鑫谈软件工程课改：AI 抽走了成长的梯子，教学须转向工程核心能力。出口在裁员，入口在改课，工程师的成长路径两头被重写——个案未必可复制，但定价逻辑已经松动。
-
-标签：`Claude-Code` `AI就业` `软件工程教育`
-
-相关材料：
-- [AI抽走了成长的梯子，软件工程课该怎么教？](https://oraink.com/public/articles/90123)
-- [公司裁掉两个年薪50+万元工程师，花2小时教他用Claude Code「接盘」：“我年薪17万，一个人干三个人的活！”](https://oraink.com/public/articles/90023)
-
-订阅来源：CodeWisdom / CSDN
+订阅来源：爱范儿 / 少数派
 
 **本卷快讯**
 
-· 词元星火发 Spark-X2.6-4B 编程模型，Anthropic 推 Claude Duet 主动 Agent（机器之心SOTA模型）
-· JetBrains 发布 Air Governance：组织级管理 AI Agent 权限与开销（The JetBrains Blog）
-· 谷歌 Project Chrysalis 智能体平台实测：自演进 Agent 1.8 秒修复生产中断（Google Developers Blog）
-· 开发者抓包 72 小时辟谣：手机没偷听，精准推荐另有技术（掘金本周最热）
-· 开源 Laya 对标闭源 Jev：单问 33 毫秒，快 6-7 倍靠微调（腾讯云开发者）
-· freeCodeCamp 推免费 MCP 安全课：覆盖 OWASP Top 10，可获证书（freeCodeCamp.org）
-· 阿里云实践：大模型安全检测从单点识别走向全流程体系（网络安全回收站）
-· Spring Batch 发 6.1.0-RC1 与 6.0.6：API 重构加性能优化（Spring Blog）
-· Vercel Pro 免费域名再添 8 个顶级域，合格后缀增至 16 个（Vercel News）
-· JS 周刊关注：TypeScript 的 Rust 移植版最高提速 8 倍（印记中文）
-· MiniMax H3 可本地部署：5090 加 ComfyUI 完整教程出炉（掘金本周最热）
-· 1024 程序员日深圳专场 22-24 日举办，聚焦大模型到端侧 AI 实战（CSDN）
+· 苹果 10 月非公开新品活动爆料：触屏 MacBook、新款 iPad mini 在列（少数派）
+· 比亚迪称 L3 有望 2028 年落地，为智驾商业化再定时间表（爱范儿）
+· 乐奇彩显 AI 眼镜意外曝光，正式发布前已先露面（爱范儿）
+· 笔记侠拆解 AI 创业两大错觉：时代红利≠护城河、高估值≠成功（笔记侠）
+· 孙灿谈企业 AI 落地：技术到位了，管理还停在工业时代（笔记侠）
+· TVScope 上架：局域网内即可完成 Apple TV 录屏与截图（少数派）
+· 散步 App Mangata 复盘迭代：定位探索工具，不做修图分享（少数派）
 
 ### 今日思考
 
-#### 当经验可以靠两小时培训和一款工具补位，企业还会为资深付溢价吗？
+#### 新形态终端上，App 适配投入的差异会不会成为下一轮用户留存的分水岭？
 
-**今日信号：** 公司裁掉两名年薪 50 万+ 工程师，花 2 小时教年薪 17 万的管理员用 Claude Code 接盘三人工作量
-
-**灵砚视角：**  
-灵砚视角：这是当事人的单方陈述，细节无从复核，传播价值大于实证价值。但它能火，说明读者默认这套账算得通。真正的信号不是裁了几个人，而是裁员决策里第一次出现了「AI 可补位」这个默认项。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t1)
-
-#### 地基被平台预制后，开发者的护城河应该建在哪一层？
-
-**今日信号：** 腾讯开元宝搜索 API、字节发 Lakebase、谷歌网关上流式，三朵云一天内补齐 AI 中间件
+**今日信号：** 高德推全球首个可折叠 iPhone 分屏导航，微信 8.0.80 仍为过渡适配
 
 **灵砚视角：**  
-灵砚视角：本周早些时候，阿里云披露八成新增数据库实例由 Agent 创建，那是需求侧投票；今天三家同天把搜索、库、网关做成即开即用，是供给侧跟进。自建正从能力证明变成成本负担，但平台化的另一面是新绑定。
+灵砚视角：高德抢的是「首个」这个位置，微信守的是体验底线，节奏不同但都在算同一笔账。值得盯的是分屏导航这类平台级特性会不会成为折叠屏上的默认期待，就像当年大屏化曾重排过一次应用座次。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t2)
-
-
-## 5. 云计算与企业服务
-
-### 云计算与企业服务
-
-**关键词：** 谷歌云 / Agent Compute Engine / 智能体基建
-
-### 今日精要
-
-#### 1. 谷歌上线智能体计算引擎：云架构开始换主角
-
-谷歌发布 Agent Compute Engine，为智能体时代重造计算底座：专用算力、安全架构、治理内建，官方直言传统计算架构已不敷使用。同一波更新里，治理能力跨环境扩展，Knowledge Catalog 的自学习上下文进入预览，智能体的知识不再靠人工维护。微软同日发文，谈云原生基础如何随智能体演进。两大云不约而同把智能体立为架构的第一约束，工作负载的主角正在换人。
-
-标签：`谷歌云` `Agent Compute Engine` `智能体基建`
-
-相关材料：
-- [Introducing Agent Compute Engine and expanded agent governance](https://oraink.com/public/articles/90134)
-- [Inside Agent Compute Engine: Building the compute foundation for the agentic era](https://oraink.com/public/articles/90133)
-- [Introducing new self-learning context enrichment in Knowledge Catalog](https://oraink.com/public/articles/90160)
-- [Evolving the cloud-native foundation for the next generation of AI](https://oraink.com/public/articles/89966)
-
-订阅来源：Google Cloud Blog / Microsoft Azure Blog
-
-#### 2. Claude 部署选项扩容，谷歌云把对手模型当卖点
-
-继 OpenAI 三模型上架之后，谷歌云今天把 Anthropic 管理的 Claude 部署选项做成正式可用，新增两种部署方式供企业选择。对手模型接连进入自家货架，谷歌云的卖点正从自家模型转向底座本身：当模型在哪都能跑，竞争回到算力、数据与治理层。
-
-标签：`谷歌云` `Claude` `Anthropic` `模型托管`
-
-相关材料：
-- [Expanding Claude availability and deployment choice on Google Cloud](https://oraink.com/public/articles/90220)
-
-订阅来源：Google Cloud Blog
-
-#### 3. 连 HSM 都开源：微软把基建开放当武器
-
-OCP 全球峰会上，微软联合多家机构推出开源集成 HSM 项目 Project Tessera，直面 AI 与量子时代的密钥安全；同一波还开放新一代芯片、网络、电力与冷却规范，并详解第三代推理加速器 Maia 300。三天前谷歌刚开源 NPU，开放正从模型层卷进机房，成为超大规模厂商的竞争姿势。
-
-标签：`微软` `OCP` `开源硬件` `Project Tessera`
-
-相关材料：
-- [Infrastructure for the frontier era: Scaling intelligence through open industry collaboration](https://oraink.com/public/articles/89969)
-- [Advancing hardware security with open-source Integrated HSM technology](https://oraink.com/public/articles/89968)
-- [Deep dive into Azure Maia 300 architecture](https://oraink.com/public/articles/89970)
-
-订阅来源：Microsoft Azure Blog
-
-#### 4. 分层控制方案背后，微软把主权做成配置项
-
-微软给主权云做阶段性更新：分层控制方案让企业按工作负载选择技术控制权，另与英特尔共建从边缘到云的主权 AI 共享底座。两天前谷歌刚集齐主权 AI 产品目录，主权正从政治承诺细化成可采购的工程配置，两大云开始在同一赛道比交付。
-
-标签：`微软` `主权云` `英特尔` `主权 AI`
-
-相关材料：
-- [Advancing digital sovereignty with greater control and choice](https://oraink.com/public/articles/90011)
-- [Designing for sovereign AI: A shared foundation from edge to cloud](https://oraink.com/public/articles/89964)
-
-订阅来源：Microsoft Azure Blog
-
-**本卷快讯**
-
-· 微软联手英伟达发布开放权重模型风险白皮书，给企业部署开源模型定分级管控框架（Microsoft Azure Blog）
-· AWS 用 AgentCore 做医疗编码：规则优先，AI 兜底（AWS Architecture Blog）
-· 阿里公开工单分诊智能体实践，AgentScope Java 跑通开发到协作（阿里巴巴中间件）
-· 微软获评 2026 Gartner 服务器虚拟化领导者，多环境一致性成核心需求（Microsoft Azure Blog）
-
-### 今日思考
-
-#### 智能体会不会像当年的容器一样，成为新的基础部署单元？
-
-**今日信号：** 谷歌为智能体单开计算层，微软同日发文谈云原生为智能体演进
-
-**灵砚视角：**  
-灵砚视角：智能体正在争取部署单元的地位，类似容器之于虚拟机。差别在于它自主发起调用、长时驻留、跨系统穿行，为人类请求设计的配额、隔离与计费未必扛得住。谷歌抢先立框架，微软同日表态，赌注是未来云上的大头算力由智能体消耗。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t1)
-
-#### 硬件都开放之后，云厂商的锁定会转移到哪一层？
-
-**今日信号：** 微软在 OCP 开源 HSM、公开基建规范，谷歌三天前刚开源 NPU
-
-**灵砚视角：**  
-灵砚视角：开放规范压低迁移成本，锁定正从硬件层上移到软件栈与运营层。微软说开放是为了让 AI 更普及可负担，但选在谷歌开源 NPU 之后跟进，节奏本身就是竞争信号。下一个看点，是谁的开放规范先长成事实标准。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-23#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-10-24#thought-t1)
 
 ## 跨分类洞察
 
 ### 共同线索：这些更新正在汇成同一条阅读主线
 
-AI与智能化、网络安全、前沿科技、软件与开发者 看似分散，但对这位用户而言都进入了同一天的阅读预算。分组先保留每个方向的独立判断，再用顶部总题把最相关的前两条主线合并成今天的个人日报入口。
+AI与智能化、网络安全、前沿科技、消费电子 看似分散，但对这位用户而言都进入了同一天的阅读预算。分组先保留每个方向的独立判断，再用顶部总题把最相关的前两条主线合并成今天的个人日报入口。
 
-> 今日 44 篇更新 → 16 条信号 + 44 条快讯，其余已替你读过
+> 今日 26 篇更新 → 11 条信号 + 37 条快讯，其余已替你读过
 
 ---
 
