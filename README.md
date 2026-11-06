@@ -14,45 +14,48 @@
 
 ## 今日日报
 
-> 本期归档文件：[daily/2026/11/2026-11-05.md](daily/2026/11/2026-11-05.md)
+> 本期归档文件：[daily/2026/11/2026-11-06.md](daily/2026/11/2026-11-06.md)
 
 <!-- latest daily content starts -->
 
-# 腾讯混元发布computer-use能力，智能体从云端伸向手机，安全事件同步升温
+# Anthropic 冲刺 IPO，智能体基建与课堂同步铺开，AI 竞逐进入工程期
 
-> 今天四个版面罕见地同频：腾讯混元的新模型学会操作电脑，云上的智能体与AlloyDB一同出现，苹果、阿里千问与AI手机同场，AI能力正沿模型、云、终端三层铺开。安全版面是另一面注脚：安全事件、加密平台与社会工程同现，能力铺得越快，攻击面也跟着变宽。
+> AI 的重心正从模型层下沉：Anthropic 的 IPO 动向牵动 AI 股情绪，Claude Code 与智能体基础设施伸进开发者工具链和企业底座，Gemini 把场景铺进 K12 教育；另一边，欧洲在为工控与物联网安全补课。资本、工具、场景与安全四条线，今天都有实质落点。
 
 **灵砚日报 · ORAINK DIGEST**  
-2026-11-05 · 日报 · Vol. 425
+2026-11-06 · 日报 · Vol. 426
 
-- 今日处理文章：545
-- 主精选条目：14
-- 预计阅读：5 分钟
-- 今日主线：智能体 / 模型发布 / AI手机 / 云基础设施 / 社会工程
+- 今日处理文章：635
+- 主精选条目：17
+- 预计阅读：6 分钟
+- 今日主线：AI资本化 / 智能体基建 / 开发者工具 / 教育落地 / 工控安全
 
 ## 速览
 
-- [币安63亿美元失窃：私钥无恙，防线倒在招聘桌](#1-币安63亿美元失窃私钥无恙防线倒在招聘桌)
-- [火绒起底GitHub投毒：5.6万URL，热度即诱饵](#2-火绒起底github投毒56万url热度即诱饵)
-- [「一句『hi』触发中转站广告」：越狱包暗藏持久化操控](#3-一句hi触发中转站广告越狱包暗藏持久化操控)
-- [362款App可拼出接管链：单应用审计出了盲区](#4-362款app可拼出接管链单应用审计出了盲区)
-- [混元 Hy4 首次看图操作电脑，补上智能体短板](#1-混元-hy4-首次看图操作电脑补上智能体短板)
-- [月烧 1 万到省九成：Revolut 把 AI 编程搬回机房](#2-月烧-1-万到省九成revolut-把-ai-编程搬回机房)
-- [Anthropic 自研 Scion：AI 代码压垮 Git](#3-anthropic-自研-scionai-代码压垮-git)
-- [Android 工具链开放成 Agent 接口，IDE 让位](#4-android-工具链开放成-agent-接口ide-让位)
-- [微软判定分层云过时，谷歌为智能体把数据库缩到零](#1-微软判定分层云过时谷歌为智能体把数据库缩到零)
-- [谷歌把安全产品线押上智能体：防御开始按机器速度设计](#2-谷歌把安全产品线押上智能体防御开始按机器速度设计)
-- [Apple 智能国行开测：千问接棒，Siri 退成门面](#1-apple-智能国行开测千问接棒siri-退成门面)
-- [Claude 拒抄游戏，腾讯用复刻王者荣耀展示 Hy4](#2-claude-拒抄游戏腾讯用复刻王者荣耀展示-hy4)
-- [FlashProve 开源：模型真假不再只靠体感判断](#3-flashprove-开源模型真假不再只靠体感判断)
-- [东风奕派换下华为乾崑，智驾联名救不了销量](#4-东风奕派换下华为乾崑智驾联名救不了销量)
+- [攻击者烧完超市烧血库：老旧制冷控制器成了欧洲软肋](#1-攻击者烧完超市烧血库老旧制冷控制器成了欧洲软肋)
+- [木马不再偷凭证：Iris 直接借用本地 AI 当大脑](#2-木马不再偷凭证iris-直接借用本地-ai-当大脑)
+- [白宫 IP 被当代理出售背后：流氓 SDK 静默出租内网](#3-白宫-ip-被当代理出售背后流氓-sdk-静默出租内网)
+- [OpenAI 漏洞挖掘流水线跑通，挖洞从手艺变成算力](#4-openai-漏洞挖掘流水线跑通挖洞从手艺变成算力)
+- [Anthropic 两万亿估值预期落空，AI 股迎来清算日](#1-anthropic-两万亿估值预期落空ai-股迎来清算日)
+- [前 20 名开源模型 18 个是 MoE，Dense 基本出局](#2-前-20-名开源模型-18-个是-moedense-基本出局)
+- [李飞飞团队上线 Frameboy：世界模型从生成走向可玩](#3-李飞飞团队上线-frameboy世界模型从生成走向可玩)
+- [Trajectory 拿 6000 万背后：AI 护城河转向生产数据](#4-trajectory-拿-6000-万背后ai-护城河转向生产数据)
+- [Anthropic 两周失三将，IPO 前人才防线松动](#1-anthropic-两周失三将ipo-前人才防线松动)
+- [GitHub 重构存储层背后，智能体成了第一约束](#2-github-重构存储层背后智能体成了第一约束)
+- [JetBrains 全线内置 Air：IDE 转岗智能体宿主](#3-jetbrains-全线内置-airide-转岗智能体宿主)
+- [DeepSeek 新架构把 Agent 调度权收归系统](#4-deepseek-新架构把-agent-调度权收归系统)
+- [谷歌捐三个项目给 CNCF：智能体底座走向中立](#1-谷歌捐三个项目给-cncf智能体底座走向中立)
+- [BigQuery 吞下语义聚合，外部分析管道退场](#2-bigquery-吞下语义聚合外部分析管道退场)
+- [谷歌实测 Agent 技能：通用增益有限，补短板涨 5%](#3-谷歌实测-agent-技能通用增益有限补短板涨-5)
+- [Google 借 Chromebook 垄断强推 Gemini，学区选择名存实亡](#1-google-借-chromebook-垄断强推-gemini学区选择名存实亡)
+- [MacBook Pro 首次触屏，苹果多年的『不』开始松动](#2-macbook-pro-首次触屏苹果多年的不开始松动)
 
 ## 本期概览
 
-- 候选文章：约 28 篇
-- 公开覆盖原文：28 篇
-- 候选订阅来源：爱范儿 / 掘金本周最热 / Microsoft Azure Blog / 安全客 / Vercel News / CSDN / meng shao(@shao__meng) / 少数派
-- 公开阅读入口：https://oraink.com/public/daily/2026-11-05/
+- 候选文章：约 41 篇
+- 公开覆盖原文：41 篇
+- 候选订阅来源：掘金本周最热 / meng shao(@shao__meng) / AI Breakfast(@AiBreakfast) / 安全客 / Gary Marcus(@GaryMarcus) / 安全威胁情报 / 天御攻防实验室 / The JetBrains Blog
+- 公开阅读入口：https://oraink.com/public/daily/2026-11-06/
 
 ## 本期如何生成
 
@@ -61,349 +64,447 @@
 ## 今日目录
 
 1. 网络安全：网络安全 — 精要 4 条 / 思考 2 个
-2. 软件与开发者：软件与开发者 — 精要 4 条 / 思考 2 个
-3. 云计算与企业服务：云计算与企业服务 — 精要 2 条 / 思考 1 个
-4. 消费电子：消费电子 — 精要 4 条 / 思考 2 个
+2. 前沿科技：前沿科技 — 精要 4 条 / 思考 2 个
+3. 软件与开发者：软件与开发者 — 精要 4 条 / 思考 2 个
+4. 云计算与企业服务：云计算与企业服务 — 精要 3 条 / 思考 2 个
+5. 消费电子：消费电子 — 精要 2 条 / 思考 2 个
 
 ## 今日主线
 
-- 智能体
-- 模型发布
-- AI手机
-- 云基础设施
-- 社会工程
+- AI资本化
+- 智能体基建
+- 开发者工具
+- 教育落地
+- 工控安全
 
 ## 1. 网络安全
 
 ### 网络安全
 
-**关键词：** 安全事件 / 加密平台 / 社会工程
+**关键词：** 工控安全 / 物联网 / 欧洲
 
 ### 今日精要
 
-#### 1. 币安63亿美元失窃：私钥无恙，防线倒在招聘桌
+#### 1. 攻击者烧完超市烧血库：老旧制冷控制器成了欧洲软肋
 
-币安披露持续五个月的定向攻击：约 63.4 亿美元资产失窃，28.5 亿美元已冻结。入口不是私钥泄露，而是一场假招聘：Lazarus 借面试诱使工程师运行恶意代码，木马化的 pyenv 潜伏内网月余，横移到钱包基础设施，内部 AI 权限也被滥用。同期美国 OFAC 制裁朝鲜海外 IT 人员网络的 10 名个人与 1 个实体。招聘桌与开发工具成了国家级攻击者的标准入口，控制面安全正取代私钥安全成为行业考题。
+欧洲冷柜攻击进入第二个月：法、瑞典等 6 国超市的联网冷柜被远程调至 50℃，生鲜损失惨重，根源是未升级的丹佛斯制冷控制器；随后法国血液机构 3 个站点的血浆冷库也被篡改储存温度，因处置及时未造成损失，入口在设备服务商系统。攻击从零售货架蔓延到血浆储备，每一台联网制冷设备都成了可复制的靶点，而没有人说得清下一台在哪。
 
-标签：`安全事件` `加密平台` `社会工程` `朝鲜APT`
-
-相关材料：
-- [币安丢了63亿美元，问题出在一台工程师的笔记本上](https://oraink.com/public/articles/95205)
-- [63.4亿美元加密资产遭窃！Binance披露攻击内幕：黑客利用假招聘面试和AI工具渗透内部系统](https://oraink.com/public/articles/95343)
-- [美国 OFAC 制裁朝鲜 IT 人员网络相关人员与实体](https://oraink.com/public/articles/95421)
-- [因虚假工作面试邀约，币安被盗63亿美元密币](https://oraink.com/public/articles/95377)
-- [【安全圈】面试题下毒pyenv！朝鲜黑客假借招聘攻破币安内网](https://oraink.com/public/articles/95457)
-
-订阅来源：安全客 / 看雪学院 / 慢雾科技 / 代码卫士 / 安全圈
-
-#### 2. 火绒起底GitHub投毒：5.6万URL，热度即诱饵
-
-火绒安全实验室披露一条自 2025 年蔓延至今的 GitHub 批量投毒链：截至今年 10 月，关联恶意 URL 已超 5.6 万条，攻击者批量注册仓库、伪装成热门 AI 与效率工具诱导下载，载荷带窃密能力，火绒称全攻击链已可检测拦截。本周 LiteLLM 刚被投毒，今天又见批量仓库做局，攻击者不必挑选目标，开源生态的信任外观本身就被当成了分发渠道。
-
-标签：`供应链安全` `开源生态` `威胁情报`
+标签：`工控安全` `物联网` `欧洲` `关键基础设施`
 
 相关材料：
-- [GitHub投毒暗流：上万恶意URL肆意扩散 警惕批量仓库投毒](https://oraink.com/public/articles/95364)
+- [有人把欧洲超市的冷柜调到了50℃，这是第二个月了](https://oraink.com/public/articles/95768)
+- [继欧洲超市冷柜之后，法国血库遭到黑客攻击](https://oraink.com/public/articles/96028)
 
-订阅来源：火绒安全实验室
+订阅来源：安全客 / 信息安全国家工程研究中心
 
-#### 3. 「一句『hi』触发中转站广告」：越狱包暗藏持久化操控
+#### 2. 木马不再偷凭证：Iris 直接借用本地 AI 当大脑
 
-Check Point Research 披露名为「海鸥」的 Codex 越狱捆绑包：它篡改全局配置实现跨会话持久化，用户一句 hi 就能触发中转站广告，同时绕过模型安全约束，且已在真实攻击者的服务器上被发现。越狱需求养出的灰色分发链，正被攻击者当作现成的感染入口，想绕过护栏的人，先把自己的配置文件交了出去。
+腾讯安全捕获的木马 Iris C2Agent 换了作业方式：不偷凭证，转而劫持主机上已登录的 AI 编程工具与本地大模型，让受害者自己的 AI 替攻击者做决策。同一攻击面上还有两起：模型仓库里，伪装成轻量模型的 Load/Mine 借 trust_remote_code 在加载瞬间植入挖矿后门，下载超 3.2 万次；AI 渗透工具 ARTEX 的高星 Fork 被植入 RCE 后门，恶意镜像下载 8.2k。AI 开发链路的每一环，都已被试过。
 
-标签：`AI安全` `智能体工具链` `持久化攻击`
-
-相关材料：
-- [一句“hi”触发中转站广告：海鸥越狱包如何持久化操控 Codex 输出](https://oraink.com/public/articles/95325)
-
-订阅来源：奇安信威胁情报中心
-
-#### 4. 362款App可拼出接管链：单应用审计出了盲区
-
-复旦白泽团队在 CCS 2026 发表研究，把移动应用跨服务标识交换引发的多步授权利用命名为 MAX 漏洞：单个应用的授权行为各自看着合法，攻击者却借标识交换把它们串成利用链，在 362 款真实应用中得到验证，最高可致账户接管，并配套发布检测工具 MAXChecker。授权安全从此难以在单应用内闭环审计，跨服务边界成了新的必查项。
-
-标签：`移动安全` `漏洞研究` `CCS2026`
+标签：`AI安全` `供应链攻击` `恶意软件` `开源安全`
 
 相关材料：
-- [CCS 26 | 当越权能力开始“滚雪球”：移动应用标识交换背后的安全陷阱](https://oraink.com/public/articles/95412)
+- [你的 AI 编程助手，可能正在后台替木马“打工”：恶意软件 Iris C2Agent 深度分析](https://oraink.com/public/articles/96274)
+- [当“加载模型”变成“执行未知代码”：AI 供应链中的 GPU 挖矿陷阱](https://oraink.com/public/articles/95932)
+- [ARTEX热门Fork被曝携带后门，可导致RCE](https://oraink.com/public/articles/95777)
 
-订阅来源：复旦白泽战队
+订阅来源：腾讯安全威胁情报中心 / 奇安信威胁情报中心 / 安全威胁情报
+
+#### 3. 白宫 IP 被当代理出售背后：流氓 SDK 静默出租内网
+
+威胁情报机构 Layer3 Intel 监测到，归属白宫总统行政办公室的 AS2650 专网内，6 个公网 IP 在近 30 天被 28 家商业住宅代理服务公开售卖为出口节点，疑似内部设备被静默植入了代理 SDK。入侵不再以窃密或宕机收场，而是变成一门出租生意：设备安安静静替别人出流量，管理员毫无感知。白宫的 6 个 IP 只是数得出来的部分，货架上还挂着什么，没人知道。
+
+标签：`威胁情报` `住宅代理` `内网安全`
+
+相关材料：
+- [美国白宫网络遭住宅代理渗透 沦为代理流量出口](https://oraink.com/public/articles/96062)
+- [【安全圈】白宫专网被卖做代理？总统办公室设备疑遭植入后门](https://oraink.com/public/articles/95994)
+
+订阅来源：黑鸟 / 安全圈
+
+#### 4. OpenAI 漏洞挖掘流水线跑通，挖洞从手艺变成算力
+
+OpenAI 公布自主 Linux 内核漏洞挖掘原型：能规模化发现漏洞、生成可用的权限提升利用，甚至自主创造新型利用技术，投入产出比远高于传统人工模式。攻击能力工业化的同时，防守研究也在换范式：浙大团队发布 AgentSnare，用轨迹自适应诱饵拖住、引开并化解自主渗透智能体；青藤等厂商则把「AI 对抗 AI」做成漏洞治理产品线。自主攻防的两端，今天同时有了交付物。
+
+标签：`AI安全` `漏洞挖掘` `自主智能体` `攻防研究`
+
+相关材料：
+- [浙江大学 | 用轨迹自适应诱饵拖住、引开并化解自主渗透智能体](https://oraink.com/public/articles/96020)
+- [OpenAI开发了一套自主漏洞挖掘流水线，具备创造新型漏洞利用技术的能力](https://oraink.com/public/articles/95806)
+- [看视频｜PHP、Linux连爆漏洞，到处挖洞的AI如何被治住?](https://oraink.com/public/articles/95928)
+
+订阅来源：安全学术圈 / 天御攻防实验室 / 青藤云安全
 
 **本卷快讯**
 
-· 苹果 CoreGraphics 零日在野武器化，iOS26/27 受影响，需升级（暗影安全）
-· WordPress 竞争条件 RCE 已有在野利用，POC 公开，超百万网站受影响（奇安信CERT）
-· CNVD 第 43 周收录 686 个漏洞，0day 占 71%，威胁等级为高（CNCERT风险评估）
-· Mandiant/Wiz 报告：LLM 劫持黑产分工成型，企业损失动辄近千万（互联网安全内参）
-· 乌镇峰会发布《智能互联网创新发展合作倡议》与两份互联网发展蓝皮书（中国信息安全）
-· 发改委「十五五」发布会定调 AI 安全治理：前置式治理，探索用数安全机制（信息安全国家工程研究中心）
-· 北约「十字剑」网络演习首次纳入 AI 代理，转向多域与人机协同验证（互联网安全内参）
-· NSA 在 2025 裁员失血后重启大规模招聘并重组，目标对准军事行动转化（情报分析师）
-· 英伟达被曝要求云伙伴把 51% 未来算力留给非中国企业，管控下沉下游（网安寻路人）
-· DARPA 认知类项目立项逻辑生变：从可解释转向可证明，测量下沉神经层（丁爸情报分析师的工具箱）
-· 微步 XGPT 发现 macOS 三个系统级漏洞，官方更新已修复，建议升级（微步在线研究响应中心）
-· 匿名实体鉴别 ISO 补篇发布，我国自主密码机制 ZYHW 首次入列（中国信息安全）
+· APT29 劫持第三方分析脚本，向 iOS 与安卓用户投放 Nday 漏洞窃取数据（黑鸟 / 看雪学院）
+· Linux 内核 TCP 握手 RCE 漏洞 CVE-2026-98432 细节与 PoC 已公开，特制包可拿 root（天融信阿尔法实验室）
+· 群晖 DSM 认证绕过漏洞 CVE-2026-13639 出现在野利用，正被勒索软件当入口（奇安信CERT）
+· WordPress 条件竞争 RCE 漏洞 CVE-2026-119977 可在升级窗口期被无授权利用（深信服千里目安全实验室）
+· PHP2Shell 两大 RCE 攻击流量暴涨，ASLR 绕过出现后利用门槛持续走低（安全牛）
+· 法国 Crédit Mutuel Arkéa 遭合作供应商入侵，被盗转账超 1.33 亿美元（互联网安全内参）
+· Amadeus 系统漏洞致亚洲六大航司客户预订数据泄露，暂无支付数据失窃证据（互联网安全内参）
+· DreamHost 自研文件管理器漏洞遭利用，攻击者潜伏近 3 个月窃取大量凭据（安全圈）
+· SonicWall 已停服的 GMS 存在两个永不修复漏洞，官方建议迁移 NSM（代码卫士）
+· Barracuda 两漏洞可组合利用绕过授权并获取设备 root，官方敦促升级固件（代码卫士）
+· Proofpoint 斥资 63 亿美元收购 Varonis，押注数据安全与 AI 治理合流（安全牛）
+· 阿里云重点业务漏洞挖掘新规 11 月 5 日起执行，违规测试丢赏金担法律风险（阿里安全响应中心）
 
 ### 今日思考
 
-#### 当招聘、开发工具、内部 AI 权限能被串成一条攻击链，企业的信任边界该画在哪里？
+#### 当每台开发机都自带会执行任务的 AI，安全边界该划在模型、工具还是仓库？
 
-**今日信号：** 币安 63.4 亿美元失窃的入口是一场假招聘，工程师的 pyenv 被换成木马，内部 AI 权限也被滥用
-
-**灵砚视角：**  
-灵砚视角：行业十年把预算押在私钥与冷钱包上，Lazarus 却从 HR 的面试邀约进了门。最贵的漏洞不在密码学里，在对人的默认信任里。OFAC 同期制裁朝鲜海外 IT 人员网络，说明这是一套正在产业化的渗透范式，不是一次性事故。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-05#thought-t1)
-
-#### 当「热门」与「越狱」本身成了分发渠道，开发者的默认信任该迁移到哪里？
-
-**今日信号：** 火绒统计 GitHub 投毒 URL 超 5.6 万条，Check Point 发现的「海鸥」越狱包也在篡改 Codex 全局配置
+**今日信号：** Iris 木马不偷凭证，改劫持本地已登录的 AI 编程工具充当攻击决策脑
 
 **灵砚视角：**  
-灵砚视角：攻击者没有发明新漏洞，只是租用了开发者的默认习惯，越热门、越省事的入口，越适合藏载荷。解法或许不在识别恶意，而在重塑默认：签名、来源锁定、最小权限，把信任从观感迁到可验证的凭证上。
+灵砚视角：这三起投毒把 AI 从「被保护对象」变成了攻击者的免费基础设施。本地模型不进审计日志、不打补丁，劫持成本远低于收益。防御重心可能要从管住模型，挪到管住模型身边的执行环境。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-05#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t1)
+
+#### 漏洞发现变成算力竞赛后，0day 会更便宜还是更贵？
+
+**今日信号：** OpenAI 的漏洞挖掘流水线已能自主创造新型利用技术，投入产出比高于人工研究
+
+**灵砚视角：**  
+灵砚视角：短期 0day 供给增加、单价下探；但补丁速度不会同步变快，供需剪刀差反而扩大。真正的变量是谁先把流水线跑起来，防守方、赏金平台，还是 Lazarus。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t2)
 
 
-## 2. 软件与开发者
+## 2. 前沿科技
+
+### 前沿科技
+
+**关键词：** AI股 / Anthropic / IPO
+
+### 今日精要
+
+#### 1. Anthropic 两万亿估值预期落空，AI 股迎来清算日
+
+中期选举结果落地、问责预期升温之际，AI 关联个股今日集体两位数下跌，SpaceX 已较发行价低 10%。Gary Marcus 的判断是：此前撑住市值的是「科技企业可以为所欲为而不被问责」，预期一破便恐慌出逃；叠加新披露的8950 亿美元基建承诺与微薄利润的落差，Anthropic 的 2 万亿美元 IPO 估值预期基本落空，320 亿美元递延股权激励更被指将由散户埋单——被重新定价的不只是估值，还有行业的免责叙事。
+
+标签：`AI股` `Anthropic` `IPO` `市场清算`
+
+相关材料：
+- [Between the realities of this number relative to negligible profits and today’s correction, Anthropi...](https://oraink.com/public/articles/96181)
+- [Retail buyers of Anthropic are probably going to get fleeced. Here is yet another subtle reason:](https://oraink.com/public/articles/95776)
+- [In hindsight it is looking like the thing that held up the market was the idea that the tech compani...](https://oraink.com/public/articles/96186)
+- [happy news: my p(doom), p(catastrophe), and p(dystopia) have all dropped this week, given the result...](https://oraink.com/public/articles/95981)
+- [rare partial disagreement with @edels0n. what he wrote here a few minutes ago probably no longer ap...](https://oraink.com/public/articles/96180)
+- [Absolute slaughter. Double digit losses for many AI companies. SpaceX 10% below IPO price, CoreW...](https://oraink.com/public/articles/96070)
+- [Tweet](https://oraink.com/public/articles/96211)
+- [yep. anthropic ain’t getting 2 or even 1.5t](https://oraink.com/public/articles/96262)
+
+订阅来源：Gary Marcus(@GaryMarcus) / Justine Moore(@venturetwins)
+
+#### 2. 前 20 名开源模型 18 个是 MoE，Dense 基本出局
+
+Hugging Face 把团队投入数十万 GPU 小时优化 MoE 训练的经验写成 3 万字全流程手册，完全开源并配套 50 余张交互图表。Thomas Wolf 顺势给出判断：当前 20 个最强开源模型里 18 个已是 MoE，Dense 架构基本退出主线。当顶级训练经验从巨头内部笔记变成公开教材，开源阵营的工程下限被整体抬高，追赶闭源的成本结构也随之改写。
+
+标签：`HuggingFace` `MoE` `开源模型`
+
+相关材料：
+- [18 of the 20 best open models today are Mixture-of-Experts. Dense is basically over. And yet the kn...](https://oraink.com/public/articles/96223)
+- [Nouamane thread on it: https://t.co/l2BAx7Qhac](https://oraink.com/public/articles/96222)
+
+订阅来源：Thomas Wolf(@Thom_Wolf)
+
+#### 3. 李飞飞团队上线 Frameboy：世界模型从生成走向可玩
+
+World Labs 上线实时探索工具 Frameboy，把两个月前发布的自回归世界模型 Atlas 优化到云端 15fps 流式输出，用户可以像玩游戏一样加载并走进模型生成的虚拟世界，李飞飞与 Justine Moore 同日公开推介。世界模型正从生成一段视频，转向可进入、可持续交互的环境，具身智能的训练场与游戏的边界同时被推动。
+
+标签：`世界模型` `World Labs` `李飞飞`
+
+相关材料：
+- [Real time Atlas! Try it now! 🚀](https://oraink.com/public/articles/96212)
+- [Play a world model with Frameboy 🕹️ Such a cool launch from @theworldlabs - you load a world and t...](https://oraink.com/public/articles/96275)
+
+订阅来源：Fei-Fei Li(@drfeifei) / Justine Moore(@venturetwins)
+
+#### 4. Trajectory 拿 6000 万背后：AI 护城河转向生产数据
+
+初创 Trajectory 发布自助后训练平台，让企业用自有生产数据定制大模型，同步披露获红杉领投的 6000 万美元融资、估值 3 亿美元。其论点直接写在门面上：护城河不会是基础模型，而是你在自己生产数据上后训练出的模型。这与企业把 AI 推理收回自建的动向同向，模型层加速商品化，胜负手转向数据与场景。
+
+标签：`Trajectory` `后训练` `融资`
+
+相关材料：
+- [The moat won't be the base model. It'll be the model you post-train on your own production data. Tr...](https://oraink.com/public/articles/95756)
+
+订阅来源：AI Breakfast(@AiBreakfast)
+
+**本卷快讯**
+
+· 谷歌发布 Gemini Omni 1.2 Flash：API 成本降三成，Runway 已接入（Google AI / Runway）
+· OpenAI 上线 ChatGPT Images 2.6：支持生成 GIF，HeyGen、Recraft 同日接入（ChatGPT / HeyGen / Recraft）
+· 淘宝 MNN 团队开源 0.3B 手机模型，iPhone 18 Pro 离线解码 350 token/s（量子位）
+· 英伟达 Jim Fan 开源 VFlash：一次输出几何结果，替代自回归解码（Jim Fan）
+· 特拉华州拟允许 AI 代理独立运营企业，Suleyman 公开表达担忧（Mustafa Suleyman）
+· Cognition 发布 SWE-2 Flash：编码评测超过所有美国开源权重模型（Scott Wu）
+· 招商局狮子山实验室发布 Lion-ER-35B-A3B，单 token 仅激活 3B 参数（量子位）
+· 清华团队把果蝇连接组用作机器人控制核心，验证类脑自适应能力（量子位）
+· Meta 美国区 Muse 上线实时具身化身：语音驱动可交互数字人（AI at Meta）
+· Notion 上线 Agent 编辑留痕，智能体间可共享记忆与技能（Notion / Akshay Kothari）
+· Replit 与日本头部金融租赁 SMFL 达成合作，向日企推广 AI 开发（Amjad Masad）
+· Voice Arena 推出 Monsoon 测试集：5 语言真实双人对话 ASR 基准（AI Breakfast）
+
+### 今日思考
+
+#### 当问责预期成了股价变量，AI 公司下一轮的融资故事还能讲什么？
+
+**今日信号：** Gary Marcus 称 Anthropic 拿不到 2 万亿估值，AI 股今日普遍两位数下跌
+
+**灵砚视角：**  
+灵砚视角：这一轮下跌清算的不是模型能力，而是免责预期的溢价。8950 亿美元基建承诺对着微薄利润，资本开支的正当性会被逐季拷问；Anthropic 折价只是开始，明年融资收紧几乎写定。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t1)
+
+#### 训练知识公共化之后，中小团队该自己训模型，还是专心做后训练？
+
+**今日信号：** Hugging Face 把数十万 GPU 小时的 MoE 训练经验写成 3 万字手册免费公开
+
+**灵砚视角：**  
+灵砚视角：这份手册把巨头的踩坑成本变成公共品，开源阵营的工程下限被整体抬高；它与 Trajectory 的后训练护城河论互为镜像，架构趋同之后，剩下的差异只剩数据与场景。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t2)
+
+
+## 3. 软件与开发者
 
 ### 软件与开发者
 
-**关键词：** 腾讯混元 / 模型发布 / computer-use
+**关键词：** Anthropic / OpenAI / Claude Code
 
 ### 今日精要
 
-#### 1. 混元 Hy4 首次看图操作电脑，补上智能体短板
+#### 1. Anthropic 两周失三将，IPO 前人才防线松动
 
-腾讯混元正式发布 Hy4：770B 参数 MoE 架构，首次具备视觉识别与电脑操作能力，主打金融、办公、游戏与科研场景。渠道同步铺开，WorkBuddy 限免至 11 月 15 日，Vercel AI Gateway 年底前调用五折。视觉与电脑操作正成为国产旗舰模型的标配，而开源权重的时点排序本身就是态度——API 商用先行，权重「计划后续开放」，团队对与顶级闭源模型的差距亦不讳言。
+筹备 IPO 的 Anthropic 在两周内接连流失三名 Claude Code 核心成员，产品负责人 Cat Wu 离职次日即官宣加入 OpenAI。此前行业人才多从 OpenAI 流向 Anthropic，这条反向通道罕见现身，AI 编程的核心产品班底，正在变成巨头之间可以直接拆走的资产。两周痛失三人，其中一人的下一站是最直接的竞争对手。
 
-标签：`腾讯混元` `模型发布` `computer-use` `开源权重`
-
-相关材料：
-- [腾讯混元正式发布 Hy4：首次能看图、能操作电脑，开源权重还在路上，团队对 Hy4 与顶级闭源模型的差异非常坦诚！ Hy4 第一次加上视觉和 Computer Use，主打金融、办公、前端游戏和科研...](https://oraink.com/public/articles/95314)
-- [WorkBuddy 里 Hy4 限免：11.04 - 11.15 用 WorkBuddy 的朋友们，可以蹬起来了！](https://oraink.com/public/articles/95375)
-- [Tencent Hy4 now available on AI Gateway](https://oraink.com/public/articles/95246)
-
-订阅来源：meng shao(@shao__meng) / Vercel News
-
-#### 2. 月烧 1 万到省九成：Revolut 把 AI 编程搬回机房
-
-英国金融科技公司 Revolut 给 AI 编程算了一笔账：Claude、Gemini 等商业工具成本过高、ROI 不达预期，有工程师单月烧掉 1 万美元。公司转向自托管智谱 GLM，56 张 B200 GPU 撑起 2000 名工程师，编码时间与交付周期同步缩短。AI 推理成本直降 90%，但先决条件是 56 张 B200 与一支基建团队。
-
-标签：`Revolut` `GLM` `自托管` `AI编程成本`
+标签：`Anthropic` `OpenAI` `Claude Code` `AI 人才`
 
 相关材料：
-- [有人每月烧掉1万美元！嫌Claude太贵，这家公司改用GLM：56张B200扛起2000名工程师，AI成本直降90%](https://oraink.com/public/articles/95281)
+- [IPO前夕遭挖角！Anthropic两周痛失3名核心成员，Claude Code产品负责人官宣跳槽OpenAI](https://oraink.com/public/articles/95886)
+- [哦？ Claude Code 产品负责人 Cat Wu 离开 Anthropic 后，居然去了 OpenAI？ 之前还真很少有从 Anthropic -&gt; OpenAI 的吧？](https://oraink.com/public/articles/95741)
 
-订阅来源：CSDN
+订阅来源：CSDN / meng shao(@shao__meng)
 
-#### 3. Anthropic 自研 Scion：AI 代码压垮 Git
+#### 2. GitHub 重构存储层背后，智能体成了第一约束
 
-ByteByteGo 复盘 Anthropic 自研源控系统 Scion 的来龙去脉：AI 生成代码规模激增后，超大仓、超高频提交、海量代码分发让传统 Git 架构不再适配，Anthropic 转向服务端主导的分布式设计。当提交主体从人换成智能体，源控这层最老的基础设施开始被重写。这也是两天内第二家动手重造版本控制的头部实验室。
+GitHub Universe 上，代号 Rubicon 的新一代存储架构亮相：存算分离、最小化跨节点协调，单仓库可支撑每秒 7200 次推送与 5000 个并发 AI 代理负载。昨天 Anthropic 刚因 AI 代码洪流自研 Scion，今天全球最大的代码托管平台也动手重构底座。AI 生成代码的写入压力，已从预言变成两大平台共同的工程现实。7200 与 5000，是这轮基建竞赛最先落地的两个数字。
 
-标签：`Anthropic` `Scion` `源代码管理` `AI基建`
-
-相关材料：
-- [How Anthropic Redesigned Source Control](https://oraink.com/public/articles/95445)
-
-订阅来源：ByteByteGo Newsletter
-
-#### 4. Android 工具链开放成 Agent 接口，IDE 让位
-
-Android Dev Summit 2026 上，谷歌把 IDE、CLI、设备验证、性能分析、编译优化等全链路能力开放为 AI 编程智能体可调用的标准化接口，并针对性优化 Token 利用率。继插件进驻 Antigravity 之后，谷歌再次把智能体当作一等客户端。工具链的设计基准正从「人点按钮」换成「Agent 发调用」，Token 成本被写进工具设计目标。
-
-标签：`谷歌` `Android` `Agent` `开发工具链`
+标签：`GitHub` `基础设施` `AI 代理` `Git`
 
 相关材料：
-- [最近 Android 有什么更新：Android Dev Summit 2026 技术解读](https://oraink.com/public/articles/95177)
+- [Inside GitHub’s new Git storage architecture](https://oraink.com/public/articles/96213)
 
-订阅来源：掘金本周最热
+订阅来源：The GitHub Blog
+
+#### 3. JetBrains 全线内置 Air：IDE 转岗智能体宿主
+
+JetBrains 一天放出 2026.3 全家桶，IntelliJ、PyCharm、WebStorm 到 CLion 九款 IDE 全部内置 Air 智能体层：WebStorm 打通设计-编码-浏览器自验链路，RustRover 让智能体坐进调试席。更关键的是 GoLand 的选择——兼容第三方编码代理、复用已有模型订阅，不强制购买自家 AI 服务。编辑器的竞争焦点，正从写代码的手感转向谁能当好智能体宿主；Air Context 的 RAG 工程日记显示，这层之下有真实的检索工程在支撑。
+
+标签：`JetBrains` `IDE` `智能体` `开发者工具`
+
+相关材料：
+- [DataGrip 2026.3: Agentic Development With JetBrains Air, Cross-Database Queries, DuckDB Support, and Major UX Improvements](https://oraink.com/public/articles/96054)
+- [GoLand 2026.3 Is Now Available!](https://oraink.com/public/articles/95991)
+- [WebStorm 2026.3: New Design-Code-Production Workflow, JetBrains Air in WebStorm, and More](https://oraink.com/public/articles/95990)
+- [What’s New in PyCharm 2026.3](https://oraink.com/public/articles/96052)
+- [CLion 2026.3 Is Here](https://oraink.com/public/articles/95868)
+- [RustRover 2026.3 Is Out: JetBrains Air, Clearer Debugger Views, and Agents That Debug With You](https://oraink.com/public/articles/96105)
+- [What’s New in IntelliJ IDEA 2026.3](https://oraink.com/public/articles/95812)
+- [Building a RAG Pipeline for Semantic Code Search: A Developer Diary and Field Notes](https://oraink.com/public/articles/96053)
+
+订阅来源：The JetBrains Blog
+
+#### 4. DeepSeek 新架构把 Agent 调度权收归系统
+
+DeepSeek Harness 团队公开 Super-Agent 架构设计：会话管理、任务调度这些原本压在用户认知上的负担，改由 Router 控制层、边界化上下文与链式召回接管，目标是低认知负担的自主智能体。当一个人名下的智能体越来越多，用户从调度器变成被系统服务的对象。这与 JetBrains 把 IDE 改造成宿主是同一方向的两端，腾讯云社区与掘金当天已各出一篇长文拆解。
+
+标签：`DeepSeek` `Agent 架构` `多智能体` `系统设计`
+
+相关材料：
+- [通了个宵，终于把 Super-Agent 架构玩明白了](https://oraink.com/public/articles/95726)
+- [一文拆解DeepSeek Harness新架构](https://oraink.com/public/articles/95823)
+
+订阅来源：掘金本周最热 / 腾讯云开发者
 
 **本卷快讯**
 
-· 讯飞发布星火 X2.6：全国产算力训练，主打长上下文编程（掘金）
-· 腾讯推出 Buddy One：会议文档网盘打通，任务跨应用流转（掘金）
-· vivo 两文拆 Agent Harness：判断与行动可恢复、可审计（vivo互联网技术）
-· 12 种 JS 技术栈建同一个应用，Token 消耗实测对比公开（印记中文）
-· Vercel CI 开放任意 GitHub 仓库，安全代理同步公测（Guillermo Rauch）
-· MIT 公开课第 7 讲：用别人的数据集，等于接受别人的选择（meng shao）
-· 阿里云发布投研工作台 Qovest：一句话跑完投研全流程（阿里云开发者）
-· MongoDB 原生接入 Google ADK：Agent 状态获得持久记忆（MongoDB Blog）
-· TemPad Dev 开源：Figma 与编程智能体双向打通，能改图层（meng shao）
-· Playwright 官方澄清：安装包不含浏览器，删库避漏洞是误解（meng shao）
-· OpenAI 工程师谈 Rust 开发用 AI：风险分级加标准化验证（JetBrains Blog）
-· 小红书腾讯滴滴对谈：AI 代码逼近 100%，1500 行 Diff 谁来审（CSDN）
+· Alpine 3.24 的 OpenSSH 爆提权漏洞：超 256 字符输入即可拿 root，修复包已推送（Guillermo Rauch）
+· 《妮姬》国际服 PC 启动器遭 CDN 投毒植入远控木马，官方已修复受污染文件（小众软件）
+· Vercel Security Review 公测：内测 24 小时扫出 6817 个漏洞，11 月 10 日前免费（Guillermo Rauch）
+· Vercel Schedules 进入公测，智能体获得长期自主运行的调度层（Vercel News / Guillermo Rauch）
+· 混元晒 Hy4 第三方评测：列中国实验室模型第二，短板是幻觉率极高（Hunyuan）
+· 百度开源 ERNIE 5.5 Flash Base：280B/A14B MoE，宣称同尺寸 SOTA（meng shao）
+· GitHub 推 Copilot Fusion：按开发任务自动路由模型，多端限时七折（GitHub）
+· MongoDB 发布 Vercel AI SDK 集成：智能体获得跨会话持久记忆（MongoDB Blog）
+· Linus 回忆造 Git 只为回去维护内核：「我受到的赞誉太多了」（CSDN）
+· IDC 中国手机出货 Top10 有 5 家采用火山引擎做 AI 助手底座（字节跳动技术团队）
+· Strata 0.2.10 发布：8GB 显卡可跑 128K 上下文，整体提速 25%（小众软件）
+· Lovable 创始人复盘：从 GPT Engineer 到 7000 万项目，架构推倒重写数次（meng shao）
 
 ### 今日思考
 
-#### 当基建按智能体的吞吐量设计，人的开发体验会被优化成什么样？
+#### 多智能体的协作短板，会被系统层编排绕过去，还是终归要回到模型层解决？
 
-**今日信号：** Anthropic 为 AI 代码量自研源控 Scion，谷歌把 Android 全工具链开放成 Agent 接口
-
-**灵砚视角：**  
-灵砚视角：两天之内，两家头部实验室先后对 Git 动手，谷歌又把整条工具链拆成接口。基础设施的设计基准，正从人的操作频率换成 Agent 的调用频率。人按天提交，Agent 按分钟调用，这层错位还会继续催生新的基建缺口。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-05#thought-t1)
-
-#### 省九成的入场券是 56 张 B200，自托管红利究竟属于谁？
-
-**今日信号：** Revolut 弃 Claude 改自托管 GLM，56 张 B200 服务 2000 名工程师，成本降 90%
+**今日信号：** 协作智力基准测出最强模型组队仅 82.2 分，同一天 JetBrains 九款 IDE 与 DeepSeek 新架构都在加码多智能体。
 
 **灵砚视角：**  
-灵砚视角：90% 的降幅是真的，入场费也是真的。AI 编程的成本优势正在向握有算力的组织集中，订阅制与自托管开始分层服务不同体量的公司。中小团队要不要跟、跟不跟得起，是接下来更实际的问题。
+灵砚视角：今天所有人都在给智能体修路——IDE 当宿主、平台扛并发、架构接管调度，唯独基准测出车本身还不擅长编队行驶。系统层补丁能推迟问题，但协作是能力不是流程，两条线迟早要在同一个路口相遇。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-05#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t1)
+
+#### AI 编程产品的壁垒到底在模型参数，还是在可被挖走的产品班底？
+
+**今日信号：** Cat Wu 离开 Anthropic 次日入职 OpenAI，两周内 Claude Code 已失三名核心成员。
+
+**灵砚视角：**  
+灵砚视角：单次跳槽年年有，但 IPO 前夜、两周三人、直奔对手，三个条件叠加就不寻常。工具产品的护城河正从模型转向产品组织与迭代节奏，而这恰恰是最容易被拆走的部分。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t2)
 
 
-## 3. 云计算与企业服务
+## 4. 云计算与企业服务
 
 ### 云计算与企业服务
 
-**关键词：** 云基础设施 / 智能体 / AlloyDB
+**关键词：** 智能体基础设施 / CNCF / 开源治理
 
 ### 今日精要
 
-#### 1. 微软判定分层云过时，谷歌为智能体把数据库缩到零
+#### 1. 谷歌捐三个项目给 CNCF：智能体底座走向中立
 
-微软 Azure 今天给出一个直白判定：面向长周期复杂任务的智能体，传统独立分层的云基础设施已无法适配其动态资源需求，替代方案是硅、计算、存储、网络协同设计的一体化平台。同一天，Google Cloud 把数据栈压向智能体场景：AlloyDB Express 面向开发者和编码代理，秒级创建、闲置缩容至零；Agentic Data Cloud 以可信上下文和专属基础设施支撑企业级智能体。阿里中间件同日交出 AgentCore 生产级实践，三家在同一条赛道落子。
+谷歌把三个自研智能体基建项目捐给 CNCF，同日把 GKE 托管 Agent Substrate 推向 GA。这一周智能体底座是云厂商主战场：微软判定分层云过时，谷歌为智能体重造数据层。项目捐给中立基金会，托管版留在自家云上，厂商绑定风险与运行成本被点名成要降的指标。开放治理与托管生意，谷歌两样都要。
 
-标签：`云基础设施` `智能体` `AlloyDB` `Azure`
-
-相关材料：
-- [AgentCore + Codex 构建生产级 Agent 的原理与实践](https://oraink.com/public/articles/95503)
-- [New capabilities to power agents at scale with Google's Agentic Data Cloud](https://oraink.com/public/articles/95418)
-- [AlloyDB Express: Instant, scale-to-zero PostgreSQL for developers and coding agents](https://oraink.com/public/articles/95417)
-- [The Platform Behind the Next AI Breakthrough](https://oraink.com/public/articles/95197)
-
-订阅来源：阿里巴巴中间件 / Google Cloud Blog / Microsoft Azure Blog
-
-#### 2. 谷歌把安全产品线押上智能体：防御开始按机器速度设计
-
-Google Cloud 在安全峰会上发布覆盖代码开发、生产负载与安全运营的全链路安全产品体系，主题是以机器速度构建和防御。这个前提近期已被反复坐实：智能体 12 小时攻破 Anthropic、AI 工具链接连遭投毒。攻击侧完成自动化之后，防御产品的形态也被迫改写，从给人看的告警面板，转向能自动处置的安全智能体。军备两端同时提速，胜负手回到谁先发现谁。
-
-标签：`智能体安全` `Google Cloud` `云安全`
+标签：`智能体基础设施` `CNCF` `开源治理` `谷歌云`
 
 相关材料：
-- [Helping you build and defend at machine-speed in the agentic era](https://oraink.com/public/articles/95481)
+- [Powering open infrastructure for autonomous agents](https://oraink.com/public/articles/95922)
+
+订阅来源：Google Cloud Blog
+
+#### 2. BigQuery 吞下语义聚合，外部分析管道退场
+
+BigQuery 上线预览版函数 AI.AGG，一条 SQL 可对百万行级非结构化数据生成语义洞察，绕开 LLM 上下文窗口的限制。过去这类需求要在数据与模型之间搭外部分布式管道，现在语义能力直接长在数仓引擎里。外部管道的角色，被一个 SQL 函数收编。昨天缩到零的是数据库，今天收编管道的是数仓，谷歌连续两天动数据栈。
+
+标签：`BigQuery` `AI.AGG` `语义分析` `谷歌云`
+
+相关材料：
+- [Semantic aggregation over millions of rows in BigQuery with AI.AGG](https://oraink.com/public/articles/96097)
+
+订阅来源：Google Cloud Blog
+
+#### 3. 谷歌实测 Agent 技能：通用增益有限，补短板涨 5%
+
+谷歌团队用 AlphaEvolve、Harbor 与 Gemini 4 Argon 搭了条技能自动优化闭环：进化算法迭代重写 Agent 技能提示词，真实任务评测负责筛选，编码代理任务通过率提升 %。比数字更有信息量的是结论：通用技能增益有限，涨分来自针对性补齐代理短板。攒通用技能库的流行做法，被这组实测数据顶了一下。
+
+标签：`Agent 技能` `AlphaEvolve` `提示词优化` `编码智能体`
+
+相关材料：
+- [Building an agent skill optimizer with AlphaEvolve, Harbor and Gemini 4 Argon](https://oraink.com/public/articles/96096)
 
 订阅来源：Google Cloud Blog
 
 **本卷快讯**
 
-· 谷歌发布 WebMCP 开发指南：定位与 MCP 互补协同，澄清取代误解（谷歌开发者）
-· Compute Engine API 日期型多版本机制转正：升级节奏交还客户自控（Google Cloud Blog）
-· 谷歌开源 CLI 工具 gcheck：一键自检网络、GCP 权限与 API 配置（谷歌开发者）
-· AlloyDB for PostgreSQL 预览 Iceberg 直读：操作库与湖仓单 SQL 联查（Google Cloud Blog）
-· 月活两千万的 Mercari 弃 VDI 换浏览器层管控，预计三年省超 50% 成本（Google Cloud Blog）
-· 谷歌公共部门峰会发布政务版 Gemini 与 Wiz 安全智能体，2700 人参会（Google Cloud Blog）
+· Gemini Omni 1.2 Flash 视频 GA：低成本长时长，面向企业批量生产（Google Cloud Blog）
+· 4 人安全团队用 Bedrock 撑起 100+ 团队威胁建模，效率超 3 倍（AWS Architecture Blog）
+· Bolt 新增 4 个面向垂直服务行业的免费网站模板（bolt.new）
 
 ### 今日思考
 
-#### 当数据库和算力都按智能体的突发短周期画像重造，云计费会不会细到按单次任务结算？
+#### 底座进了中立基金会后，云厂商还能靠什么区分自家智能体平台？
 
-**今日信号：** 微软 Azure 判定传统分层云无法适配智能体，谷歌同日推出闲置缩容至零的 AlloyDB Express。
+**今日信号：** 谷歌把三个智能体基建项目捐给 CNCF，同日 GKE Agent Substrate 转 GA。
 
 **灵砚视角：**  
-灵砚视角：微软的「一体化平台」与谷歌的「缩到零」是同一枚硬币的两面，智能体的资源画像（突发、短生命周期、海量并发）正在反向定义云产品形态。云的第一批非人类客户已经到货。等价目表上出现按 Agent 任务计费的行目，这场重构才算真正落地。
+灵砚视角：捐赠读起来是开放，落子看是卡位。把自家项目送进 CNCF，等于邀请对手在自己定调的底座上开发。真正要盯的是治理席位：谁握着议程，谁就定义什么叫中立的智能体基建。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-05#thought-t1)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t1)
+
+#### 当 AI 能力变成数据库原语，RAG 与数据处理中间件还有多少生存空间？
+
+**今日信号：** BigQuery 上线 AI.AGG，一条 SQL 完成百万行非结构化数据的语义聚合。
+
+**灵砚视角：**  
+灵砚视角：上下文窗口曾是 LLM 应用的硬约束，绕它建管道养活了一批工具链。AI.AGG 把约束吞进引擎，等于宣判这部分管道只是脚手架。谷歌连改两天数据栈，赌的是分析最终长在数据所在的地方。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t2)
 
 
-## 4. 消费电子
+## 5. 消费电子
 
 ### 消费电子
 
-**关键词：** 苹果 / 阿里千问 / AI手机
+**关键词：** Google / Gemini / K12 教育
 
 ### 今日精要
 
-#### 1. Apple 智能国行开测：千问接棒，Siri 退成门面
+#### 1. Google 借 Chromebook 垄断强推 Gemini，学区选择名存实亡
 
-11 月 4 日苹果向中国用户推送 iOS 27.3 首个 Beta，国行 Apple 智能开放测试，12 月随正式版上线。实测亮点集中在实时翻译、照片消除这类轻量功能，复杂任务则经系统入口跳转千问 App、带着上下文接力完成，Siri 依旧是短板。继奔驰交出 E 级座舱开发权之后，两天内第二家外资巨头把系统级 AI 重活交给中国生态——手机 AI 的攻守位，正在换边。
+Google 在美国 K12 市场走出一步险棋：凭借 Chromebook 多年积累的校园垄断地位，它把 Gemini AI 服务与搜索访问权深度捆绑，以『学区自主选择』为名，实际让学校几乎没有拒绝的余地，教育界与监管层面的批评已经起来。当 AI 的进入不靠产品说服用户，而靠渠道地位强制铺开，K12 成了观察 AI 采用方式是否变形的第一个样本。
 
-标签：`苹果` `阿里千问` `AI手机` `国行AI`
-
-相关材料：
-- [连夜实测 iPhone 国行 AI，亮点和槽点都在这了](https://oraink.com/public/articles/95196)
-- [实测 iPhone 国行 AI：有亮点有槽点，还有一个惊喜点](https://oraink.com/public/articles/95476)
-- [国行 Apple 智能实测：问 Siri 只是开始，跳进千问 App 才是重头戏](https://oraink.com/public/articles/95321)
-- [早报｜国行苹果AI开测，Siri接入千问/中兴否认出售手机业务传闻/多所高校免费发Token](https://oraink.com/public/articles/95139)
-- [Apple 智能国行版开放测试](https://oraink.com/public/articles/95319)
-
-订阅来源：爱范儿 / 少数派
-
-#### 2. Claude 拒抄游戏，腾讯用复刻王者荣耀展示 Hy4
-
-Anthropic 在 Claude Code 新增系统规则，禁止复刻特定现有游戏，宁可误伤正常开发者也要把侵权风险前置；但大半年的零成本抄游戏已实质冲击独立游戏生态，这道闸来得偏晚。同日腾讯正式发布混元 Hy4，爱范儿用复刻《王者荣耀》完成实测，对象恰是腾讯自家游戏，绕开争议，也反证这道闸是政策选择而非能力上限。同一个动作，一边是闸门，一边是度量衡。Hy4 由此跻身最强开源大模型行列。
-
-标签：`Anthropic` `腾讯混元` `AI版权` `开源模型`
+标签：`Google` `Gemini` `K12 教育` `反垄断`
 
 相关材料：
-- [Claude 开始拒绝抄游戏，但可能已经太晚了](https://oraink.com/public/articles/95195)
-- [实测腾讯Hy4：我用它复刻《王者荣耀》，WorkBuddy 真能接大活了](https://oraink.com/public/articles/95267)
+- [Chromebook 统治美国校园，AI 成了没得选的「套餐」](https://oraink.com/public/articles/95826)
 
 订阅来源：爱范儿
 
-#### 3. FlashProve 开源：模型真假不再只靠体感判断
+#### 2. MacBook Pro 首次触屏，苹果多年的『不』开始松动
 
-Anthropic 发布开源原型 FlashProve，用零知识证明让用户不获取模型权重，就能核验中转站有没有偷换自己付费的模型，模型身份从体感判断变成可数学验证的流程。靠信息差运转的中转生意，开始被数学工具盯上。只是这套工具眼下成本偏高，仅覆盖权重替换，降智式微调仍查不出来。
+M5 系列 MacBook Pro 到手，最大的话题反而是那块第一次可以摸的屏幕。苹果在触屏 Mac 这个问题上说了多年的『不』，如今随 M5 一并收回。评测的判断相当冷静：触屏是新机型里价值最低的升级。一块没人需要的触屏，出现在苹果最重要的产品线上——它不是为今天的键鼠交互准备的，那它在等什么？
 
-标签：`Anthropic` `FlashProve` `零知识证明` `AI中转站`
-
-相关材料：
-- [Anthropic微微发力，AI中转站的天就要塌了？](https://oraink.com/public/articles/95330)
-
-订阅来源：爱范儿
-
-#### 4. 东风奕派换下华为乾崑，智驾联名救不了销量
-
-东风奕派 M8 搭华为乾崑方案时，9 月零售仅 401 台；新推天元激光版换成自研智驾与座舱，限时补贴价 15.98 万元起，较原版直降 3-4.4 万元。在同行争相拥抱华为智驾的当下，这是一次方向相反的替换：联名光环没能兑换成销量，自研加降价成了自救组合。401 台的月销与最高 4.4 万的降幅，把智驾联名的溢价摆上了台面。
-
-标签：`东风奕派` `华为乾崑` `智驾` `价格战`
+标签：`苹果` `MacBook Pro` `M5` `触屏`
 
 相关材料：
-- [15.98 万元起，东风奕派 M8 天元激光版上市，用自研智驾替换华为乾崑](https://oraink.com/public/articles/95162)
+- [MacBook Pro 能触屏了，但这只是它最小的升级｜附选购指南](https://oraink.com/public/articles/96012)
 
 订阅来源：爱范儿
 
 **本卷快讯**
 
-· 深网拆解大模型独角兽账本：Coding 变现难覆盖算力成本，仍靠融资续命（深网腾讯新闻）
-· 王坚乌镇访谈：AI 抹平工具差距、放大判断差距，会提问者最值钱（笔记侠）
-· 小米 WorldCast 框架落地 REDMI K100，单张照片生成 3D 运镜（小米技术）
-· 阿里为达喀尔青奥会落地本土化 AI 应用，赛后专有云移交塞内加尔政府（爱范儿）
-· 拓竹 3D 打印机 H3C 装 9 个打印头，多材料一体成型，售万元以上（爱范儿）
-· 奥迪借保时捷下一代纯电 718 平台开发双门跑车，2027 年上市（爱范儿）
-· 安东内利 20 岁 68 天提前 4 站加冕 F1 冠军，破 16 年最年轻纪录（爱范儿）
-· Hoardware 更新 3.x：Apple 硬件收藏新增统计可视化与 AI 交互（少数派）
+· OpenAI 发布图像模型 Images 2.6：支持 GIF 生成，全档位 ChatGPT 与 API 同步开放（爱范儿）
+· 新款 iPad mini 上架：8.5 英寸 OLED 屏，起售价涨至 5499 元仍为 60Hz（少数派）
+· Mac 视频工具 Vimpo 开测：下载、字幕、语音识别一站式，Beta 期免费（少数派）
+· 独立开发者上架 iOS 服药提醒应用「该吃药了」，主打小组件可视化记录（少数派）
+· 笔记侠拆解义乌 5 毛指甲钳在美翻 50 倍的定价逻辑（笔记侠）
+· 星尘智能来杰：机器人「iPhone 4 时刻」未到，但比想象中更近（爱范儿）
+· 一加 Ace 7 Pro 实测：旗舰配置下放，从游戏副机转向全场景主力（爱范儿）
+· Bose Ultra 开放式耳机 II 上手：2299 元同价，舒适度与续航升级（爱范儿）
+· 腾讯混元 Hy4 正式版多平台上线：API 维持原价，权重将开源（少数派）
+· 苹果收紧员工 AI Token 预算，AI 成本管控转向公司内部（爱范儿）
+· 雷军披露小米机器人已在工厂连续「实习」8 小时（爱范儿）
+· 爱范儿早报：全球手机出货量降 19%，手机越卖越贵（爱范儿）
 
 ### 今日思考
 
-#### 当顶级模型预装进每一部 iPhone，AI 应用的胜负还剩什么变量？
+#### 靠渠道强推而非产品说服的 AI 采用，会留下什么样的市场后遗症？
 
-**今日信号：** 国行 Apple 智能开测：复杂任务跳转千问 App 接力，Siri 只做入口
-
-**灵砚视角：**  
-灵砚视角：王坚在乌镇说，AI 抹平工具获取差距、放大应用判断差距。千问借苹果一夜触达亿级用户，分发红利会迅速清零，剩下的比拼在场景理解与履约深度。手机厂商从 AI 入口的守门人，退成了管道。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-05#thought-t1)
-
-#### 合规限制会变成模型的能力税，还是信任资产？
-
-**今日信号：** Claude Code 禁止复刻现有游戏，腾讯 Hy4 却用复刻王者荣耀自证能力
+**今日信号：** Google 将 Gemini 与搜索访问权捆绑进 Chromebook 校园套餐，教育界与监管层批评声起。
 
 **灵砚视角：**  
-灵砚视角：Anthropic 把侵权风险前置进系统规则、接受误伤；腾讯用自家游戏绕开争议。在能力趋同的开源模型市场，版权姿态正在成为新的定价因子，开发者迟早要为这道闸门付费，或者因它省钱。
+灵砚视角：微软当年把 IE 捆进 Windows，换来一桩世纪反垄断案；今天 Google 把 Gemini 捆进 Chromebook，渠道权力的剧本没有换，只是商品从浏览器变成了 AI。K12 的特殊之处在于决策者与使用者分离：学区签字，学生承受，且没有退出选项——这正是监管最容易切入的结构性裂缝。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-05#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t1)
+
+#### 把最没用的升级放在最受关注的位置，苹果在这块可摸的屏上等什么？
+
+**今日信号：** 苹果在 M5 MacBook Pro 上首次加入触屏，评测称这是全机最小的升级点。
+
+**灵砚视角：**  
+灵砚视角：『价值最低的升级』这个评语值得反过来读——它对今天的键鼠用户没用，不等于对明天的界面没用。触屏更像苹果为 AI 交互预留的接口：当语音、智能体和直接点选分走键盘的份额，一块能摸的屏就从冗余变成必需。苹果的松口未必是妥协，更像提前站位。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-06#thought-t2)
 
 ## 跨分类洞察
 
 ### 共同线索：这些更新正在汇成同一条阅读主线
 
-网络安全、软件与开发者、云计算与企业服务、消费电子 看似分散，但对这位用户而言都进入了同一天的阅读预算。分组先保留每个方向的独立判断，再用顶部总题把最相关的前两条主线合并成今天的个人日报入口。
+网络安全、前沿科技、软件与开发者、云计算与企业服务 看似分散，但对这位用户而言都进入了同一天的阅读预算。分组先保留每个方向的独立判断，再用顶部总题把最相关的前两条主线合并成今天的个人日报入口。
 
-> 今日 28 篇更新 → 14 条信号 + 38 条快讯，其余已替你读过
+> 今日 41 篇更新 → 17 条信号 + 51 条快讯，其余已替你读过
 
 ---
 
