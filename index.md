@@ -1,3 +1,3 @@
 # 灵砚公开日报与周报
 
-- [Anthropic 冲刺 IPO，智能体基建与课堂同步铺开，AI 竞逐进入工程期](daily/2026/11/2026-11-06.md)
+- [灵砚周刊·AI与智能化 2026-W45｜OpenAI融资缩水引发AI泡沫担忧](weekly/2026/ai-intelligence/2026-W45.md)
