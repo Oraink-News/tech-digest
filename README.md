@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·AI与智能化 2026-W45｜OpenAI融资缩水引发AI泡沫担忧](weekly/2026/ai-intelligence/2026-W45.md)
+- 最新周报：[灵砚周刊·软件与开发者 2026-W45](weekly/2026/software-developers/2026-W45.md)
 - [License](#license)
 
 ---
