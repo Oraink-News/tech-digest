@@ -1,3 +1,3 @@
 # 灵砚公开日报与周报
 
-- [灵砚周刊·云计算与企业服务 2026-W46｜云厂商同周上架Agent治理与托管](weekly/2026/cloud-enterprise/2026-W46.md)
+- [灵砚周刊·网络安全 2026-W46｜多家SRC给AI测试立规并明确罚则](weekly/2026/cybersecurity/2026-W46.md)
