@@ -14,49 +14,50 @@
 
 ## 今日日报
 
-> 本期归档文件：[daily/2026/11/2026-11-18.md](daily/2026/11/2026-11-18.md)
+> 本期归档文件：[daily/2026/11/2026-11-19.md](daily/2026/11/2026-11-19.md)
 
 <!-- latest daily content starts -->
 
-# 从GPT-6.2到供应链安全：AI一路提速，工程与安全边界同步重排
+# 英伟达财报与AI代码评审之外，Java4Shell把开源治理拉回视野
 
-> 今天的技术新闻分两条线：能力一侧，OpenAI发布GPT-6.2，开发者圈在讨论ai-coding与QA，黄仁勋与英伟达的公司治理话题同日出现；防线一侧，供应链、第三方脚本、APT与身份安全接连进入议程。AI提速的同时，支撑它的信任基建也在同步调整。
+> 黄仁勋的财报与公司治理话题同日出现，AI代码评审进入工程文化讨论，Java4Shell高危漏洞则让开源治理的压力变得具体：技术扩张越快，治理越要跟上节奏。
 
 **灵砚日报 · ORAINK DIGEST**  
-2026-11-18 · 日报 · Vol. 452
+2026-11-19 · 日报 · Vol. 453
 
-- 今日处理文章：678
-- 主精选条目：18
-- 预计阅读：6 分钟
-- 今日主线：模型发布 / 供应链安全 / AI编程 / 公司治理 / 身份安全
+- 今日处理文章：711
+- 主精选条目：19
+- 预计阅读：7 分钟
+- 今日主线：英伟达财报 / 公司治理 / 代码评审 / 高危漏洞 / 开源治理
 
 ## 速览
 
-- [GPT-6.2 单任务成本砍到 1/3，旗舰卷进价格战](#1-gpt-62-单任务成本砍到-13旗舰卷进价格战)
-- [美国收紧算力管制：海外租卡须持证，存量仅 90 天](#2-美国收紧算力管制海外租卡须持证存量仅-90-天)
-- [谷歌免费开放 Tasks 背后，智能体入口之争开打](#3-谷歌免费开放-tasks-背后智能体入口之争开打)
-- [68% 跌到 26%：开发者 AI 红利向少数团队集中](#4-68-跌到-26开发者-ai-红利向少数团队集中)
-- [178站被投毒背后，官方脚本通道成了单点](#1-178站被投毒背后官方脚本通道成了单点)
-- [不到10个神经元植入后门，评测高分不再等于安全](#2-不到10个神经元植入后门评测高分不再等于安全)
-- [BIS把远程算力纳入管制：不运芯片也算出口](#3-bis把远程算力纳入管制不运芯片也算出口)
-- [ARTEX攻击等来对位解法，只读智能体数天收复失地](#4-artex攻击等来对位解法只读智能体数天收复失地)
-- [黄仁勋走后第8天：本人表态愿回归，压力聚向董事会](#1-黄仁勋走后第8天本人表态愿回归压力聚向董事会)
-- [PyBot 走红背后，千智能体把能力写进代码而非权重](#2-pybot-走红背后千智能体把能力写进代码而非权重)
-- [Claude 数天破译哥德尔手稿，7年学术瓶颈失守](#3-claude-数天破译哥德尔手稿7年学术瓶颈失守)
-- [Claude Code 九成代码背后：瓶颈移到了验证](#1-claude-code-九成代码背后瓶颈移到了验证)
-- [9791 条 AI 告警只留 99 条：维护者要修复不要发现](#2-9791-条-ai-告警只留-99-条维护者要修复不要发现)
-- [黄仁勋走后第 8 天：认错、配合调查，回归留了口子](#3-黄仁勋走后第-8-天认错配合调查回归留了口子)
-- [阿里字节腾讯共建 XPU 规范：异构算力管理开始统一](#4-阿里字节腾讯共建-xpu-规范异构算力管理开始统一)
-- [COLD RELIC 冒充链式入侵，安全边界移向身份](#1-cold-relic-冒充链式入侵安全边界移向身份)
-- [Google 主权 AI 全栈背后，控制权本身成卖点](#2-google-主权-ai-全栈背后控制权本身成卖点)
-- [阿里实测万级案例：运维智能体开始生成决策分家](#3-阿里实测万级案例运维智能体开始生成决策分家)
+- [黄仁勋走后第9天：复职被拒，营收照样破纪录](#1-黄仁勋走后第9天复职被拒营收照样破纪录)
+- [GPT-6.2 发布48小时：跑分狂飙，口碑两极](#2-gpt-62-发布48小时跑分狂飙口碑两极)
+- [Anthropic 上市周，安全叙事变成负债](#3-anthropic-上市周安全叙事变成负债)
+- [DeepMind 开放 Genie 4：世界模型进了订阅制](#4-deepmind-开放-genie-4世界模型进了订阅制)
+- [Java4Shell现身JDK本体，攻击面退回最底层](#1-java4shell现身jdk本体攻击面退回最底层)
+- [物理隔离也挡不住：NSA绝密内网栽在例行补丁上](#2-物理隔离也挡不住nsa绝密内网栽在例行补丁上)
+- [GTIG首次在野观测无人在环攻击，防守节奏被迫改按天](#3-gtig首次在野观测无人在环攻击防守节奏被迫改按天)
+- [防御刚收复失地，ARTEX转头攻进安全厂商梭子鱼](#4-防御刚收复失地artex转头攻进安全厂商梭子鱼)
+- [黄仁勋走后第9天：董事会接受辞呈，回归之门关闭](#1-黄仁勋走后第9天董事会接受辞呈回归之门关闭)
+- [Anthropic 遭联名信围攻，安全招牌反成软肋](#2-anthropic-遭联名信围攻安全招牌反成软肋)
+- [Waymo 被赶下高速背后，自动驾驶输给了施工路障](#3-waymo-被赶下高速背后自动驾驶输给了施工路障)
+- [千智能体走红次日，Replit 给集群拴上预算缰绳](#4-千智能体走红次日replit-给集群拴上预算缰绳)
+- [每天 15 个 PR 之后：资深工程师开始因 AI 代码辞职](#1-每天-15-个-pr-之后资深工程师开始因-ai-代码辞职)
+- [Meta 把 ML 技术传播交给 Agent：一年省 4500 万美元](#2-meta-把-ml-技术传播交给-agent一年省-4500-万美元)
+- [Windows 11 暗记 AI 工具使用，遥测逼近竞品情报](#3-windows-11-暗记-ai-工具使用遥测逼近竞品情报)
+- [GPT-6.2 进 Copilot，微软 MAI Code 2 同日分走货架](#4-gpt-62-进-copilot微软-mai-code-2-同日分走货架)
+- [Linux 内核用上 AI 评审员，维护者瓶颈开始有解](#1-linux-内核用上-ai-评审员维护者瓶颈开始有解)
+- [Google 改造 Envoy：智能体流量开始有自己的代理层](#2-google-改造-envoy智能体流量开始有自己的代理层)
+- [15 分钟到 1 秒：Aderant 用 Iceberg 换掉批处理管道](#3-15-分钟到-1-秒aderant-用-iceberg-换掉批处理管道)
 
 ## 本期概览
 
-- 候选文章：约 46 篇
-- 公开覆盖原文：46 篇
-- 候选订阅来源：AI Engineer / meng shao(@shao__meng) / 安全行者老霍 / 掘金本周最热 / 量子位 / Google Cloud Blog / 网安寻路人 / 小互(@imxiaohu)
-- 公开阅读入口：https://oraink.com/public/daily/2026-11-18/
+- 候选文章：约 69 篇
+- 公开覆盖原文：69 篇
+- 候选订阅来源：Sam Altman(@sama) / Amjad Masad(@amasad) / GitHub(@github) / Gary Marcus(@GaryMarcus) / Tw93(@HiTw93) / meng shao(@shao__meng) / 腾讯云开发者 / 腾讯科技
+- 公开阅读入口：https://oraink.com/public/daily/2026-11-19/
 
 ## 本期如何生成
 
@@ -66,210 +67,224 @@
 
 1. AI与智能化：AI与智能化 — 精要 4 条 / 思考 2 个
 2. 网络安全：网络安全 — 精要 4 条 / 思考 2 个
-3. 前沿科技：前沿科技 — 精要 3 条 / 思考 2 个
+3. 前沿科技：前沿科技 — 精要 4 条 / 思考 2 个
 4. 软件与开发者：软件与开发者 — 精要 4 条 / 思考 2 个
 5. 云计算与企业服务：云计算与企业服务 — 精要 3 条 / 思考 2 个
 
 ## 今日主线
 
-- 模型发布
-- 供应链安全
-- AI编程
+- 英伟达财报
 - 公司治理
-- 身份安全
+- 代码评审
+- 高危漏洞
+- 开源治理
 
 ## 1. AI与智能化
 
 ### AI与智能化
 
-**关键词：** OpenAI / GPT-6.2 / 模型发布
+**关键词：** 英伟达 / 黄仁勋 / 财报
 
 ### 今日精要
 
-#### 1. GPT-6.2 单任务成本砍到 1/3，旗舰卷进价格战
+#### 1. 黄仁勋走后第9天：复职被拒，营收照样破纪录
 
-OpenAI 发布 GPT-6.2 系列：旗舰 Astra 在 Terminal-Bench Science 涨 9 分、内部网安基准涨 22 分，单任务成本却不到上代的三分之一，API 再降 20%；日常款 Sol 又比 Astra 便宜八成，Ultrafast 模式限时五折。昨天 Qwen4-Max 们刚用成本换牌桌，今天 OpenAI 亲自把旗舰拖进价格战，顶级能力的单价正加速融化。
+黄仁勋走后的首份财报创纪录：单季营收1160亿美元，净利润652.87亿美元同比翻倍，数据中心贡献九成以上，2028财年增长预期上调至75%。但董事会拒绝其复职申请，近20万人联署没能改变决定。据创业邦报道，过去数年黄仁勋个人主导的投资与信用支持撑起大批AI创业公司，这张人格化网络如今悬空，等待融资的AI创业者开始担心扶持政策生变。
 
-标签：`OpenAI` `GPT-6.2` `模型发布` `价格战`
-
-相关材料：
-- [GPT-6.2 Astra is our new flagship model, delivering a step up in capability with cleaner code, bette...](https://oraink.com/public/articles/102036)
-- [GPT-6.2 Astra and GPT-6.2 Sol—Models built for the real world](https://oraink.com/public/articles/102057)
-- [GPT-6.2 Astra and Sol continue to improve coding quality and efficiency, delivering more intelligenc...](https://oraink.com/public/articles/102035)
-- [GPT-6.2 Astra sets a new high on Terminal-Bench Science 0.1, which tests how well models carry out s...](https://oraink.com/public/articles/102034)
-- [NEW: OpenAI released GPT-6.2 Astra and GPT-6.2 Sol, rolling out now across paid plans. OpenAI rates...](https://oraink.com/public/articles/102009)
-- [GPT-6.2 Astra and Sol by @OpenAI are here. Agent Arena scores based on real-world sessions from our ...](https://oraink.com/public/articles/102044)
-- [GPT-6.2 Astra—a frontier model built for your hardest projects. It sets new highs on evals across pr...](https://oraink.com/public/articles/101983)
-- [GPT-6.2 Astra is our most capable model ever for cyber. It jumps 22 points over GPT-6 Astra on Explo...](https://oraink.com/public/articles/101980)
-
-订阅来源：OpenAI Developers(@OpenAIDevs) / OpenAI / The Rundown AI(@TheRundownAI) / lmarena.ai(@lmarena_ai) / OpenAI(@OpenAI)
-
-#### 2. 美国收紧算力管制：海外租卡须持证，存量仅 90 天
-
-美国商务部 BIS 落地临时最终规则，把 AI 算力管制从实体芯片出口延伸到海外云端访问、转租与代训全链路：为受限实体提供大规模生成式 AI 算力须先取得许可证，新加坡、马来西亚等五国新入许可名单，存量业务只留 90 天宽限。借海外机房用美国芯片的路径被正式堵上，云厂商与出海模型公司进入合规重算期。
-
-标签：`算力管制` `BIS` `出口管制` `中美科技`
+标签：`英伟达` `黄仁勋` `财报` `公司治理`
 
 相关材料：
-- [算力新规：海外租卡也要被限制了](https://oraink.com/public/articles/101731)
-- [中国公司借海外机房用美国芯片的路，美国周一也给堵上了 美国商务部发了一条临时规则：给中国公司提供大量算力的海外数据中心，要拿到美国许可证才能接着干，已经在做的给 90 天缓冲期... 新加坡、马来...](https://oraink.com/public/articles/101691)
+- [英伟达爆赚653亿美元，黄仁勋：“很愿意回来担任CEO”](https://oraink.com/public/articles/102320)
+- [全文| 没有黄仁勋的财报会 | NVIDIA 2027财年Q3财务业绩电话会议](https://oraink.com/public/articles/102514)
+- [黄仁勋复职被拒，一群AI创业者慌了](https://oraink.com/public/articles/102681)
+- [黄仁勋终于回应：愿重返英伟达CEO岗位](https://oraink.com/public/articles/102613)
+- [今天的小互 AI 日报： 3 件大事： AI 歌手在韩国压过女团拿了第一 GPT-6.2 Astra 和 Sol发布 英伟达董事会：不会让黄仁勋回来当 CEO 今天的小互 AI 日报： Ope...](https://oraink.com/public/articles/102322)
 
-订阅来源：夕小瑶科技说 / 小互(@imxiaohu)
+订阅来源：腾讯科技 / Web3天空之城 / 创业邦 / 智东西 / 小互(@imxiaohu)
 
-#### 3. 谷歌免费开放 Tasks 背后，智能体入口之争开打
+#### 2. GPT-6.2 发布48小时：跑分狂飙，口碑两极
 
-谷歌把 Gemini 的 Tasks 模式免费推向美、日、韩、加、澳、印六国数亿用户：在 Gmail、Drive、短信里就能直接派活，呼叫、支付等高级操作先开放美国。当同行还在比拼聊天质量，谷歌把「替你办事」做成了默认能力——个人智能体的入口之争，从分发规模开始分胜负。
+GPT-6.2上线48小时，口碑劈成两半：3D建模与机器人控制评测双料第一，任务成本降至对手零头；但代码能力停滞、幻觉率偏高，通用规划与可读性短板依旧，Sam Altman罕见承认模型「好用度」欠账。更微妙的是，多位KOL的差评被证实出自发布前3-4天的旧测试版，跑分、实测与预发布版本三者错位，评测正被版本速度甩开。
 
-标签：`Google` `Gemini` `个人智能体` `AI产品`
-
-相关材料：
-- [Knowing things → doing things → finding ways to save you time and money We’re expanding Tasks in Ge...](https://oraink.com/public/articles/101939)
-- [Put Gemini to work for you with Tasks. While Chat is for quick back-and-forth answers, Tasks are fo...](https://oraink.com/public/articles/101954)
-- [Tasks in Gemini is live today across the US, Japan, Korea, Canada, Australia + India, with advanced ...](https://oraink.com/public/articles/101940)
-- [@gmail @googledrive Ready to hand off your next task? Open Gemini, flip the home-screen toggle from ...](https://oraink.com/public/articles/101952)
-
-订阅来源：Sundar Pichai(@sundarpichai) / Google Gemini App(@GeminiApp)
-
-#### 4. 68% 跌到 26%：开发者 AI 红利向少数团队集中
-
-Atlassian《2026 开发者体验现状报告》给出反直觉数字：AI 在研发场景接近全面覆盖，每周靠 AI 省下十小时以上的开发者占比却从 68% 跌到 26%，收益被新增的 AI 管理与纠错工作吃掉。同一天，Cognition 讲 PR 一年涨 40 倍，Ramp 的 Agent 写掉约七成代码。红利没有消失，只是流向重构过流程的少数团队。
-
-标签：`AI编码` `开发者体验` `Atlassian` `效率分化`
+标签：`GPT-6.2` `OpenAI` `模型评测`
 
 相关材料：
-- [刚刚，Claude code 团队自曝开发内幕：AI写代码完全靠谱，前提是你得这样管它](https://oraink.com/public/articles/101697)
-- [40x More Merged PRs With 2.7x the Engineers — Walden Yan, Cognition](https://oraink.com/public/articles/101494)
-- [How 21 People Built a $100M+ Agent Company — Quinn Slack, Amp](https://oraink.com/public/articles/101496)
-- [开发者每周借助 AI 节约数十小时的比例在一年内从 68% 降至 26%](https://oraink.com/public/articles/101709)
-- [How to build an agent that builds the culture — Zach Bruggeman, Ramp](https://oraink.com/public/articles/101505)
+- [跑分狂飙，实测翻车，刚发的 GPT-6.2 暴露了 OpenAI 的软肋](https://oraink.com/public/articles/102393)
+- [深度实测GPT-6.2 Astra，OpenAI在偏科的道路上越走越远了。](https://oraink.com/public/articles/102416)
+- [GPT 像极了“五条人”：刚想淘汰它，6.2-Sol 又杀回我的主力工位了](https://oraink.com/public/articles/102487)
+- [拖更两个月的GPT-6.2，居然是一个“汇报狂魔”？](https://oraink.com/public/articles/102319)
+- [刚刚，GPT-6.2发布：拿下机器人与3D建模双料第一，真实上手评价却彻底两极分化](https://oraink.com/public/articles/102371)
+- [我用 Sol 和 Astra 6.2 体感还行 Tibo 说是三四天之前的 KOL 测试版本有严重的问题 现在的版本其实还好 但很多人反馈 codex 里调用比较慢，pi 就很快，我们的产品 cola...](https://oraink.com/public/articles/102385)
+- [Real-world Arena scores are in for GPT-6.2 Astra and GPT-6.2 Sol by @OpenAI in the Code Arena: WebDe...](https://oraink.com/public/articles/102719)
+- [Although the new models are very smart, we have more work ahead of us on making the models nice to w...](https://oraink.com/public/articles/102183)
 
-订阅来源：AI寒武纪 / AI Engineer / InfoQ 中文
+订阅来源：极客公园 / 数字生命卡兹克 / 刘小排r / 腾讯科技 / AI寒武纪
+
+#### 3. Anthropic 上市周，安全叙事变成负债
+
+Anthropic本周启动IPO，讨论中的估值上限达1.4万亿美元；前三季度营收与ARR数据流出，季度环比增速已现回落，硅星人Pro进一步拆出大模型行业的规模不经济。上市节点，AI安全中心发公开声明判定其「并非安全AI公司」，获学界与诺奖得主联署；OpenAI则赶在IPO前夕发布降价的GPT-6.2。——安全标签在定价时刻，从资产变成了负债。
+
+标签：`Anthropic` `IPO` `AI安全`
+
+相关材料：
+- [我们该不该给Anthropic 14000亿美元？](https://oraink.com/public/articles/102391)
+- [AINews\] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse](https://oraink.com/public/articles/102456)
+- [Anthropic is going to IPO this week. Let's have a quick look at the numbers: 1. Revenue for the fir...](https://oraink.com/public/articles/102482)
+- [NEW: The Center for AI Safety launched a public statement against Anthropic ahead of its IPO, saying...](https://oraink.com/public/articles/102640)
+
+订阅来源：硅星人Pro / Latent Space / Aadit Sheth(@aaditsh) / The Rundown AI(@TheRundownAI)
+
+#### 4. DeepMind 开放 Genie 4：世界模型进了订阅制
+
+Genie 4向合格的AI Ultra订阅者开放：实时物理、推理与音频一体，支持嵌套仿真，在生成的世界里还能再造世界，Demis Hassabis形容这是「turtles all the way down」。DeepMind同步公开Project Genie平台，浏览器内即可生成、交互、二次创作虚拟世界。同日，李沐出任Aimotion联合创始人兼CTO，攻关产业级世界模型。世界模型的消费级与产业级两条线同日铺开。
+
+标签：`Genie 4` `DeepMind` `世界模型`
+
+相关材料：
+- [Project Genie: Create and explore interactive worlds with Genie 4](https://oraink.com/public/articles/102729)
+- [速递｜李沐加入Aimotion，联合打造产业级世界模型](https://oraink.com/public/articles/102409)
+- [Behind the scenes with Genie 4](https://oraink.com/public/articles/102728)
+- [Genie 4 is available! Looks like it is turtles all the way down then… Eligible Ultra subs can try it...](https://oraink.com/public/articles/102849)
+- [Genie 4 is now available🔥! (and the day is not over!)](https://oraink.com/public/articles/102802)
+
+订阅来源：Google DeepMind / Z Potentials / Demis Hassabis(@demishassabis) / Patrick Loeber(@patloeber)
 
 **本卷快讯**
 
-· Perplexity 年化营收破 10 亿美元，宣布万卡 GPU 前沿研究部门（Latent Space / Aravind Srinivas）
-· Isomorphic Labs 获 50 亿美元融资，加速 AI 攻克疾病（Demis Hassabis）
-· OpenAI 推出 Daybreak，为北约及盟友网络提供防御（Greg Brockman）
-· OpenAI 推进 ChatGPT 医疗落地，头部医院与保险机构接入（OpenAI）
-· DeepMind 基于 Gemini 4 Hydrogen：照片变 3D 场景直连机械臂（Google DeepMind）
-· Cloudflare 自称 AI neolab：只做后训练，不做预训练（Latent Space / AI Engineer）
-· 微软 MAI-Image-2.7 结束预览，图像竞技场升至第二（lmarena.ai / OpenRouter）
-· AMD 82 亿美元收购 World Labs 完成交割（AI前线）
-· Altman 谈黄仁勋处境，回归议题未进英伟达董事会议程（AGI Hunt / InfoQ 中文 / 极客公园）
-· Quad9 因法国强制屏蔽令，宣布退出法国市场（The Cloudflare Blog）
-· Anthropic 用 1000 个 Claude 智能体，30 小时形式化费马大定理（AI Engineer）
-· 英特尔完成 230 亿美元融资后，CEO 陈立武遭投资者集体起诉（创业邦）
+· 谷歌发布 Gemini 4 Neon，AA 智能指数 61 分位列第三（Sundar Pichai / Google DeepMind / Paul Couvert）
+· 微软 Ignite 发布 7 款 MAI 模型，Agent 365 登记智能体超 5000 万（智东西 / The Rundown AI）
+· LMArena 推出 Agent Arena 指数，真实任务评测，Anthropic 居首（lmarena.ai）
+· 思维链之父 Jason Wei 离开 Meta，加盟 Mercor 任首席科学家（机器之心）
+· 美商务部与司法部公开 Megaspeed 涉违反芯片出口管制的调查进展（赛博禅心）
+· 苹果审核新规落地，AI 陪伴应用收入前十中 5 款遭 iOS 下架（白鲸出海）
+· EPFL 让 Claude Opus 5.5 独营「AI 公司」7 周，产出模型获 5 万下载（The Rundown AI）
+· 前 OpenAI 研究员开源权重取证工具，证实多款国产新模型用 Blackwell（AINLP）
+· OpenJDK 高危漏洞 Java4Shell 曝光，Cloudflare 给出 WAF 规则（The Cloudflare Blog）
+· 加州发布禁令后，Waymo 暂停全美高速公路自动驾驶出租车运营（创业邦）
+· OpenAI 模型联手 AMD：为旗舰 GPU IP 带来最高 14% PPA 提升（OpenAI）
+· curl 作者晒数据：AI 生成的 Rust 克隆版维护远落后官方，缺安全补丁（Simon Willison's Weblog）
 
 ### 今日思考
 
-#### 旗舰能力价格逐季跳水，开源模型和 API 中间层的生存空间还剩多大？
+#### 创始人人格化的生态扶持，公司制度能完整接住吗？
 
-**今日信号：** OpenAI 发布 GPT-6.2：单任务成本不到上代三分之一，API 再降 20%
-
-**灵砚视角：**  
-灵砚视角：昨天 Qwen4-Max 与混元刚用成本换牌桌，今天 OpenAI 把旗舰单价砍到三分之一，推理能力的降价速度已快过多数公司的预算模型。价格战洗掉的不只是毛利，还有「自建不如调用」这道算术题的旧答案。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t1)
-
-#### 同样的模型，为什么 Cognition 们效率翻几十倍，普通团队反而在给 AI 打工？
-
-**今日信号：** Atlassian 报告：开发者每周靠 AI 省十小时以上的占比一年内从 68% 跌到 26%
+**今日信号：** 英伟达单季营收1160亿美元创纪录，董事会却拒绝黄仁勋复职，靠其个人投资网络撑着的AI创业者先慌了。
 
 **灵砚视角：**  
-灵砚视角：差别不在模型，在组织。PR 涨 40 倍的公司把 Agent 当同事，重构了评审、测试与合并的全流程；多数团队只是把 Agent 当插件塞进旧流程，省下的时间转头花在给 AI 纠错和管理上。红利的分配，正由工程文化决定。
+灵砚视角：创纪录的营收给了董事会说不的底气，但英伟达生态里那张投资与信用网络是黄仁勋个人的产物，机器离得开创始人，网络未必。临时CEO克雷斯会不会把扶持制度化，才是后黄时代真正的考题。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t1)
+
+#### 模型迭代快过评测周期时，谁还在追踪真实体验？
+
+**今日信号：** GPT-6.2多个专业评测登顶，实测口碑两极，KOL差评被证实出自三天前的旧测试版。
+
+**灵砚视角：**  
+灵砚视角：差评可能测的是旧版，好评也可能只踩中新版长板，发布日跑分的保质期正在缩短。稳定的结论需要持续更新的实测面板，选型不妨等两周，让版本先尘埃落定。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t2)
 
 
 ## 2. 网络安全
 
 ### 网络安全
 
-**关键词：** 供应链安全 / 第三方脚本 / Web安全
+**关键词：** Java4Shell / OpenJDK / 高危漏洞
 
 ### 今日精要
 
-#### 1. 178站被投毒背后，官方脚本通道成了单点
+#### 1. Java4Shell现身JDK本体，攻击面退回最底层
 
-11月16日起，数字体验平台Optimizely因账户注册流程漏洞遭供应链攻击，恶意JS经官方CDN下发至178家全球品牌站点：盗取支付卡信息、替换加密钱包地址、向iOS设备投递漏洞利用。要害是载荷来自官方通道，站点侧没有任何失陷痕迹。攻击者9小时累计获利约6600-7040美元，与波及面严重不成比例——SaaS分发通道一旦失守，上百家企业的安全水位同时下沉。
+OpenJDK 的 Base64 解码器曝出 CVE-2026-114938（Java4Shell），62 字节堆越界写入，在支持 AVX-512 VBMI 的硬件上可未授权远程执行代码，POC 已公开，波及 Jenkins、Jira 等主流应用。最基础的编解码路径成了入口，攻击面退回运行时本体。阿里云、奇安信、微步、绿盟等当天密集发通告并完成复现，CVSS 评分 8.1，CISA 促尽快处置；代码卫士称该漏洞由 AI 编程工具快速发现。
 
-标签：`供应链安全` `第三方脚本` `Web安全`
-
-相关材料：
-- [第三方脚本供应链失守：全球178家大型品牌站点钱包地址被替换](https://oraink.com/public/articles/101910)
-- [【安全圈】178个站点被投毒：官方CDN送出了盗卡脚本](https://oraink.com/public/articles/101840)
-- [178家知名网站沦陷！黑客利用第三方脚本窃取支付信息，iPhone用户也遭殃](https://oraink.com/public/articles/101775)
-- [Optimizely 供应链攻击波及全球178家组织机构](https://oraink.com/public/articles/101736)
-
-订阅来源：黑鸟 / 安全圈 / 看雪学院 / 代码卫士
-
-#### 2. 不到10个神经元植入后门，评测高分不再等于安全
-
-微软研究院证明，只改开放权重模型里不到10个休眠神经元、无需重新训练，就能植入一个通过所有常规评测的休眠后门，而多数企业目前没有能力发现这类篡改。这把开源模型的安全问题从提示层、输出层直接压到权重本身，跑分与对齐测试全部放行，研究开出的防线只有一条：权重溯源审计。
-
-标签：`AI安全` `开源模型` `模型后门`
+标签：`Java4Shell` `OpenJDK` `高危漏洞`
 
 相关材料：
-- [重写大语言模型中不到10个神经元就能将其变成休眠后门](https://oraink.com/public/articles/101549)
+- [【漏洞通告】OpenJDK Java4Shell 远程代码执行漏洞](https://oraink.com/public/articles/102495)
+- [【风险提示-已复现】天融信关于OpenJDK Base64解码器远程代码执行漏洞CVE-2026-114938(Java4Shell)的风险提示](https://oraink.com/public/articles/102594)
+- [【漏洞通告】Java4Shell：OpenJDK Base64 解码器远程代码执行漏洞（CVE-2026-114938）](https://oraink.com/public/articles/102477)
+- [OpenJDK Java4Shell Base64解码远程代码执行漏洞（CVE-2026-114938）](https://oraink.com/public/articles/102776)
+- [【已复现】OpenJDK远程代码执行漏洞（CVE-2026-114938）](https://oraink.com/public/articles/102666)
+- [OpenJDK曝出Java4Shell高危漏洞：特定条件下可实现未授权远程代码执行](https://oraink.com/public/articles/102460)
+- [【已复现】OpenJDK Base64 解码器远程代码执行漏洞(CVE-2026-114938)安全风险通告](https://oraink.com/public/articles/102406)
+- [【漏洞通告】Oracle Java SE JIT 编译器堆越界写入漏洞(CVE-2026-114938)](https://oraink.com/public/articles/102616)
+- [OpenJDK 中严重漏洞Java4Shell可导致 RCE](https://oraink.com/public/articles/102435)
+- [已复现！Java4Shell OpenJDK Base64 解码远程代码执行漏洞](https://oraink.com/public/articles/102685)
 
-订阅来源：安全行者老霍
+订阅来源：云鼎实验室 / 天融信阿尔法实验室 / 长亭安全课堂 / 阿里云应急响应 / 绿盟科技CERT
 
-#### 3. BIS把远程算力纳入管制：不运芯片也算出口
+#### 2. 物理隔离也挡不住：NSA绝密内网栽在例行补丁上
 
-全球算力管制正从管芯片升级为管访问：继英伟达51%客户配额之后，BIS新规把先进算力的「远程访问」纳入出口管制，五国新增许可要求；十国又同步签署《旧金山宣言》，把生产、转运、远程获取连成一张网。此后不发生芯片运输的跨境算力调用，也可能触发许可要求。
+11 月 17 日，美国国家安全局与互联网物理隔离的绝密内网 NSANet，因批量部署一个 PHP 高危漏洞的修复补丁引发连锁故障而中断，无网络攻击证据，最高优先级情报传递未受影响。全球防护等级最高的网络，倒在了自己的例行维护上。同一天，业界正为 Java4Shell 呼吁全网抢时间打补丁——补丁的速度与风险，被摆上了同一条天平。
 
-标签：`算力管制` `出口管制` `AI治理`
-
-相关材料：
-- [从供应商配额到国家合围：十国《旧金山宣言》与美国远程算力新规如何重塑全球算力访问秩序](https://oraink.com/public/articles/101672)
-
-订阅来源：网安寻路人
-
-#### 4. ARTEX攻击等来对位解法，只读智能体数天收复失地
-
-被FBI点名的ARTEX，今天有了受害方视角的完整复盘：一支安全团队在经济牟利型攻击中失守后，改用带严格只读护栏、人工掌握决策权的并行LLM智能体体系应对，数天内完成环境夺回与加固。机器速度对抗机器速度，从此有了完整工程样本；样本的边界也写得很清楚：智能体只读，人握决策权。
-
-标签：`AI攻防` `智能体安全` `事件复盘`
+标签：`NSA` `NSANet` `运维风险`
 
 相关材料：
-- [我们如何抵御一次 AI 驱动的攻击](https://oraink.com/public/articles/101828)
+- [NSA绝密内部网络突发宕机：漏洞补丁修复引发连锁故障](https://oraink.com/public/articles/102700)
+- [情报帝国也会断网！美国国家安全局机密网络出现故障](https://oraink.com/public/articles/102331)
 
-订阅来源：securitainment
+订阅来源：黑鸟 / 情报分析师
+
+#### 3. GTIG首次在野观测无人在环攻击，防守节奏被迫改按天
+
+GTIG 与 Mandiant 首次在野观测到无人在环的漏洞利用框架 exploit_agent，全链路自动运行，两个月前官方口径还是「尚未观察到」。攻方把人移出循环，守方还在纠结放权：企业用 AI 做检测的占 64%，敢交给自动处置的仅 26%。另有研究盘点五套合计六万星的攻击框架均已落地真实入侵，Palisade 的蜜罐已在现网认出这类智能体，安全牛建议补丁周期从按月改成按天。
+
+标签：`GTIG` `无人在环` `AI攻击`
+
+相关材料：
+- [循环之内：五套从不请求许可的 AI 攻击框架](https://oraink.com/public/articles/102535)
+- [从“尚未观察到”到“被配置为”只隔两个月：GTIG 无人在环攻击框架，甲方该读哪几行](https://oraink.com/public/articles/102359)
+- [GTIG首次观测无人在环的漏洞发现与利用：拆解 exploit_agent 自动化漏洞利用链](https://oraink.com/public/articles/102553)
+- [Palisade Research | LLM 智能体蜜罐：现网环境下的 AI 攻击智能体监测](https://oraink.com/public/articles/102614)
+- [AI能发现威胁，企业为何不敢让它自动处置？](https://oraink.com/public/articles/102478)
+
+订阅来源：securitainment / 安全牛 / 奇安信威胁情报中心 / 安全学术圈 / 数世咨询
+
+#### 4. 防御刚收复失地，ARTEX转头攻进安全厂商梭子鱼
+
+ARTEX 攻防战进入新回合：美国网安厂商梭子鱼因未及时撤销第三方 AI 服务商的失效云访问密钥被入侵，攻击者使用的正是 FBI 点名预警的 ARTEX 渗透工具，波及含 XDR 管理节点的多个云环境。安全厂商成了靶子，入口恰是它引入的 AI 服务链。只读智能体前脚收复失地，目标清单又添一类高价值对象，目前暂无客户被入侵的证据，凭证更换已在进行。
+
+标签：`ARTEX` `梭子鱼` `云安全`
+
+相关材料：
+- [AI攻击火力太强，知名网络安全公司也被入侵了！](https://oraink.com/public/articles/102440)
+
+订阅来源：互联网安全内参
 
 **本卷快讯**
 
-· LibreOffice双RCE的EXP已公开，打开恶意ODS即触发执行（奇安信CERT / 绿盟科技CERT）
-· Apache Axis 1.x 曝9.8分RCE且已有在野利用（绿盟科技CERT）
-· 微软披露M365全球宕机根因：7月部署的网关缺陷潜伏数月，超80%网关无响应（代码卫士）
-· 攻击者借微软真实宕机发起全球钓鱼，以恢复滞留邮件为饵诱导点击（奇安信威胁情报中心）
-· 加州总检察长起诉OpenAI：80起失控事件、27起已公开（安全牛）
-· N-able一次补17个洞并删除遗留API开关，21台暴露服务器已被用于挖矿（安全圈）
-· ScreenConnect高危漏洞催生SCKit蠕虫，从客户端跳上技术员电脑（安全圈）
-· 微步再捕获8款应用供应链投毒：路由器0day配DNS劫持做内网扩散（安全威胁情报）
-· AccuraSoftHire假招聘投毒开发者，C2藏以太坊链上动态解析（奇安信威胁情报中心）
-· 白泽披露TypoPrompting：仿冒主流AI域名投放三类恶意载荷（白泽安全实验室）
-· 绿盟27B安全模型以91.31%拿下CyberGym纯模型榜全球第一（绿盟科技研究通讯）
-· NIST后量子迁移指引落地，企业可先从密码资产台账启动准备（安全牛）
+· Optimizely投毒清单点名BBC、CNN等178家，平台称已完成清除（数说安全 / 奇安信威胁情报中心 / 360数字安全）
+· 苹果多项在线服务中断近6小时，官方称为内部系统更新所致（安全圈）
+· 日本超算富岳遭未授权访问紧急停机，疑4000余名用户信息外泄（互联网安全内参）
+· Check Point曝ChatGPT锁定模式可绕过，能静默外泄聊天记录（安全行者老霍）
+· iOS麦克风权限旁路细节公开，拒绝授权的应用仍可偷偷录音（安全圈）
+· LibreOffice曝JDBC链式RCE，打开特制文档即可执行任意代码（深信服千里目安全实验室）
+· 绿盟风云卫登顶CyberGym；JINS约1829万账户经KARTE外流（安全牛）
+· 上周约八千个GitHub仓库遭投毒，邮件网关与防火墙接连失守（安全419）
+· AI安全初创Corma三个月完成两轮融资，估值达10亿美元（白泽安全实验室）
+· 美指控工业规模蒸馏后，中方期刊发文驳斥泛安全化（中国信息安全）
+· 安全客刊文警示：安全团队过度依赖AI正丧失核心判断（安全客）
+· 纽创信安发布可重构后量子密码硬件IP，通过NIST验证（纽创信安）
 
 ### 今日思考
 
-#### 当恶意代码自带官方渠道的通行证，基于站点自查的检测体系还剩多少效力？
+#### 攻方已把人移出循环、守方仍全程留人，这道自主权差距靠技术收敛，还是只能等制度松绑？
 
-**今日信号：** Optimizely官方CDN向178家品牌站下发盗卡脚本，站点侧却无失陷痕迹。
-
-**灵砚视角：**  
-灵砚视角：要害不在盗卡金额，9小时约6600美元近乎象征性；真正要紧的是集中度：178家企业的安全水位被一个实验平台的账号注册流程绑在一起。脚本治理正从站点自查上移到供应商审计，这堂课不止Optimizely一家该补。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t1)
-
-#### 如果评测拦不住权重层的篡改，开源模型的信任应该锚在哪里？
-
-**今日信号：** 微软研究院证明：改动不足10个休眠神经元，即可植入通过全部常规评测的后门。
+**今日信号：** GTIG 首次在野观测到无人在环的 exploit_agent；同日调查显示仅 26% 的企业敢让 AI 自动处置威胁。
 
 **灵砚视角：**  
-灵砚视角：这条研究把「下载权重即信任」的老习惯推到墙角。多数企业做不了权重级验证，开源模型的供应链安全只能外移到来源审计：谁发布、改过什么、能否复现。往后选开源模型，出处可能比跑分更早决定安全边界。
+灵砚视角：攻防的差距从来不止算力，还有问责结构。攻击者的失败接近零成本，防守者的误处置要写事故报告，卡在 26% 的不是模型能力，而是谁愿意为机器的动作签字。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t1)
+
+#### 当补丁周期从月压到天，补丁本身的事故风险由谁来承担？
+
+**今日信号：** Java4Shell 让全网抢时间打补丁，同一天 NSA 绝密内网却因批量部署补丁而断网。
+
+**灵砚视角：**  
+灵砚视角：行业习惯把「尽快修复」当终点，NSANet 提醒我们补丁同时也是一次生产变更。按天核对的前提是灰度、回滚与爆炸半径控制都跟得上，否则提速只是把风险换了形态。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t2)
 
 
 ## 3. 前沿科技
@@ -280,241 +295,264 @@ Atlassian《2026 开发者体验现状报告》给出反直觉数字：AI 在研
 
 ### 今日精要
 
-#### 1. 黄仁勋走后第8天：本人表态愿回归，压力聚向董事会
+#### 1. 黄仁勋走后第9天：董事会接受辞呈，回归之门关闭
 
-黄仁勋走后第8天亲自下场：公开承认个人生活存在严重错误、愿配合董事会独立调查，并表态若董事会认定符合各方利益，愿重返CEO岗位。回归从传闻变成正式选项，否决的成本正转向董事会。Paul Graham 断言董事会几乎找不到更好人选，客户 Suhail 同日喊话要他回来。
+黄仁勋本人刚表态愿在符合多方利益时回归，董事会的回应随即到来：临时 CEO Colette Kress 宣布接受辞呈、明确不恢复其职位，昨日还留着的口子被正式关上。与此同时，SEC 民事调查推进，股价自离职以来累跌超 10%，季度财报的反弹只维持了不到 15 分钟，10-Q 提交也罕见延迟。公司选择制度优先于创始人，而市场还没学会给一个没有黄仁勋的英伟达定价。
 
 标签：`英伟达` `黄仁勋` `公司治理`
 
 相关材料：
-- [Imagine being a board member at Nvidia considering potential candidates for CEO, and trying to claim...](https://oraink.com/public/articles/102041)
-- [To be unequivocally clear: As a customer, I want Jensen back at the helm. "If the Board of Director...](https://oraink.com/public/articles/101994)
-- [Tweet](https://oraink.com/public/articles/101934)
-- [Tweet](https://oraink.com/public/articles/102042)
-- [💚💚💚 FTW!!!](https://oraink.com/public/articles/101899)
+- [BREAKING: Nvidia’s earnings bump literally lasted less than 15 minutes and it is back down into the ...](https://oraink.com/public/articles/102601)
+- [必须支持！](https://oraink.com/public/articles/102256)
+- [a good quarter doesn’t solve this](https://oraink.com/public/articles/102265)
+- [interesting](https://oraink.com/public/articles/102233)
+- [get used to seeing Colette Kress; Jensen is not coming back.](https://oraink.com/public/articles/102264)
 
-订阅来源：Paul Graham(@paulg) / Suhail(@Suhail) / andrew chen(@andrewchen) / Justine Moore(@venturetwins) / Jim Fan(@DrJimFan)
+订阅来源：Gary Marcus(@GaryMarcus) / Tw93(@HiTw93)
 
-#### 2. PyBot 走红背后，千智能体把能力写进代码而非权重
+#### 2. Anthropic 遭联名信围攻，安全招牌反成软肋
 
-Hugging Face 联合创始人 Thomas Wolf 复盘爆火的 PyBot：1000 个 DeepSeek V4.1 Flash 智能体协作一周，让无权重、无训练的机器人追平 360M 参数的 Smollm。团队结论：智能体规模化的瓶颈已从 GPU 算力挪向协调效率与基础设施。这条路线的第一份账本：一周，60 万行纯 Python 规则。
+一封由 Gary Marcus、Max Tegmark 等人联署的公开信在 Anthropic IPO 前夕发布，直指其「并非一家安全公司」，以公益之名扩张权力。Hugging Face 联合创始人 Thomas Wolf 随后长文解释为何顶着私交压力签字：核心担忧是 Anthropic 透明度不足、安全生态出现权力集中的早期信号。而另一半事实更扎眼——多数安全组织因资金与合作关系不敢署名。当估值被指比三星还高五成、IPO 冲向万亿，这块安全招牌开始反噬自身。
 
-标签：`多智能体` `Hugging Face` `智能体工程`
-
-相关材料：
-- [Our PyBot chatbot went viral yesterday but the story behind it is even more interesting imo: what ha...](https://oraink.com/public/articles/101835)
-
-订阅来源：Thomas Wolf(@Thom_Wolf)
-
-#### 3. Claude 数天破译哥德尔手稿，7年学术瓶颈失守
-
-赫尔辛基大学团队把哥德尔 1009 页失传速记手稿喂给 Claude：人类团队 7 年未能推进的解析，模型数天完成。最难读的一批档案第一次有了可规模化的读者，一次解析挖出 663 个定理与 14 个学界未见的新主题，还触到悬置 60 余年的选择公理公案。
-
-标签：`Claude` `AI for Science` `数理逻辑`
+标签：`Anthropic` `AI治理` `公开信`
 
 相关材料：
-- [Claude破解千页哥德尔手稿：80年前他差一步拿菲尔兹奖](https://oraink.com/public/articles/101625)
+- [I'm featured quite visibly on Dan's letter, so it's probably good that I briefly explain why I signe...](https://oraink.com/public/articles/102630)
+- [Max @tegmark and I had discussion a couple weeks ago about which was more dangerous, Anthropic or Op...](https://oraink.com/public/articles/102598)
+- [Forget about the money. “Anthropic is not a safe AI company, and we must reject its reckless attempt...](https://oraink.com/public/articles/102600)
+- [Proud to be have been among those independent enough to sign.](https://oraink.com/public/articles/102846)
+- [absolute insanity. anthropic is valued at 50% more than a stable, consistently profitable company wi...](https://oraink.com/public/articles/102287)
+- [and yet people are going to buy this IPO at over a trillion. fools and their money may soon part.](https://oraink.com/public/articles/102541)
 
-订阅来源：量子位
+订阅来源：Thomas Wolf(@Thom_Wolf) / Gary Marcus(@GaryMarcus)
+
+#### 3. Waymo 被赶下高速背后，自动驾驶输给了施工路障
+
+加州车管局（DMV）下令 Waymo 车辆撤出州内高速公路，起因是三辆自动驾驶车闯入封闭施工区，被判定存在公共安全紧迫风险。值得记录的是监管的姿态：没等到真正的事故，路权先被收回。对自动驾驶行业来说，长尾场景由技术课题变成合规课题，任何一次边缘场景失误都可能换来一纸区域禁令，规模化时间表被迫重排。
+
+标签：`Waymo` `自动驾驶` `监管`
+
+相关材料：
+- [🚨 Huge Breaking news: “California’s Department of Motor Vehicles ordered \[Waymos\] off the state’s f...](https://oraink.com/public/articles/102267)
+
+订阅来源：Gary Marcus(@GaryMarcus)
+
+#### 4. 千智能体走红次日，Replit 给集群拴上预算缰绳
+
+千智能体实验昨日刷屏，Replit 今天就把 Agent 集群做成了产品：Missions 宣称是首个带预算约束的 Agent Swarm 工具，一条 prompt 即可调度并行协作的多智能体网络。CEO Amjad Masad 同步给出路线判断：继预训练、推理扩展之后，智能体数量是下一条规模化曲线，实测中扩展协作智能体显著提升 NumPy 代码优化效率，连 iOS 级手势上 Web 这类难题也被拿来回测。实验热度隔天就有了商品形态，且预算闸门先行入场。
+
+标签：`Replit` `多智能体` `Missions`
+
+相关材料：
+- [How scaling agent swarms can optimize software performance.](https://oraink.com/public/articles/102187)
+- [Agent swarms are the next scaling frontier for AI. For years, we’ve scaled intelligence by training...](https://oraink.com/public/articles/102188)
+- [Didn’t think it was possible to do iOS-quality gestures on the web](https://oraink.com/public/articles/102189)
+
+订阅来源：Amjad Masad(@amasad)
 
 **本卷快讯**
 
-· Replit 智能体集群复刻年费 8.37 万美元可观测平台，免费开源（Amjad Masad）
-· OpenAI 发布 GPT-6.2 Astra 与 Sol，主打游戏开发（ChatGPT）
-· NSA 机密内网 NSA Net 宕机，暂无攻击证据，员工错峰到岗（Gary Marcus）
-· Gary Marcus 称连环故障源于 AI 自写自修复代码，呼吁下架智能体（Gary Marcus）
-· 英伟达董事会新设国家安全与出口管制监督委员会（Geek）
-· Hugging Face 为 pi 定制 Qwen3.8，编码基准近翻倍（Clement Delangue）
-· Qwen4-Max 登陆 You.com 与 LebrelAI，后者售价比官方便宜 7%（Qwen）
-· NotebookLM 新功能：上传资料一句话生成可交互分享网站（NotebookLM）
-· Gary Marcus 打假：特朗普从未「确认」Alice Huang 非间谍（Gary Marcus）
-· Ollama 拆解编程智能体提速：三类操作正在破坏前缀缓存（Ollama）
-· V-CAST 免训练剪掉 75% 视觉 Token，长视频推理耗时减半（量子位）
-· 英伟达 SC26 发布科研 Nemotron 套件，开源模型配后训练配方（NVIDIA AI）
+· 阿里 Qwen4-Max 上线 Runware 与 TokenHarborAI 两平台（Alibaba_Qwen）
+· GPT-6.2 Sol 拿下浏览器任务榜首：成功率 82%，便宜 35%（Browser Use）
+· NVIDIA 开源 Nemotron-Labs-Sigma，成块生成挑战逐 token 范式（NVIDIA AI）
+· Marin 公开 Mochi 535B 预训练全程，57 个中间检查点全放出（Junyang Lin）
+· 微软发布 MAI Cyber 2 Flash：安全告警先人工核查再交维护者（Mustafa Suleyman）
+· 美司法部刑事调查 Megaspeed，涉帮阿里绕开 A100 禁令（Gary Marcus）
+· ChatGPT 连推会计与销售插件，接入 QuickBooks、Salesforce（ChatGPT）
+· 谷歌 Project Genie 正式发布，世界模型并入创作生态（Google AI）
+· ElevenLabs 推医疗对话智能体，多家医疗医药机构已部署（ElevenLabs）
+· Pika 发布实时交互视频场景 Enact，还原片场执导体验（Pika）
+· HF 为 pi 智能体定制 Qwen3.8-27B，两项基准大涨工具调用减半（ClementDelangue）
+· Fish Audio 推 Drama 3，单人可制 60 分钟多语配音短剧（Fish Audio）
 
 ### 今日思考
 
-#### 董事会昨天刚拒绝回归请求，今天声援潮压上来，否决还守得住吗？
+#### 当创始人光环与公司治理只能二选一，市场究竟在给哪一边定价？
 
-**今日信号：** 黄仁勋走后第8天本人公开表态愿回归，Paul Graham 与客户同日声援
-
-**灵砚视角：**  
-灵砚视角：从被曝到亲自表态，牌面已经翻开——决定权的重量落到了董事会一侧。客户与意见领袖接连下场之后，董事会的下一次表态不再只是程序动作，而是要给出扛得住追问的公开理由。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t1)
-
-#### 当能力能被编译成代码，训练权重的护城河还剩多宽？
-
-**今日信号：** 千个智能体一周写出 60 万行规则，无权重 PyBot 追平 360M 模型
+**今日信号：** 英伟达董事会经 Colette Kress 宣布接受黄仁勋辞呈、不恢复职位；股价自离职累跌超 10%，财报反弹只撑了 15 分钟
 
 **灵砚视角：**  
-灵砚视角：PyBot 的价值不在对话多聪明，而在验证了一条旁路——一部分能力可以用规则与协调兑付，不必全部装进权重。更值得注意的是那句结论：瓶颈已挪到协调层，谁先建好协调基建，谁先拿到下一个数量级。
+灵砚视角：15 分钟的反弹说明市场也没想好怎么定价。董事会选制度、弃光环，短期是止血，长期则要把公司价值从黄仁勋的个人关系网里剥离出来重估——这笔账没人算得清，股价只好先跌为敬。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t1)
+
+#### 当问责者靠被问责者发工资，AI 安全承诺由谁来执行？
+
+**今日信号：** Marcus、Tegmark、Wolf 联名发信批 Anthropic，多数安全组织因资金依附不敢署名
+
+**灵砚视角：**  
+灵砚视角：这封信的信息量不在指控本身，而在签名名单与沉默名单的对照。安全生态的独立性是 Anthropic 叙事的地基，地基被指认有裂缝，万亿估值就得为信任打折——IPO 定价会是第一份答卷。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t2)
 
 
 ## 4. 软件与开发者
 
 ### 软件与开发者
 
-**关键词：** ai-coding / engineering / qa
+**关键词：** ai-coding / code-review / engineering-culture
 
 ### 今日精要
 
-#### 1. Claude Code 九成代码背后：瓶颈移到了验证
+#### 1. 每天 15 个 PR 之后：资深工程师开始因 AI 代码辞职
 
-Claude Code 团队披露 90% 的代码已由 Claude 生成，交付流程随之重建：让 Agent 附带可检查的证据、验证器自校验，并行瓶颈已从生成端移到人工验证。同日 Together 评测发现 Agent 失败多源于文档与 Skills 而非模型，Jane Street 校招加考代码审校与 AI Coding，Level Access 调研称 QA 与无障碍测试被提速甩在身后。生成越来越便宜，确认无误越来越贵。
+CSDN 报道揭开 AI 编码的暗面：资深工程师每天审查 15 个 PR、消化约 2 万行 AI 生成代码，被逼成「质检员」，有人干脆辞职，而传统绩效并未覆盖这类隐形劳动。同一天，Shopify CEO Tobi Lütke 在 Vercel Ship 炉边对谈中给出管理层版本——工程的角色正在转向核验；腾讯云社区也在讨论 CR 成本反升、以结构化测试替代人审的路径。瓶颈移到验证之后，人力与组织成本开始显性化，评价体系的失配先于工具成熟到来。
 
-标签：`ai-coding` `engineering` `qa`
-
-相关材料：
-- [AI帮我生成了一个炫酷的3D大屏，上线3天就卡崩了](https://oraink.com/public/articles/101623)
-- [Together 团队分享 Agent 评测实践：失败的不只是模型，还有文档和 Skills @togethercompute 团队 @nutlope 分享了团队里的实际做法：用 Coding Ag...](https://oraink.com/public/articles/101537)
-- [Claude Code 团队：让 Agent 交付验证证据，不只是代码 来自 Claude Code 团队 @addyosmani 分享：Claude Code 团队 90% 的代码由 Claude...](https://oraink.com/public/articles/101538)
-- [AI Sped Up The Build: How Can Accessibility Testing Keep Up?](https://oraink.com/public/articles/101773)
-- [Jane Street 软件工程师面试变了（一点点...）：增加设计、验码与 AI Coding，不过传统考核仍是主流 Jane Street 工程师 Matthew Saffer 在《Our so...](https://oraink.com/public/articles/101536)
-
-订阅来源：掘金本周最热 / meng shao(@shao__meng) / Smashing Magazine
-
-#### 2. 9791 条 AI 告警只留 99 条：维护者要修复不要发现
-
-GitHub 与微软安全团队做了一次残酷的算术：9791 条原始 AI 安全发现，经三层筛选只剩 99 条附修复建议的报告，交付给 6 个开源项目，其余九成九是维护者无力消化的噪音。价值锚点正从产出发现转向替人消化发现。当 AI 扫描无限量产告警，维护者的注意力成了安全链路上唯一无法扩容的环节，这个试点等于给 AI 安全扫描业重写了计价逻辑。
-
-标签：`open-source` `security` `ai`
+标签：`ai-coding` `code-review` `engineering-culture`
 
 相关材料：
-- [Maintainers don’t need more AI bug reports. They need fixes.](https://oraink.com/public/articles/102011)
-- [Maintainers need fixes, not more AI bug reports. With @msftsecurity, we turned 9,791 raw AI securit...](https://oraink.com/public/articles/102053)
+- [“最优秀的开发者，正在被AI慢慢耗尽……”每天审查15个PR、硬啃2万行AI代码，资深工程师被逼成「质检员」，有人干脆辞职](https://oraink.com/public/articles/102428)
+- [Chrome 官方案例：Policybazaar 用 Agent 将复杂前端开发验证从 4 天缩至数小时，性能审计工作量减少 92% Coding Agent 能写前端代码，不代表它知道页面实际渲染...](https://oraink.com/public/articles/102454)
+- [Tobi Lütke 在 Vercel Ship 谈「第三类顾客」：Agent 代购是增量，工程变成核验 Shopify CEO Tobi Lütke 与 Vercel CEO Guillermo ...](https://oraink.com/public/articles/102278)
+- [AI时代，代码Review还有必要吗？](https://oraink.com/public/articles/102306)
 
-订阅来源：The GitHub Blog / GitHub(@github)
+订阅来源：CSDN / meng shao(@shao__meng) / 腾讯云开发者
 
-#### 3. 黄仁勋走后第 8 天：认错、配合调查，回归留了口子
+#### 2. Meta 把 ML 技术传播交给 Agent：一年省 4500 万美元
 
-董事会拒绝回归请求次日，黄仁勋本人打破沉默：公开承认个人生活领域的严重失误触发离职，承诺全权负责并配合董事会独立调查，同时表态若董事会判定回归符合各方最佳利益，他愿意响应复职呼声重返 CEO 岗位。道歉收拢了责任问题，去留被原样推回董事会。离职第 8 天，英伟达的权力真空仍在延长，白宫一侧的换血追问悬而未决。
+Meta 在工程博客披露其广告排序模型的 Agent 传播体系：2026 年 3 月上线以来，超过 60% 的 ML 技术传播工作由 Agent 承担，工程效率提升 3 倍、训练算力节省 4 倍，预计年内节省超 4500 万美元。配套的标准模型模板（SMT）体系两年内把单模型工程时间压缩 92%，落地 5000+ 技术-模型组合。Agent 不只写代码，开始接管组织内部的技术扩散，技术全量落地周期的目标从一年以上压至三个月。
 
-标签：`nvidia` `company` `governance`
-
-相关材料：
-- [🖤](https://oraink.com/public/articles/101900)
-
-订阅来源：Guillermo Rauch(@rauchg)
-
-#### 4. 阿里字节腾讯共建 XPU 规范：异构算力管理开始统一
-
-阿里、字节跳动、腾讯罕见同框，联合发布三份 XPU 带外管理规范，统一异构算力的管理能力、协议与接口约定，面向全产业开放共建。三家直接竞争者愿意共用一套管理语言，说明跨厂商运维适配的成本已高到没人愿意独自扛。芯片百花齐放之后，管理面这个最不起眼的环节，正成为异构算力规模化落地的第一道门槛。
-
-标签：`ai-infra` `standards` `cloud`
+标签：`ai-agent` `ai-infra` `meta`
 
 相关材料：
-- [让算力说同一种管理语言：共建 XPU 带外管理标准](https://oraink.com/public/articles/101770)
+- [Design Once, Deploy at Scale: Building a Template-Driven ML Ecosystem](https://oraink.com/public/articles/102733)
+- [How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models](https://oraink.com/public/articles/102732)
 
-订阅来源：字节跳动技术团队
+订阅来源：Engineering at Meta
+
+#### 3. Windows 11 暗记 AI 工具使用，遥测逼近竞品情报
+
+安全研究者发现 Windows 11 内置开发工具检测机制，能识别原生与 WSL 环境下 Codex、Claude、Cursor 等 AI 编程工具的使用情况，并纳入可选诊断数据上传；判定仅依赖可执行文件名，存在明显缺陷，文章同时给出关闭路径。操作系统层开始感知开发者用什么 AI 工具，而这些遥测数据的去向，恰好落在微软自营 Copilot 的竞争视野之内，采集边界与竞品情报的界限由此成了必须回答的问题。
+
+标签：`privacy` `telemetry` `windows`
+
+相关材料：
+- [Windows 11 偷偷记录你用了哪些 AI 工具：Codex、Claude、Cursor 都在名单里](https://oraink.com/public/articles/102378)
+
+订阅来源：小众软件
+
+#### 4. GPT-6.2 进 Copilot，微软 MAI Code 2 同日分走货架
+
+GPT-6.2 Astra 与 Sol 全量进驻 GitHub Copilot 的同一天，微软自研的 MAI Code 2 与 MAI Code 2 Flash 也在 Copilot 全渠道正式开放，两则公告都来自 GitHub 官方账号。机器之心的盘点显示，OpenAI、微软、Liquid 等厂商数日内集中放出覆盖通用、代码、视频理解的新模型。Copilot 的模型选择器正从 OpenAI 专场变成多厂商货架，雇主的自研模型与最大供应商的产品，就此摆进了同一个选择器。
+
+标签：`github-copilot` `model-release` `openai`
+
+相关材料：
+- [OpenAI发布GPT-6.2 Astra与Sol，微软推出MAI Code 2与Flash代码模型](https://oraink.com/public/articles/102488)
+- [🆕 @MicrosoftAI's MAI Code 2 and MAI Code 2 Flash are now generally available in GitHub Copilot. MA...](https://oraink.com/public/articles/102200)
+- [GPT-6.2 Astra and GPT-6.2 Sol from @OpenAIDevs are now generally available in GitHub Copilot. Desig...](https://oraink.com/public/articles/102258)
+
+订阅来源：机器之心SOTA模型 / GitHub(@github)
 
 **本卷快讯**
 
-· Vercel 开源 eve 1.0：周下载 240 万，142 天走完 Next.js 五年路（Vercel News / Guillermo Rauch）
-· GitHub：Copilot Fusion Max 跑 Terminal-Bench 4.1 达 71.2%，领先 5.4 个点（GitHub）
-· 微软研究院开源 TokenEconomizer：不改模型，Agent 省 18.4%-30.9% token（Meng Shao）
-· GitHub 开源 Agent Host Protocol：Agent 会话可跨设备、跨应用接续（The GitHub Blog）
-· Simon Willison 开源编码 Agent 外部沙箱：Agent 留本机，命令进隔离环境（Meng Shao）
-· JetBrains 用 Qodana 扫 AI 生成代码：能抓漏洞，可利用性仍需人工判定（The JetBrains Blog）
-· Vercel AI Gateway 上新：GPT-6.2 双版本、Decision-1.1、MAI-Image-2.7（Vercel News）
-· Google 推出机器人模型 Gemini 4 Hydrogen：半天从拆箱机械臂到可用应用（Google Developers Blog）
-· Mac 开机约 49.7 天会假断网：TIME_WAIT 清理 Bug，26.4 已修复（小众软件）
-· MongoDB 收购 Firebolt，实时分析并入数据平台支撑智能体决策（MongoDB Blog）
-· MSIgnite：Copilot 上线浏览器扩展，新增 Azure DevOps 集成（GitHub）
-· GrapheneOS 怒批 Linux 内核是「人类垃圾代码」，遭围攻后删帖澄清（CSDN）
+· 腾讯混元开放 Hy4 flash 权重：224B 总参 12B 激活、1M 上下文（Hunyuan）
+· DeepSeek 开放全家桶 API，并开源 Agent 运行时 DeepSeek Harness（掘金本周最热）
+· LangChain 披露主动式 Agent 超七成运行靠日程触发，低介入优于高自主（meng shao）
+· Anthropic 实测：告知 Claude 拥有代码库，重复代码合并率 10% 升至 75%（掘金本周最热）
+· Meta 提出自我改进记忆：先迭代记忆提示，再蒸馏进模型权重（meng shao）
+· ArtCraft 团队用 AI Agent 24 小时复刻 Photoshop，启动速度快 10 倍（meng shao）
+· Airbnb 以开源 Presidio 为训练文本去标识，系统评测得分 9/10（meng shao）
+· vivo 研发数字人 Agent 落地，已替代超八成研发繁琐事务（vivo互联网技术）
+· Parallel 开源搜索评测框架，模型接入搜索平均提分 34.4（meng shao）
+· MongoDB 发布 strands SDK，为 Strands Agent 补齐会话持久化与记忆（MongoDB Blog）
+· 物理学家威滕访港授课遇 Claude 地区限制，封号传言不实（小众软件）
+· Vercel X 加速器开放申请：6 周线下无股权，900 万美元资源额度（Vercel News / Guillermo Rauch）
 
 ### 今日思考
 
-#### 当写代码的边际成本趋近于零，工程团队的产出上限由什么决定？
+#### 当验证成为主要劳动，绩效与培训体系为什么还没跟上？
 
-**今日信号：** Claude Code 团队披露 90% 代码由 AI 生成，并重建验证证据交付流程
-
-**灵砚视角：**  
-灵砚视角：验证能力正在取代编码能力，成为团队的新产能上限。Claude Code 的证据交付、Together 的文档修复、Jane Street 的面试改版，是同一个转移的三个断面，谁先把验证自动化、证据化，谁就吃到 AI 编程的下一波红利。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t1)
-
-#### 告警可以无限量产之后，安全行业按发现计价还是按修复计价？
-
-**今日信号：** GitHub 把 9791 条 AI 安全发现筛成 99 条修复建议交付 6 个开源项目
+**今日信号：** CSDN 报道有资深工程师每天审 15 个 PR、硬啃 2 万行 AI 代码后辞职；Tobi Lütke 同日在 Vercel Ship 说工程正在变成核验
 
 **灵砚视角：**  
-灵砚视角：安全链路上最稀缺的资源，已经从漏洞发现变成人工注意力。9791 筛到 99 意味着原始告警几乎一文不值，能替维护者消化发现的工具才握有定价权，这与验证瓶颈是同一枚硬币的两面。
+灵砚视角：AI 代码的产能红利正在被验证成本对冲，而评价体系仍按产出计件。真正缺的不是审查人手，是给验证劳动定价的方法；谁能先定义这个价格，谁就拿到下一阶段的工程话语权。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t1)
+
+#### 技术扩散被 Agent 接管后，工程组织的知识流动还需要经过人吗？
+
+**今日信号：** Meta 披露 60% 以上的 ML 技术传播已交由 Agent 承担，年内预计省 4500 万美元算力成本
+
+**灵砚视角：**  
+灵砚视角：技术传播是组织里最粘性的工作，如今六成交给了 Agent。知识流转第一次可以不经过人，模板加 Agent 正在承担中层的部分职能，工程组织的形状会因此改变。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t2)
 
 
 ## 5. 云计算与企业服务
 
 ### 云计算与企业服务
 
-**关键词：** 云安全 / APT / 身份安全
+**关键词：** AI 代码评审 / Linux 内核 / 开源治理
 
 ### 今日精要
 
-#### 1. COLD RELIC 冒充链式入侵，安全边界移向身份
+#### 1. Linux 内核用上 AI 评审员，维护者瓶颈开始有解
 
-Mandiant/GTIG 一手应急调查点名俄罗斯 FSB 关联 APT 组织 COLD RELIC：以窃取的身份与数据冒充可信对象，滥用跨云身份权限，沿第三方链条展开间谍式入侵。攻击者不再强攻大门，而是从身份层径直走入，报告并附针对性加固指南。当身份横跨厂商与伙伴，安全边界必须从网络层移向身份层。
+Google 把基于 Gemini 的智能体评审系统 Sashiko 捐给 Linux 基金会，为内核人工评审减负。上线后内核合并代码的后续修复率显著下降，核心维护者公开背书。对照此前开源界「9791 条 AI 告警只留 99 条」的冷遇，分野清晰：替维护者消化工作量的智能体被接纳，往待办清单里塞告警的被拒收——AI 评审的信任门槛在产出方式，不在能力。
 
-标签：`云安全` `APT` `身份安全` `威胁情报`
+标签：`AI 代码评审` `Linux 内核` `开源治理`
 
 相关材料：
-- [COLD RELIC: A Case Study in Impersonation and Compromise](https://oraink.com/public/articles/101869)
+- [Sashiko: Lessons from building an agentic code review system for Linux](https://oraink.com/public/articles/102658)
 
 订阅来源：Google Cloud Blog
 
-#### 2. Google 主权 AI 全栈背后，控制权本身成卖点
+#### 2. Google 改造 Envoy：智能体流量开始有自己的代理层
 
-布鲁塞尔主权 AI 峰会上，Google Cloud 宣布升级欧洲主权 AI 技术栈：全栈 Gemini 部署、密钥管控、合规审计与本地生态一并落地，同时面向欧洲及以色列开放无股权的 15 周主权 AI 创业加速器，申请截止 2027 年 1 月 15 日。美国厂商开始按欧洲的控制权诉求改造云产品，主权从诉求变成商品，剩下的变量只有欧洲买不买账。
+Google Cloud 给开源 L7 代理 Envoy 装上「智能体栈」：原生解析智能体载荷、按 token 管理流量、路由模型与 MCP 工具调用，再叠一层 AI 安全护栏，逐项回应传统代理的四大固有缺陷。智能体的长链路、多轮、工具调用流量，正在把传统 L7 的无状态假设撑到失效，Envoy 顺势把目标定为 AI 流量、MCP 调用与智能体间通信的开放标准。
 
-标签：`主权AI` `AI治理` `Google Cloud` `欧盟合规`
+标签：`Envoy` `MCP` `智能体基础设施`
 
 相关材料：
-- [Sovereign AI in Europe: New ways to control your AI stack](https://oraink.com/public/articles/101662)
-- [Building Sovereign AI in Europe, With Europe: Our New Startup Accelerator](https://oraink.com/public/articles/101661)
+- [Building an agentic stack in Envoy: routing models, tokens, and MCP](https://oraink.com/public/articles/102659)
 
 订阅来源：Google Cloud Blog
 
-#### 3. 阿里实测万级案例：运维智能体开始生成决策分家
+#### 3. 15 分钟到 1 秒：Aderant 用 Iceberg 换掉批处理管道
 
-阿里巴巴中间件团队专门实测了运维智能体的决策大脑：万级评分 case 加真实故障 RCA 对比显示，专用决策模型在不同运维判断环节各有准确率与性能优势，最优接入位置也随之明确。通用大模型的价值正被拆开，生成与判断各归其位、各配其模，这份数据为 AgenticOps 的架构分工提供了实测依据。
+法律行业 SaaS 厂商 Aderant 把 15 分钟周期的批处理管道换成 Iceberg 上的事件驱动架构，查询性能提升 10-26 倍，管道计算成本下降 77%，700 个客户环境获得近实时分析。同日，联合航空也在 AWS 架构博客拆解 Aurora MySQL 到 Iceberg 的 CDC 管道。两家体量迥异的企业给出同款答案：批处理按 15 分钟跑，CDC 事件单秒级落库。
 
-标签：`AgenticOps` `AI智能体` `决策模型` `评测`
+标签：`Apache Iceberg` `CDC` `数据架构`
 
 相关材料：
-- [从生成到决策：AgenticOps 决策模型的能力实测](https://oraink.com/public/articles/101801)
+- [Aderant modernizes analytics data pipeline with Apache Iceberg and AWS Lambda](https://oraink.com/public/articles/102833)
+- [How United Airlines streams database changes to Apache Iceberg with Amazon Data Firehose](https://oraink.com/public/articles/102834)
 
-订阅来源：阿里巴巴中间件
+订阅来源：AWS Architecture Blog
 
 **本卷快讯**
 
-· Google Cloud 至 Azure 专线互联进预览，私连从数月压缩到分钟（Google Cloud Blog）
-· Rakbank 用 OpenSearch 分层存储扛日均 150GB 日志，省约 55%（AWS Architecture Blog）
-· Google Cloud 第三次进 Gartner AI 开发平台领导者，执行力轴最高（Google Cloud Blog）
-· Looker 推视觉语言大更新，新增 AI 智能体驱动自定义图表流程（Google Cloud Blog）
-· bolt.new：token 效率第一课是让 AI 少读，附 5 项减上下文方向（bolt.new）
+· AWS DNS 防火墙接入 Infoblox 托管威胁规则，VPC 出站查询可自动拦截（AWS Architecture Blog）
+· Google Cloud 发布 Antigravity 实践：五层任务分类加外置验证循环（Google Cloud Blog）
+· AWS 用 FIS 给 Bedrock AgentCore 智能体注入工具故障，定位不安全行为（AWS Architecture Blog）
+· 谷歌 GKE 推单栈 IPv6 预览：AI 集群撑爆 IPv4 私网，TPU v6e 先行（Google Cloud Blog）
+· 谷歌 Agent 知识规范 OKF 升到 v0.3，迁独立开源组织做跨企业协作（Google Cloud Blog）
+· 谷歌云 Slush 秀 6 家 EMEA 智能体创企，主权 AI 加速最高 35 万美元（Google Cloud Blog）
+· 谷歌云 Database Center 上线 agentic assessments，克隆实例验证数据库变更（Google Cloud Blog）
+· IDC 报告：Cameyo 免重构接入遗留 Windows 应用，总拥有成本最高降 54%（Google Cloud Blog）
+· Google Play 揭晓 2026 大中华区年度最佳，应用与游戏出海作品多品类获奖（谷歌开发者）
 
 ### 今日思考
 
-#### 当身份本身成了万能钥匙，防御预算该往哪一层倾斜？
+#### 同一批维护者冷落 AI 告警、接纳 AI 评审员，信任的边界画在哪里？
 
-**今日信号：** Mandiant 点名 FSB 关联 APT COLD RELIC：靠窃取身份链式入侵第三方
-
-**灵砚视角：**  
-灵砚视角：这条攻击链没有技术浪漫，靠的是系统里本就存在的身份与信任。继续在网络层堆防火墙，边际收益在缩水，而身份治理、短时效凭证与第三方访问审计才是真正的缺口。案例附带的加固指南，值得直接当清单来读。
-
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t1)
-
-#### 向美国厂商买来的「主权」，还算不算主权？
-
-**今日信号：** Google Cloud 在布鲁塞尔峰会升级主权 AI 栈并开无股权加速器
+**今日信号：** Linux 基金会接收 Google 捐出的 AI 评审系统 Sashiko，核心维护者公开背书
 
 **灵砚视角：**  
-灵砚视角：Google 把密钥、审计、本地化部署做成可交付的规格，说明主权已成采购硬指标而非政治姿态。但悖论也在这里，由单一厂商授予的控制权，仍是对该厂商的依赖。欧洲创业者接不接受这种「采购来的主权」，决定这块市场能做多大。
+灵砚视角：差别不在能力而在产出方式。告警把工作推给维护者，评审替维护者消化工作；此前「9791 条告警只留 99 条」与今天内核的背书，恰好画出这条线：AI 进核心流程的前提，是先证明自己在减负而非添活。
 
-[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-18#thought-t2)
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t1)
+
+#### 智能体流量真的需要一套新代理语义，还是会被现有 L7 逐渐吸收？
+
+**今日信号：** Google 把 token 路由、MCP 调用与护栏写进 Envoy，瞄准 AI 流量开放标准
+
+**灵砚视角：**  
+灵砚视角：token 感知意味着限流、计费、安全都要按 token 重构，不是加个插件的事。代理层是流量的税口，Envoy 若立成标准，Google 在智能体时代的位置就不止模型层。
+
+[在灵砚中继续思考](https://oraink.com/digest?date=2026-11-19#thought-t2)
 
 ## 跨分类洞察
 
@@ -522,7 +560,7 @@ Mandiant/GTIG 一手应急调查点名俄罗斯 FSB 关联 APT 组织 COLD RELIC
 
 AI与智能化、网络安全、前沿科技、软件与开发者 看似分散，但对这位用户而言都进入了同一天的阅读预算。分组先保留每个方向的独立判断，再用顶部总题把最相关的前两条主线合并成今天的个人日报入口。
 
-> 今日 46 篇更新 → 18 条信号 + 53 条快讯，其余已替你读过
+> 今日 69 篇更新 → 19 条信号 + 57 条快讯，其余已替你读过
 
 ---
 
