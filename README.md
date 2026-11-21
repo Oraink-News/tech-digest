@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·网络安全 2026-W47｜Java与PHP运行时接连曝RCE](weekly/2026/cybersecurity/2026-W47.md)
+- 最新周报：[灵砚周刊·前沿科技 2026-W47｜黄仁勋回归失败后英伟达遭SEC查账](weekly/2026/frontier-tech/2026-W47.md)
 - [License](#license)
 
 ---
