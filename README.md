@@ -8,7 +8,7 @@
 - [今日日报](#今日日报)
 - [往期日报](daily/)
 - [周报归档](weekly/)
-- 最新周报：[灵砚周刊·AI与智能化 2026-W48｜Claude的黎曼证明通过机器验证](weekly/2026/ai-intelligence/2026-W48.md)
+- 最新周报：[灵砚周刊·软件与开发者 2026-W48](weekly/2026/software-developers/2026-W48.md)
 - [License](#license)
 
 ---
